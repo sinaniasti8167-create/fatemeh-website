@@ -1,0 +1,1192 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#251a15">
+<meta name="description" content="تمرین تعاملی آلمانی در موقعیت‌های واقعی زندگی؛ از سطح A1.">
+<title>آلمانی در زندگی روزمره | Deutsch mit Fatemeh</title>
+<style>
+:root{--bg:#251a15;--panel:#38251b;--panel2:#4b3224;--gold:#f0c77e;--amber:#c88b3d;--cream:#fff8ec;--muted:#d7c1a5;--line:#c88b3d55;--green:#9eb29a;--red:#e4a08b}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse at 15% 0%,#77502b55,transparent 35%),linear-gradient(145deg,#251a15,#38251b 60%,#211710);color:var(--cream);font-family:Tahoma,'Segoe UI',Arial,sans-serif;line-height:1.9}
+a{color:inherit;text-decoration:none}
+.container{width:min(1100px,calc(100% - 32px));margin:auto}
+.top{position:sticky;top:0;background:#211812ed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:5}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:15px;min-height:66px;flex-wrap:wrap}
+.brand{font-weight:bold}
+.brand small{display:block;color:var(--gold);font-size:10px;letter-spacing:1.5px;direction:ltr}
+.links{display:flex;gap:7px;flex-wrap:wrap}
+.links a{padding:7px 10px;border-radius:99px;color:#f4e8d6;font-size:12px;transition:.2s}
+.links a:hover,.links .active{background:#c88b3d25;color:var(--gold)}
+.hero{padding:40px 0 20px;text-align:center}
+.eyebrow{color:var(--gold);font-size:12px;letter-spacing:1.5px;direction:ltr}
+.hero h1{font-size:clamp(28px,4.5vw,42px);line-height:1.4;margin:10px 0}
+.hero p{color:var(--muted);max-width:720px;margin:0 auto;font-size:14px}
+.chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:16px}
+.chip{border:1px solid var(--line);border-radius:99px;padding:4px 12px;font-size:11px;color:var(--gold)}
+section{padding:25px 0 40px}
+.heading{text-align:center;margin-bottom:20px}
+.heading h2{font-size:24px;margin-bottom:4px}
+.heading p{color:var(--muted);margin:0;font-size:13px}
+.situations{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.situation{background:linear-gradient(145deg,#fffaf10c,#fffaf104);border:1px solid var(--line);border-radius:14px;padding:12px 8px;text-align:center;color:var(--cream);cursor:pointer;min-height:110px;transition:.2s;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.situation:hover,.situation.active{border-color:var(--gold);background:#c88b3d22;transform:translateY(-2px)}
+.emoji{font-size:24px;display:block;margin-bottom:4px}
+.situation b{display:block;font-size:12px;margin-bottom:2px}
+.situation small{color:var(--muted);font-size:10px}
+.lesson{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+.panel{border:1px solid var(--line);background:linear-gradient(145deg,#432d20dd,#2d2019);border-radius:18px;padding:22px}
+.label{font-size:11px;color:var(--gold);letter-spacing:1px;font-weight:bold;display:block;margin-bottom:8px}
+.de{direction:ltr;text-align:left;font-size:17px;color:var(--gold);line-height:1.5;font-weight:bold}
+.fa{color:#e9ddcb;font-size:13px;margin-top:2px}
+.phrase{padding:10px 0;border-bottom:1px solid #ffffff14}
+.phrase:last-child{border:0}
+.btn{border:1px solid var(--line);border-radius:10px;background:#c88b3d;color:#251a15;padding:10px 16px;font-weight:bold;cursor:pointer;font-family:inherit;font-size:12px;transition:.2s}
+.btn:hover{background:#f0c77e}
+.btn.secondary{background:#ffffff08;color:var(--cream)}
+.btn.secondary:hover{background:#ffffff18}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.quiz{margin-top:0}
+.question{font-size:15px;margin:10px 0 14px;line-height:1.7}
+.answers{display:grid;gap:8px}
+.answer{background:#ffffff08;border:1px solid #ffffff20;border-radius:10px;color:var(--cream);padding:11px 14px;text-align:right;cursor:pointer;font-family:inherit;font-size:13px;transition:.2s}
+.answer:hover{border-color:var(--gold);background:#ffffff12}
+.answer.correct{border-color:var(--green);background:#9eb29a25;color:#cde0cb}
+.answer.wrong{border-color:var(--red);background:#e4a08b20;color:#f3c4b8}
+.feedback{margin-top:12px;padding:12px;border-radius:10px;background:#ffffff08;color:var(--muted);font-size:13px;line-height:1.6;min-height:50px;border:1px solid #ffffff10}
+.nextline{margin-top:16px;border-top:1px solid #ffffff18;padding-top:14px}
+.progress{height:6px;background:#ffffff15;border-radius:99px;overflow:hidden;margin-top:14px}
+.progress span{display:block;height:100%;width:0;background:var(--gold);transition:width .25s}
+.note{font-size:11px;color:var(--muted);margin-top:4px}
+.dialogue-box{background:#ffffff05;padding:12px;border-radius:12px;border:1px solid #ffffff10;margin-top:8px;max-height:380px;overflow-y:auto}
+.dialogue-line{margin-bottom:10px}
+.dialogue-line:last-child{margin-bottom:0}
+
+/* استایل بخش جدید واژگان و گرامر زیر کوییز */
+.extra-section{margin-top:18px;border-top:1px solid #ffffff18;padding-top:16px}
+.vocab-table{width:100%;border-collapse:collapse;margin-top:10px;font-size:13px}
+.vocab-table th,.vocab-table td{padding:8px 10px;text-align:right;border-bottom:1px solid #ffffff10}
+.vocab-table th{color:var(--gold);font-weight:bold;background:#ffffff05}
+.vocab-de{direction:ltr;text-align:left;font-weight:bold;color:var(--gold2)}
+.grammar-card{background:#ffffff05;border:1px solid #e4b96b33;border-radius:12px;padding:14px;margin-top:12px}
+.grammar-card h4{margin:0 0 6px 0;color:var(--gold);font-size:14px}
+.grammar-card p{margin:0;font-size:12px;color:var(--muted);line-height:1.7}
+
+footer{border-top:1px solid var(--line);padding:20px 0;color:var(--muted);font-size:11px}
+.footer{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.ltr{direction:ltr;unicode-bidi:embed;display:inline-block}
+
+@media(max-width:960px){.situations{grid-template-columns:repeat(3,1fr)}.lesson{grid-template-columns:1fr}}
+@media(max-width:540px){.situations{grid-template-columns:repeat(2,1fr)}.panel{padding:16px}.de{font-size:15px}}
+
+/* Version 15 — warm dimensional surfaces (CSS only; no added photos) */
+body{background-image:radial-gradient(ellipse at 10% 4%,rgba(240,199,126,.15),transparent 32%),radial-gradient(ellipse at 92% 26%,rgba(200,139,61,.11),transparent 34%),linear-gradient(145deg,#251a15 0%,#38251b 52%,#211a17 100%);background-attachment:fixed}
+.container{perspective:1200px}
+.hero,.panel,.dialogue-box,.extra-section,.grammar-card,.note{position:relative;isolation:isolate;box-shadow:0 18px 36px rgba(0,0,0,.23),inset 0 1px 0 rgba(255,255,255,.09)}
+.hero:before,.panel:before,.dialogue-box:before,.extra-section:before,.grammar-card:before{content:"";position:absolute;inset:1px;border-radius:inherit;pointer-events:none;background:linear-gradient(135deg,rgba(255,255,255,.07),transparent 35%,rgba(240,199,126,.045));z-index:-1}
+.situation,.lesson,.answer,.question,.vocab-table{box-shadow:0 8px 0 rgba(0,0,0,.10),0 14px 25px rgba(0,0,0,.18),inset 0 1px 0 rgba(255,255,255,.10);border:1px solid rgba(240,199,126,.17);transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease}
+.situation:hover,.lesson:hover,.answer:hover,.question:hover{transform:translateY(-4px);box-shadow:0 11px 0 rgba(0,0,0,.08),0 20px 30px rgba(0,0,0,.24),inset 0 1px 0 rgba(255,255,255,.15);border-color:rgba(240,199,126,.42)}
+.chip,.emoji,.label,.progress{box-shadow:inset 0 1px 0 rgba(255,255,255,.18),0 5px 12px rgba(0,0,0,.15)}
+@media(prefers-reduced-motion:reduce){.situation,.lesson,.answer,.question{transition:none}.situation:hover,.lesson:hover,.answer:hover,.question:hover{transform:none}}
+
+
+/* VERSION 16 — warm café depth treatment, no new photographs */
+:root{--cafe-ink:#1b100b;--cafe-deep:#29170f;--cafe-brown:#3a2115;--cafe-brown2:#4a2a19;--cafe-gold:#e8b66a;--cafe-cream:#fff3df;--cafe-muted:#d6bda0}
+body{background:radial-gradient(ellipse at 12% 4%,#a45e2b35,transparent 28%),radial-gradient(ellipse at 90% 70%,#e8b66a12,transparent 30%),linear-gradient(145deg,#1b100b 0%,#2c190f 48%,#180e09 100%)!important;color:var(--cafe-cream)!important}
+.topbar,.top{background:linear-gradient(180deg,#1a0f0aF5,#28160ff2)!important;border-bottom:1px solid #dca45b55!important;box-shadow:0 8px 24px #10080370!important;backdrop-filter:blur(14px)}
+.brand-mark{background:linear-gradient(145deg,#4a2a18,#201109)!important;box-shadow:inset 1px 1px 0 #ffdda055,5px 6px 14px #0b060480!important;border-radius:14px!important}
+.navlinks a,.links a{transition:transform .22s ease,background .22s ease,box-shadow .22s ease!important}
+.navlinks a:hover,.links a:hover{transform:translateY(-2px);background:#e8b66a18!important;box-shadow:0 5px 14px #09050355}
+.eyebrow,.chip{background:linear-gradient(135deg,#e8b66a12,#e8b66a04)!important;border-color:#dca45b66!important;color:#f2cc8d!important;box-shadow:inset 0 1px 0 #fff4d61c,0 5px 14px #10080335!important}
+.page-hero,.hero{position:relative;isolation:isolate}
+.page-hero:before,.hero:before{content:"";position:absolute;z-index:-1;inset:12px 0 0;border-radius:28px;background:radial-gradient(ellipse at 50% 0%,#b8793a20,transparent 68%);pointer-events:none}
+.flash-area,.feature-panel,.panel,.quiz,.dialogue-box,.grammar-card,.extra-section,.practice-result,.split>*,.situation,.flash-card,.flash-grid>*,.feature-card,.lesson-card{background:linear-gradient(145deg,#4a2c1d 0%,#342015 48%,#25150e 100%)!important;border:1px solid #c58b4c66!important;box-shadow:inset 1px 1px 0 #ffe3b51c,inset -1px -1px 0 #0a050366,0 14px 28px #0d0704a8,0 3px 0 #754625!important;border-radius:18px!important}
+.flash-card,.situation,.grammar-card,.feature-panel,.panel,.dialogue-box,.quiz,.flash-area{transition:transform .24s ease,box-shadow .24s ease,border-color .24s ease!important}
+.flash-card:hover,.situation:hover,.grammar-card:hover,.feature-panel:hover,.panel:hover,.dialogue-box:hover,.quiz:hover{transform:translateY(-4px);border-color:#edc27caa!important;box-shadow:inset 1px 1px 0 #ffe3b52c,0 22px 38px #090503bb,0 5px 0 #8a562a!important}
+button,.btn,.filter-btn,.answers button{border-radius:12px!important;transition:transform .18s ease,filter .18s ease,box-shadow .18s ease!important}
+button:hover,.btn:hover,.filter-btn:hover,.answers button:hover{transform:translateY(-2px);filter:brightness(1.09);box-shadow:0 8px 16px #0b060455}
+.btn-gold,.btn:not(.secondary):not(.btn-ghost),button.active{background:linear-gradient(135deg,#f4d18d,#d99a46)!important;color:#28160d!important;border:1px solid #ffe2a5!important;box-shadow:inset 0 1px 0 #fff5d8,0 5px 0 #8c5527,0 10px 18px #0b060455!important}
+.btn-ghost,.secondary,.filter-btn{background:linear-gradient(145deg,#4a2c1d,#2a180f)!important;color:#f7dfb8!important;border:1px solid #b77d4266!important;box-shadow:inset 0 1px 0 #ffe2b31c,0 4px 0 #1b0e08!important}
+.situations{gap:14px!important}
+.situation{min-height:125px!important;padding:18px 12px!important}
+.flash-grid{gap:16px!important}
+.progress,.progress *{accent-color:#e8b66a}
+footer,.footer{background:linear-gradient(180deg,#21130c,#160b07)!important;border-top:1px solid #dca45b44!important}
+::selection{background:#e8b66a55;color:#fff8eb}
+@media(max-width:700px){.flash-grid,.situations{grid-template-columns:repeat(2,minmax(0,1fr))!important}.flash-card:hover,.situation:hover,.panel:hover{transform:translateY(-2px)}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important;scroll-behavior:auto!important}}
+
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="container nav">
+    <a class="brand" href="index.html">فاطمه براتی <small>DEUTSCH MIT FATEMEH</small></a>
+    <nav class="links"><a href="index.html">خانه</a><a href="index.html#courses">دوره‌ها</a><a href="index.html#about">روش تدریس</a><a href="null.html">آلمانی از صفر</a><a class="active" href="alltag.html">آلمانی در زندگی</a><a href="lernen.html">تمرین A1</a><a href="cafe.html">کافهٔ آلمانی</a><a href="index.html#contact">ارتباط</a></nav>
+  </div>
+</header>
+
+<main>
+  <div class="container hero">
+    <span class="eyebrow">DEUTSCH FÜRS LEBEN · A1 MASTER PRACTICAL</span>
+    <h1>تمرین جامع آلمانی در موقعیت‌های واقعی</h1>
+    <p>موضوع مورد نظرت را انتخاب کن؛ ۱۰ موضوع کاربردی، ۱۰۰ عبارت کلیدی، واژگان با آرتیکل، نکات گرامری و ۷۰ سناریوی تمرینی.</p>
+    <div class="chips">
+      <span class="chip">۱۰ موضوع کاربردی</span>
+      <span class="chip">واژگان با آرتیکل و تلفظ</span>
+      <span class="chip">نکات گرامری هر بخش</span>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="heading">
+        <h2>امروز در چه موقعیتی تمرین کنیم؟</h2>
+        <p>یک موضوع انتخاب کن تا عبارت‌ها، مکالمه، تمرینات، واژگان و گرامرش فعال شوند:</p>
+      </div>
+      <div class="situations" id="situations">
+        <button class="situation active" data-scene="bakery"><span class="emoji">🥖</span><b>نانوایی</b><small>خرید نان و شیرینی</small></button>
+        <button class="situation" data-scene="supermarket"><span class="emoji">🛒</span><b>سوپرمارکت</b><small>قیمت، صندوق و کارت</small></button>
+        <button class="situation" data-scene="cafe"><span class="emoji">☕</span><b>کافه و رستوران</b><small>سفارش و حساب کردن</small></button>
+        <button class="situation" data-scene="office"><span class="emoji">🏛️</span><b>اداره (Bürgeramt)</b><small>ثبت‌نام و مدارک</small></button>
+        <button class="situation" data-scene="directions"><span class="emoji">📍</span><b>آدرس و ایستگاه</b><small>قطار، اتوبوس و مسیر</small></button>
+        <button class="situation" data-scene="pharmacy"><span class="emoji">👨‍⚕️</span><b>داروخانه</b><small>دارو و علائم بیماری</small></button>
+        <button class="situation" data-scene="housing"><span class="emoji">🏠</span><b>اجاره خانه</b><small>صاحب‌خانه و بازدید</small></button>
+        <button class="situation" data-scene="workplace"><span class="emoji">💼</span><b>محیط کار</b><small>معرفی خود و همکاران</small></button>
+        <button class="situation" data-scene="neighbors"><span class="emoji">🚪</span><b>همسایه‌ها</b><small>آشنایی و ارتباط</small></button>
+        <button class="situation" data-scene="hobbies"><span class="emoji">⚽</span><b>علایق و آخر هفته</b><small>سرگرمی و زمان آزاد</small></button>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="container lesson">
+      <!-- سمت راست: عبارت‌ها و مکالمه -->
+      <div class="panel">
+        <span class="label">01 · WICHTIGE SÄTZE / ۱۰ عبارت کلیدی</span>
+        <h2 id="sceneTitle" style="margin:0 0 4px 0;">نانوایی (Bäckerei)</h2>
+        <p class="note" id="sceneIntro" style="margin-bottom:12px;">جملات پرکاربرد برای خرید نان و سفارش صبحانه.</p>
+        
+        <div id="phrases"></div>
+        
+        <div class="actions">
+          <button class="btn secondary" id="showTranslations">نمایش / پنهان‌کردن ترجمه‌ها</button>
+        </div>
+
+        <div class="nextline">
+          <span class="label">02 · DIALOG / نمونه مکالمه جامع</span>
+          <div class="dialogue-box" id="dialogueContainer"></div>
+        </div>
+      </div>
+
+      <!-- سمت چپ: تمرین تعاملی + واژگان و گرامر اضافه شده -->
+      <div class="panel quiz">
+        <span class="label">03 · INTERAKTIVES QUIZ / تمرین موقعیت</span>
+        <h3>پاسخ مناسب را انتخاب کن</h3>
+        <p class="question" id="question">سؤال بارگذاری می‌شود...</p>
+        
+        <div class="answers" id="answers"></div>
+        
+        <div class="feedback" id="feedback" aria-live="polite">یک گزینه را انتخاب کن تا بازخورد و علت آن را ببینی.</div>
+        
+        <div class="progress"><span id="progressBar"></span></div>
+        
+        <div class="actions" style="justify-content:space-between; align-items:center;">
+          <button class="btn" id="nextQuestion">سوال / موقعیت بعدی ←</button>
+          <button class="btn secondary" id="reset">شروع مجدد این بخش</button>
+        </div>
+
+        <!-- بخش جدید: واژگان و گرامر بخش -->
+        <div class="extra-section">
+          <span class="label">04 · WORTSCHATZ & GRAMMATIK / واژگان کلیدی و گرامر</span>
+          
+          <!-- جدول کلمات -->
+          <table class="vocab-table">
+            <thead>
+              <tr>
+                <th>واژه و آرتیکل</th>
+                <th>تلفظ</th>
+                <th>معنی</th>
+              </tr>
+            </thead>
+            <tbody id="vocabBody"></tbody>
+          </table>
+
+          <!-- کارت گرامر -->
+          <div class="grammar-card">
+            <h4 id="grammarTitle">نکته گرامری این بخش</h4>
+            <p id="grammarText">توضیحات گرامری...</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container panel">
+      <span class="label">05 · WICHTIGER TIPP / نکته طلایی برای زندگی در آلمان</span>
+      <h2 style="margin:5px 0 8px">اگر کلمه‌ای را متوجه نشدی چه بگویی؟</h2>
+      <p class="de">Entschuldigung, ich lerne noch Deutsch. Können Sie das bitte wiederholen?</p>
+      <p class="fa">ببخشید، من هنوز دارم آلمانی یاد می‌گیرم. می‌توانید لطفاً تکرار کنید؟</p>
+      <p class="note">آلمانی‌ها از این جمله استقبال می‌کنند و صبورانه و شمرده‌تر با شما صحبت خواهند کرد!</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer">
+    <span>یادگیری کاربردی زبان آلمانی A1</span>
+    <span class="ltr">LERNEN · SPRECHEN · WACHSEN</span>
+    <span>© Deutsch mit Fatemeh</span>
+  </div>
+</footer>
+
+<script>
+const scenes = {
+  bakery: {
+    title: 'نانوایی (Bäckerei)',
+    intro: 'نانوایی‌ها در آلمان تنوع بسیار بالایی دارند. ۱۰ جمله ضروری برای سفارش نان و شیرینی:',
+    phrases: [
+      ['Guten Tag, ich hätte gerne zwei Brötchen.','روز بخیر، من دو تا نان کوچک می‌خواهم.','درخواست محترمانه (ich hätte gerne)'],
+      ['Gibt es hier Vollkornbrot?','آیا نان سبوس‌دار دارید؟','پرسیدن درباره نوع نان'],
+      ['Ich nehme auch ein Stück Käsekuchen.','من یک تکه کیک چیزکیک هم برمی‌دارم.','سفارش کیک یا شیرینی'],
+      ['Können Sie das Brot bitte schneiden?','می‌توانید نان را برش بزنید؟','درخواست برش زدن نان'],
+      ['Ist das Croissant frisch?','آیا این کرواسان تازه است؟','پرسیدن کیفیت جنس'],
+      ['Was kostet eine Brezel?','چوب‌شور آلمانی (Brezel) چقدر است؟','پرسیدن قیمت یک قلم کالا'],
+      ['Sonst noch etwas?','چیز دیگری هم می‌خواهید؟','سؤال رایج فروشنده'],
+      ['Nein danke, das ist alles.','نه ممنون، همین‌ها بود.','برای اتمام سفارش'],
+      ['Kann ich mit Karte zahlen?','می‌توانم با کارت پرداخت کنم؟','پرداخت الکترونیکی'],
+      ['Schönen Tag noch!','روز خوبی داشته باشید!','خداحافظی گرم']
+    ],
+    dialogue: [
+      {de: 'Verkäufer: Guten Tag! Was darf es sein?', fa: 'فروشنده: روز بخیر! چی میل دارید؟'},
+      {de: 'Kunde: Guten Tag, ich hätte gerne ein Vollkornbrot und zwei Brötchen.', fa: 'مشتری: روز بخیر، من یک نان سبوس‌دار و دو تا نان گرد کوچک می‌خواهم.'},
+      {de: 'Verkäufer: Möchten Sie das Brot geschnitten?', fa: 'فروشنده: می‌خواهید نان را برایتان برش بزنم؟'},
+      {de: 'Kunde: Ja, bitte geschnitten.', fa: 'مشتری: بله، لطفاً برش بزنید.'},
+      {de: 'Verkäufer: Sonst noch etwas?', fa: 'فروشنده: چیز دیگری هم می‌خواهید؟'},
+      {de: 'Kunde: Ja, ich nehme noch eine Brezel. Was kostet das zusammen?', fa: 'مشتری: بله، یک برتسل هم برمی‌دارم. سرجمع چقدر می‌شود؟'},
+      {de: 'Verkäufer: Das macht 5 Euro 20.', fa: 'فروشنده: می‌شود ۵ یورو و ۲۰ سنت.'},
+      {de: 'Kunde: Hier bitte. Auf Wiedersehen!', fa: 'مشتری: بفرمایید. به امید دیدار!'}
+    ],
+    vocab: [
+      {word: 'das Brot', pron: 'داس بروت', meaning: 'نان'},
+      {word: 'das Brötchen', pron: 'داس بروت‌خِن', meaning: 'نان کوچک گرد'},
+      {word: 'die Bäckerei', pron: 'دی بَکِرای', meaning: 'نانوایی'},
+      {word: 'die Brezel', pron: 'دی برِتسِل', meaning: 'چوب‌شور سنتی آلمانی'},
+      {word: 'der Kuchen', pron: 'دِر کوخِن', meaning: 'کیک'},
+      {word: 'schneiden', pron: 'شرایبِن / اشنایدن', meaning: 'برش زدن / بریدن'}
+    ],
+    grammarTitle: '💡 ساختار سفارش محترمانه: Ich hätte gerne...',
+    grammarText: 'در آلمان برای سفارش دادن غذا، نان یا نوشیدنی به جای استفاده مستقیم از "Ich will" (من می‌خواهم) همیشه از عبارت محترمانه **"Ich hätte gerne + اسم"** یا **"Ich nehme + اسم"** استفاده می‌شود.',
+    quiz: [
+      {
+        q: 'وارد نانوایی می‌شوی و می‌خواهی دو عدد نان کوچک (Brötchen) سفارش دهی. چه می‌گویی؟',
+        a: ['Ich hätte gerne zwei Brötchen, bitte.', 'Ich gehe nach Hause.', 'Wo ist die Bäckerei?'],
+        c: 0,
+        why: 'عبارت «Ich hätte gerne...» محترمانه‌ترین و رایج‌ترین روش سفارش دادن در نانوایی و کافه است.'
+      },
+      {
+        q: 'می‌خواهی نانی که خریده‌ای را فروشنده برایت اسلایس و برش بزند. کدام جمله درست است؟',
+        a: ['Können Sie das Brot bitte schneiden?', 'Das Brot ist kalt.', 'Ich esse kein Brot.'],
+        c: 0,
+        why: 'فعل «schneiden» به معنی بریدن و اسلایس کردن نان است.'
+      },
+      {
+        q: 'فروشنده نانوایی می‌پرسد: «Sonst noch etwas?» منظورش چیست و چه پاسخ می‌دهی؟',
+        a: ['می‌پرسد آیا چیز دیگری هم می‌خواهی؟ پاسخ: «Nein danke, das ist alles.»', 'می‌پرسد اسمت چیست؟ پاسخ: «Ich heiße Sina.»', 'می‌پرسد کجا زندگی می‌کنی؟ پاسخ: «In Berlin.»'],
+        c: 0,
+        why: 'کلمه «Sonst noch etwas» یعنی "آیا چیز دیگری نیاز دارید؟" و در پاسخ می‌توانید بگوئید "نه ممنون، همین بود".'
+      },
+      {
+        q: 'می‌خواهی بپرسی آیا نان سبوس‌دار (Vollkornbrot) دارند یا نه؟',
+        a: ['Haben Sie Vollkornbrot?', 'Das ist kein Brot.', 'Ich kaufe Milch.'],
+        c: 0,
+        why: '«Haben Sie...?» ساده‌ترین راه برای پرسیدن وجود یک کالا در فروشگاه است.'
+      },
+      {
+        q: 'چوب‌شور محبوب آلمانی (Brezel) را می‌بینی و می‌خواهی قیمت یک عدد آن را بپرسی:',
+        a: ['Was kostet eine Brezel?', 'Wie alt ist die Brezel?', 'Wo ist die Brezel?'],
+        c: 0,
+        why: '«Was kostet...?» الگوی استاندارد پرسیدن قیمت کالاهاست.'
+      },
+      {
+        q: 'خریدت تمام شده و می‌خواهی خداحافظی محترمانه‌ای داشته باشی و بگویی "روز خوبی داشته باشید":',
+        a: ['Schönen Tag noch!', 'Guten Morgen!', 'Gute Nacht!'],
+        c: 0,
+        why: '«Schönen Tag noch!» یعنی "ادامه روز خوبی داشته باشید" که در آلمان بسیار رایج است.'
+      },
+      {
+        q: 'می‌خواهی ببینی آیا امکان پرداخت با کارت وجود دارد یا خیر. کدام جمله درست است؟',
+        a: ['Kann ich mit Karte zahlen?', 'Wie alt bist du?', 'Das Brot ist lecker.'],
+        c: 0,
+        why: '«mit Karte zahlen» یعنی پرداخت کردن با کارت اعتباری یا بانکی.'
+      }
+    ]
+  },
+  supermarket: {
+    title: 'سوپرمارکت (Supermarkt)',
+    intro: '۱۰ جمله و عبارت کلیدی برای خرید از فروشگاه‌های مانند Aldi، Lidl یا Rewe:',
+    phrases: [
+      ['Wo finde ich die Milch?','شیر را کجا پیدا کنم؟','پرسیدن جای اجناس'],
+      ['Wo stehen die Bio-Produkte?','محصولات ارگانیک کجا هستند؟','پرسیدن بخش اجناس خاص'],
+      ['Brauchen Sie einen Kassenbon?','فیش خرید (رسید) می‌خواهید؟','سؤال صندوق‌دار'],
+      ['Brauchen Sie eine Tüte?','پلاستیک / کیسه نیاز دارید؟','سؤال صندوق‌دار'],
+      ['Sammeln Sie Treuepunkte?','امتیاز خرید جمع می‌کنید؟','سؤال صندوق‌دار'],
+      ['Das steht im Angebot.','این جنس تخفیف خورده است.','درباره قیمت و تخفیف'],
+      ['Wo ist die Pfandannahme?','دستگاه بازگشت بطری (Pfand) کجاست؟','بازیافت بطری'],
+      ['Ich zahle kontaktlos.','من بدون تماس (کارت/موبایل) می‌پردازم.','روش پرداخت جدید'],
+      ['Ist die Kasse geöffnet?','آیا این صندوق باز است؟','پرسیدن درباره صندوق'],
+      ['Ich habe kein Kleingeld.','من پول خرد ندارم.','توضیح در مورد پول']
+    ],
+    dialogue: [
+      {de: 'Kassiererin: Guten Tag! Haben Sie eine Kundenkarte?', fa: 'صندوق‌دار: روز بخیر! کارت مشتری داری؟'},
+      {de: 'Kunde: Nein, habe ich nicht.', fa: 'مشتری: نه، ندارم.'},
+      {de: 'Kassiererin: Das macht zusammen 18 Euro 20.', fa: 'صندوق‌دار: سرجمع می‌شود ۱۸ یورو و ۲۰ سنت.'},
+      {de: 'Kunde: Kann ich mit Karte zahlen?', fa: 'مشتری: می‌توانم با کارت بپردازم؟'},
+      {de: 'Kassiererin: Ja, ab 5 Euro. Bitte halten Sie die Karte an das Gerät.', fa: 'صندوق‌دار: بله، بالای ۵ یورو. لطفاً کارت را روی دستگاه نگه دارید.'},
+      {de: 'Kassiererin: Brauchen Sie den Kassenbon?', fa: 'صندوق‌دار: رسید خرید را می‌خواهید؟'},
+      {de: 'Kunde: Nein danke, schönes Wochenende!', fa: 'مشتری: نه ممنون، آخر هفته خوبی داشته باشید!'},
+      {de: 'Kassiererin: Danke, gleichfalls!', fa: 'صندوق‌دار: ممنون، همچنین برای شما!'}
+    ],
+    vocab: [
+      {word: 'die Kasse', pron: 'دی کَسه', meaning: 'صندوق فروشگاه'},
+      {word: 'der Kassenbon', pron: 'دِر کَسِن‌بُن', meaning: 'رسید / فیش خرید'},
+      {word: 'die Tüte', pron: 'دی توته', meaning: 'کیسه پلاستیکی خرید'},
+      {word: 'das Angebot', pron: 'داس آن‌گه‌بوت', meaning: 'تخفیف ویژه / پیشنهاد'},
+      {word: 'das Pfand', pron: 'داس پفاند', meaning: 'مبلغ ودیعه بازیافت بطری'},
+      {word: 'das Kleingeld', pron: 'داس کلاین‌گِلد', meaning: 'پول خرد / سکه'}
+    ],
+    grammarTitle: '💡 مفعول مستقیم (Akkusativ) در خرید',
+    grammarText: 'وقتی در فروشگاه می‌گویید "من فلان چیز را نیاز دارم" (Ich brauche...) آرتیکل مذکر `der` به **`den`** یا `einen` تبدیل می‌شود: <br>• Ich brauche **einen** Kassenbon. (مذکر)<br>• Ich brauche **eine** Tüte. (مؤنث)',
+    quiz: [
+      {
+        q: 'در سوپرمارکت نمی‌توانی شیر (Milch) را پیدا کنی. چطور از کارمند کمک می‌گیری؟',
+        a: ['Entschuldigung, wo finde ich die Milch?', 'Die Milch ist kalt.', 'Ich trinke keine Milch.'],
+        c: 0,
+        why: '«Wo finde ich...?» الگوی استاندارد برای پرسیدن محل اجناس در فروشگاه است.'
+      },
+      {
+        q: 'می‌خواهی بطری‌های خالی را تحویل دستگاه بازیافت (Pfand) بدهی. چه می‌پرسی؟',
+        a: ['Wo ist der Pfandautomat?', 'Wo ist der Ausgang?', 'Wie viel kostet die Flasche?'],
+        c: 0,
+        why: '«Pfandautomat» دستگاه مخصوص تحویل بطری‌های پلاستیکی و شیشه‌ای در سوپرمارکت‌ها است.'
+      },
+      {
+        q: 'می‌خواهی بدانی آیا یک کالا شامل تخفیف ویژه‌ی هفته شده یا خیر:',
+        a: ['Ist das im Angebot?', 'Ist das alt?', 'Wo ist die Kasse?'],
+        c: 0,
+        why: 'عبارت «im Angebot» به معنای تخفیف خورده یا حراج بودن کالا است.'
+      },
+      {
+        q: 'می‌خواهی کارت اعتباری‌ات را روی دستگاه خوان‌کارت بدون زدن رمز (kontaktlos) بگذاری:',
+        a: ['Ich zahle kontaktlos.', 'Ich habe keine Karte.', 'Das Gerät ist kaputt.'],
+        c: 0,
+        why: '«kontaktlos zahlen» یعنی پرداخت بدون تماس با کارت یا گوشی هوشمند.'
+      },
+      {
+        q: 'صندوق‌دار موقع پرداخت می‌پرسد: «Brauchen Sie eine Tüte?» یعنی چه؟',
+        a: ['آیا کیسه/پلاستیک خرید نیاز دارید؟', 'آیا امروز کارت اعتباری دارید؟', 'آیا نان تازه می‌خواهید؟'],
+        c: 0,
+        why: 'کلمه «die Tüte» به معنی کیسه یا پلاستیک خرید است.'
+      },
+      {
+        q: 'صندوق‌دار می‌پرسد: «Brauchen Sie den Kassenbon?» منظور چیست؟',
+        a: ['آیا رسید / فیش خرید را می‌خواهید؟', 'آیا کیف پولتان را جا گذاشتید؟', 'آیا سکه خرد دارید؟'],
+        c: 0,
+        why: '«der Kassenbon» رسید کاغذی خرید است که صندوق‌دار ارائه می‌دهد.'
+      },
+      {
+        q: 'صندوق‌دار می‌گوید: «Das macht 8 Euro.» شما پول را می‌دهید. چه کلمه‌ای می‌گویید؟',
+        a: ['Hier bitte.', 'Auf Wiedersehen.', 'Ich verstehe nicht.'],
+        c: 0,
+        why: 'موقع تحویل دادن پول یا کارت همیشه می‌گوییم: «Hier bitte» (بفرمایید).'
+      }
+    ]
+  },
+  cafe: {
+    title: 'کافه و رستوران (Café & Restaurant)',
+    intro: '۱۰ عبارت کاربردی برای سفارش غذا، نوشیدنی و پرداخت حساب در کافه‌های آلمان:',
+    phrases: [
+      ['Ich möchte bitte einen Tisch für zwei Personen.','یک میز برای دو نفر می‌خواهم، لطفاً.','گرفتن میز در رستوران'],
+      ['Ich möchte bitte einen Kaffee bestellen.','می‌خواهم یک قهوه سفارش دهم.','سفارش نوشیدنی'],
+      ['Ein Stück Käsekuchen, bitte.','یک اسلایس کیک چیزکیک، لطفاً.','سفارش کیک'],
+      ['Haben Sie auch vegetarische Gerichte?','آیا غذای گیاهی هم دارید؟','پرسیدن درباره منو'],
+      ['Bringt der Kellner die Speisekarte?','آیا گارسون منوی غذا را می‌آورد؟','درخواست منو'],
+      ['Ist dieser Platz noch frei?','آیا این صندلی/میز خالی است؟','پرسیدن نشسته رو صندلی خالی'],
+      ['Wir möchten bitte bezahlen.','ما می‌خواهیم حساب کنیم، لطفاً.','درخواست صورتحساب'],
+      ['Zusammen oder getrennt?','با هم یا جداگانه؟','سؤال گارسون برای پرداخت'],
+      ['Stimmt so!','بقیه‌اش برای خودتان (انعام)!','دادن انعام به گارسون'],
+      ['Das Essen war sehr lecker!','غذا بسیار خوشمزه بود!','تعریف از غذا']
+    ],
+    dialogue: [
+      {de: 'Kellner: Hallo, haben Sie reserviert?', fa: 'گارسون: سلام، آیا رزرو کرده‌اید؟'},
+      {de: 'Kunde: Nein, haben Sie einen Tisch für zwei Personen?', fa: 'مشتری: نه، آیا یک میز برای دو نفر دارید؟'},
+      {de: 'Kellner: Ja, hier bitte. Was möchten Sie trinken?', fa: 'گارسون: بله بفرمایید اینجا. چی میل دارید بنوشید؟'},
+      {de: 'Kunde: Ich nehme einen Cappuccino und meine Frau nimmt einen Tee.', fa: 'مشتری: من یک کاپوچینو می‌برم و همسرم یک چای.'},
+      {de: 'Kellner: Möchten Sie auch etwas essen?', fa: 'گارسون: آیا می‌خواهید چیزی هم بخورید؟'},
+      {de: 'Kunde: Ja, zwei Stück Apfelkuchen, bitte.', fa: 'مشتری: بله، دو اسلایس کیک سیب، لطفاً.'},
+      {de: 'Kunde (später): Entschuldigung, wir möchten bitte zahlen.', fa: 'مشتری (بعداً): ببخشید، ما می‌خواهیم حساب کنیم.'},
+      {de: 'Kellner: Zusammen oder getrennt? - Kunde: Getrennt, bitte.', fa: 'گارسون: با هم یا جداگانه؟ - مشتری: جداگانه، لطفاً.'}
+    ],
+    vocab: [
+      {word: 'der Kellner', pron: 'دِر کِلنِر', meaning: 'گارسون (مرد)'},
+      {word: 'die Speisekarte', pron: 'دی اشپایزه‌کارته', meaning: 'منوی غذا'},
+      {word: 'die Rechnung', pron: 'دی رِخنونگ', meaning: 'صورتحساب / فاکتور'},
+      {word: 'das Trinkgeld', pron: 'داس ترینک‌گِلد', meaning: 'انعام'},
+      {word: 'getrennt', pron: 'گِترِنت', meaning: 'جداگانه (پرداخت)'},
+      {word: 'zusammen', pron: 'توسامِن', meaning: 'با هم / یکجا (پرداخت)'}
+    ],
+    grammarTitle: '💡 پرداخت انعام با اصطلاح Stimmt so!',
+    grammarText: 'در رستوران‌های آلمان معمولاً ۵ تا ۱۰ درصد انعام (Trinkgeld) می‌دهند. اگر صورتحساب ۱۸ یورو شود و شما یک اسکناس ۲۰ یورویی بدهید و بگویید **"Stimmt so!"** یعنی ۲ یورو باقی‌مانده انعام گارسون باشد.',
+    quiz: [
+      {
+        q: 'وارد رستوران می‌شوی و می‌خواهی یک میز برای دو نفر بگیری. چه می‌گویی؟',
+        a: ['Ein Tisch für zwei Personen, bitte.', 'Ich habe zwei Tische.', 'Wo ist die Küche?'],
+        c: 0,
+        why: '«Ein Tisch für [Anzahl] Personen» الگوی استاندارد درخواست میز است.'
+      },
+      {
+        q: 'می‌خواهی ببینی آیا این صندلی در کافه خالی است تا بنشینی یا کسی روی آن نشسته؟',
+        a: ['Ist dieser Platz noch frei?', 'Ist das ein Stuhl?', 'Wo wohne ich?'],
+        c: 0,
+        why: '«Ist dieser Platz frei?» جمله‌ی بسیار پرکاربرد در اماکن عمومی و کافه‌هاست.'
+      },
+      {
+        q: 'می‌خواهی ببینی آیا غذای بدون گوشت / گیاهی (vegetarisch) دارند یا نه؟',
+        a: ['Haben Sie vegetarische Gerichte?', 'Ich esse viel Fleisch.', 'Das Essen ist kalt.'],
+        c: 0,
+        why: '«vegetarische Gerichte» به معنی غذاهای گیاهی است.'
+      },
+      {
+        q: 'می‌خواهی در کافه یک قهوه و یک کیک سفارش دهی. کدام جمله درست است؟',
+        a: ['Ich nehme einen Kaffee und ein Stück Kuchen, bitte.', 'Ich habe keinen Kaffee.', 'Der Kaffee ist sehr heiß.'],
+        c: 0,
+        why: '«Ich nehme...» (من برمی‌دارم/می‌برم) یکی از جملات رایج برای سفارش غذای و نوشیدنی است.'
+      },
+      {
+        q: 'موقع پرداخت، گارسون می‌پرسد: «Zusammen oder getrennt?» منظورش چیست؟',
+        a: ['آیا صورتحساب را با هم می‌پردازید یا جداجدا؟', 'آیا قهوه را با شیر می‌خواهید یا تلخ؟', 'آیا داخل می‌نشینید یا بیرون؟'],
+        c: 0,
+        why: 'در آلمان رسم است که افراد در رستوران می‌توانند دنگ خود را جداگانه (getrennt) یا یکجا (zusammen) بدهند.'
+      },
+      {
+        q: 'صورتحساب ۹ یورو شده و شما ۱۰ یورو می‌دهید و می‌خواهید ۱ یورو انعام بدهید. چه می‌گویید؟',
+        a: ['Stimmt so!', 'Das ist zu teuer.', 'Ich habe kein Geld.'],
+        c: 0,
+        why: 'عبارت «Stimmt so!» یعنی "بقیه‌اش مال خودتان / بقیشو نگه دارید".'
+      },
+      {
+        q: 'از کیفیت غذا خیلی راضی هستی و می‌خواهی از گارسون تشکر کنی:',
+        a: ['Das Essen war sehr lecker!', 'Das Essen war teuer.', 'Ich bin voll.'],
+        c: 0,
+        why: '«sehr lecker» یعنی بسیار خوشمزه.'
+      }
+    ]
+  },
+  office: {
+    title: 'اداره ثبت (Bürgeramt / Ausländerbehörde)',
+    intro: '۱۰ عبارت ضروری برای مراجعه به ادارات در آلمان (ثبت آدرس، ویزا و مدارک):',
+    phrases: [
+      ['Ich habe einen Termin um 10 Uhr.','من ساعت ۱۰ وقت قبلی (Termin) دارم.','معرفی در پذیرش'],
+      ['Hier ist meine Terminbestätigung.','این تاییدیه وقت قبلی من است.','ارائه برگه وقت'],
+      ['Hier sind meine Unterlagen.','بفرمایید، این مدارک من است.','تحویل مدارک'],
+      ['Ich muss meine Adresse anmelden.','من باید آدرسم را ثبت کنم (Anmeldung).','توضیح علت مراجعه'],
+      ['Muss ich ein Formular ausfüllen?','آیا باید یک فرم پر کنم؟','پرسیدن درباره فرم‌ها'],
+      ['Ich brauche eine Bestätigung.','من نیاز به یک تاییدیه/گواهی دارم.','درخواست برگه رسمی'],
+      ['Wo ist das Wartezimmer?','اتاق انتظار کجاست؟','پرسیدن محل سالن انتظار'],
+      ['Wie lange dauert das?','چقدر زمان می‌برد؟','پرسیدن مدت زمان'],
+      ['Können Sie das bitte aufschreiben?','می‌توانید لطفاً این را بنویسید؟','درخواست یادداشت کردن'],
+      ['Vielen Dank für Ihre Hilfe.','خیلی ممنون از کمکتان.','تشکر از کارمند']
+    ],
+    dialogue: [
+      {de: 'Beamter: Guten Tag, Ihre Wartenummer bitte?', fa: 'کارمند: روز بخیر، شماره نوبتتان لطفاً؟'},
+      {de: 'Besucher: Guten Tag, A-104. Ich habe einen Termin für die Anmeldung.', fa: 'مراجع: روز بخیر، A-104. من برای ثبت آدرس وقت دارم.'},
+      {de: 'Beamter: Haben Sie den Pass und die Wohnungsgeberbestätigung dabei?', fa: 'کارمند: پاسپورت و تاییدیه صاحب‌خانه را همراه دارید؟'},
+      {de: 'Besucher: Ja, hier sind alle Unterlagen.', fa: 'مراجع: بله، بفرمایید این تمام مدارک است.'},
+      {de: 'Beamter: Gut. Bitte füllen Sie noch dieses Formular aus.', fa: 'کارمند: خوب است. لطفاً این فرم را هم پر کنید.'},
+      {de: 'Besucher: Muss ich hier unterschreiben?', fa: 'مراجع: آیا باید اینجا را امضا کنم؟'},
+      {de: 'Beamter: Ja, genau hier unten. Danke!', fa: 'کارمند: بله، دقیقاً همین پایین. ممنون!'}
+    ],
+    vocab: [
+      {word: 'der Termin', pron: 'دِر تِرمین', meaning: 'وقت قبلی / قرار ملاقات'},
+      {word: 'das Formular', pron: 'داس فرمولار', meaning: 'فرم اداری'},
+      {word: 'die Anmeldung', pron: 'دی آن‌مِلدونگ', meaning: 'ثبت آدرس سکونت'},
+      {word: 'die Unterlagen', pron: 'دی اونتِرلاگِن', meaning: 'مدارک و اسناد'},
+      {word: 'unterschreiben', pron: 'اونتِرشرایبِن', meaning: 'امضا کردن'},
+      {word: 'das Wartezimmer', pron: 'داس وارتِه‌تسیمِر', meaning: 'اتاق انتظار'}
+    ],
+    grammarTitle: '💡 افعال جداشدنی (Trennbare Verben) مثل ausfüllen',
+    grammarText: 'در آلمانی خیلی از افعال اداری جداشدنی هستند؛ مثلاً **ausfüllen** (پر کردن فرم). در جمله پیشوند `aus` به آخر جمله می‌رود: <br>• Ich fülle das Formular **aus**.',
+    quiz: [
+      {
+        q: 'وارد اداره می‌شوی و می‌خواهی بگویی برای ساعت ۱۱ وقت قبلی داری. چه می‌گویی؟',
+        a: ['Ich habe einen Termin um 11 Uhr.', 'Ich suche ein Zimmer.', 'Wie viel Uhr ist es?'],
+        c: 0,
+        why: 'کلمه «der Termin» به معنی وقت ملاقات یا قرار قبلی اداری/پزشکی است.'
+      },
+      {
+        q: 'می‌خواهی آدرس جدیدت را در اداره ثبت شهرداری ثبت (Anmeldung) کنی:',
+        a: ['Ich möchte meine Adresse anmelden.', 'Ich wohne nicht hier.', 'Die Adresse ist falsch.'],
+        c: 0,
+        why: '«die Adresse anmelden» فرآیند اجباری ثبت آدرس سکونت در آلمان است.'
+      },
+      {
+        q: 'کارمند اداری برگه‌ای جلوی شما می‌گذارد و می‌گوید: «Bitte unterschreiben Sie hier.» یعنی چه؟',
+        a: ['لطفاً اینجا را امضا کنید.', 'لطفاً اینجا بنشینید.', 'لطفاً فردا بیایید.'],
+        c: 0,
+        why: 'فعل «unterschreiben» به معنی امضا کردن است.'
+      },
+      {
+        q: 'می‌خواهی بپرسی آیا نیاز هست فرمی (Formular) را پر کنی یا نه؟',
+        a: ['Muss ich ein Formular ausfüllen?', 'Das Formular ist alt.', 'Ich habe kein Formular.'],
+        c: 0,
+        why: '«ein Formular ausfüllen» به معنی پر کردن یک فرم اداری است.'
+      },
+      {
+        q: 'کارمند اداری آدرسی یا نامه‌ای به شما می‌گوید ولی متوجه نمی‌شوی. چه درخواستی می‌کنی؟',
+        a: ['Können Sie das bitte aufschreiben?', 'Ich gehe jetzt.', 'Das ist schön.'],
+        c: 0,
+        why: '«aufschreiben» یعنی یادداشت کردن و نوشتن روی برگه.'
+      },
+      {
+        q: 'می‌خواهی بپرسی اتاق انتظار (Wartezimmer) کجاست تا منتظر نوبتت بمانی:',
+        a: ['Wo ist das Wartezimmer?', 'Wo ist der Bahnhof?', 'Wann schläfst du?'],
+        c: 0,
+        why: '«das Wartezimmer» اتاق انتظار در مطب‌ها و ادارات است.'
+      },
+      {
+        q: 'کارمند اداری سریع صحبت می‌کند و شما متوجه نمی‌شوید. مناسب‌ترین پاسخ چیست؟',
+        a: ['Sprechen Sie bitte etwas langsamer.', 'Ich weiß nicht.', 'Tschüss, bis morgen.'],
+        c: 0,
+        why: '«Sprechen Sie bitte langsamer» یعنی "لطفاً آهسته‌تر صحبت کنید".'
+      }
+    ]
+  },
+  directions: {
+    title: 'آدرس و ایستگاه (Wegbeschreibung & Bahnhof)',
+    intro: '۱۰ عبارت طلایی برای مسیریابی در شهر، ایستگاه قطار و وسایل حمل‌ونقل عمومی:',
+    phrases: [
+      ['Entschuldigung, wo ist der Bahnhof?','ببخشید، ایستگاه قطار کجاست؟','پرسیدن آدرس'],
+      ['Wie komme ich zur Post?','چطور به اداره پست بروم؟','پرسیدن مسیر رسیدن'],
+      ['Fährt dieser Bus zum Zentrum?','آیا این اتوبوس به مرکز شهر می‌رود؟','سؤال در ایستگاه اتوبوس'],
+      ['Auf welchem Gleis fährt der Zug ab?','قطار از کدام سکو حرکت می‌کند؟','پرسیدن سکوی قطار'],
+      ['Hat der Zug Verspätung?','آیا قطار تاخیر دارد؟','پرسیدن تاخیر قطار'],
+      ['Muss ich umsteigen?','آیا باید خط عوض کنم (خط تعویض)؟','سؤال تعویض قطار/اتوبوس'],
+      ['Gehen Sie geradeaus und dann links.','مستقیم بروید و سپس به چپ.','راهنمایی مسیر'],
+      ['Biegen Sie die zweite Straße rechts ab.','خیابان دوم به راست بپیچید.','جزئیات آدرس'],
+      ['Ich habe mich verlaufen.','من راهم را گم کرده‌ام.','درخواست کمک'],
+      ['Wo kann ich eine Fahrkarte kaufen?','کجا می‌توانم بلیت بخرم؟','خرید بلیت']
+    ],
+    dialogue: [
+      {de: 'Passant: Entschuldigung, wissen Sie wo die Post ist?', fa: 'عابر: ببخشید، می‌دانید اداره پست کجاست؟'},
+      {de: 'Sie: Ja, gehen Sie zuerst geradeaus bis zur Ampel.', fa: 'شما: بله، اول مستقیم بروید تا چراغ راهنمایی.'},
+      {de: 'Sie: Dann biegen Sie links ab. Die Post ist auf der rechten Seite.', fa: 'شما: سپس به چپ بپیچید. اداره پست در سمت راست است.'},
+      {de: 'Passant: Ist das weit zu Fuß?', fa: 'عابر: آیا پیاده راه زیادی است؟'},
+      {de: 'Sie: Nein, das dauert nur 5 Minuten.', fa: 'شما: نه، فقط ۵ دقیقه طول می‌کشد.'},
+      {de: 'Passant: Vielen Dank! - Sie: Gerne! Schönen Tag noch.', fa: 'عابر: خیلی ممنون! - شما: خواهش می‌کنم! روز خوبی داشته باشید.'}
+    ],
+    vocab: [
+      {word: 'der Bahnhof', pron: 'دِر بان‌هوف', meaning: 'ایستگاه قطار'},
+      {word: 'das Gleis', pron: 'داس گلایس', meaning: 'سکوی قطار'},
+      {word: 'die Fahrkarte', pron: 'دی فارکارته', meaning: 'بلیت سفر / کارت بلیت'},
+      {word: 'geradeaus', pron: 'گِراده‌اوس', meaning: 'مستقیم به جلو'},
+      {word: 'links / rechts', pron: 'لینکْس / رِختس', meaning: 'چپ / راست'},
+      {word: 'umsteigen', pron: 'اوم‌اشتایگن', meaning: 'تعویض خط وسیله نقلیه'}
+    ],
+    grammarTitle: '💡 جهات و حرکت با افعال امری (Imperativ)',
+    grammarText: 'برای آدرس دادن معمولاً از حالت محترمانه امری استفاده می‌شود: <br>• **Gehen Sie...** (بروید...)<br>• **Biegen Sie... ab** (بپیچید...)<br>• **Fahren Sie...** (با وسیله بروید...)',
+    quiz: [
+      {
+        q: 'در خیابان گم شده‌ای و می‌خواهی آدرس ایستگاه قطار (Bahnhof) را بپرسی:',
+        a: ['Entschuldigung, wo ist der Hauptbahnhof?', 'Der Zug fährt schnell.', 'Ich fahre gerne Auto.'],
+        c: 0,
+        why: '«Wo ist...» پرسش ساده و مستقیم برای پیدا کردن مکان‌هاست.'
+      },
+      {
+        q: 'در ایستگاه قطار می‌خواهی ببینی قطار از کدام سکو (Gleis) حرکت می‌کند؟',
+        a: ['Auf welchem Gleis fährt der Zug ab?', 'Wie teuer ist die Karte?', 'Wann kommt das Essen?'],
+        c: 0,
+        why: 'کلمه «das Gleis» به معنی سکوی قطار در ایستگاه است.'
+      },
+      {
+        q: 'می‌خواهی بپرسی آیا برای رسیدن به مقصد باید خط قطار/اتوبوس عوض کنی (umsteigen) یا نه؟',
+        a: ['Muss ich umsteigen?', 'Kann ich schlafen?', 'Wo ist das Auto?'],
+        c: 0,
+        why: 'فعل «umsteigen» به معنای تعویض خط در وسایل نقلیه عمومی است.'
+      },
+      {
+        q: 'کسی به شما می‌گوید: «Gehen Sie geradeaus und dann links!» منظور چیست؟',
+        a: ['مستقیم بروید و سپس به چپ بپیچید!', 'دور بزنید و برگردید!', 'به راست بپیچید و بایستید!'],
+        c: 0,
+        why: '«geradeaus» یعنی مستقیم و «links» یعنی به سمت چپ.'
+      },
+      {
+        q: 'می‌خواهی بپرسی دستگاه فروش بلیت (Fahrkartenautomat) کجاست؟',
+        a: ['Wo kann ich eine Fahrkarte kaufen?', 'Wo ist der Busfahrer?', 'Die Karte ist schön.'],
+        c: 0,
+        why: '«die Fahrkarte» بلیت سفر با وسایل نقلیه عمومی است.'
+      },
+      {
+        q: 'می‌خواهی بپرسی آیا قطار تاخیر (Verspätung) دارد یا خیر؟',
+        a: ['Hat der Zug Verspätung?', 'Ist der Zug rot?', 'Wo ist der Bus?'],
+        c: 0,
+        why: 'کلمه «die Verspätung» به معنی تاخیر در وسایل حمل و نقل است.'
+      },
+      {
+        q: 'می‌خواهی بگویی کلاً راهت را گم کرده‌ای و نیاز به کمک داری:',
+        a: ['Ich habe mich verlaufen.', 'Ich habe kein Fahrrad.', 'Ich bin zu Hause.'],
+        c: 0,
+        why: 'اصطلاح «Ich habe mich verlaufen» یعنی من راهم را گم کرده‌ام.'
+      }
+    ]
+  },
+  pharmacy: {
+    title: 'داروخانه و سلامت (Apotheke & Gesundheit)',
+    intro: '۱۰ عبارت ضروری در داروخانه و مطب پزشک برای بیان علائم بیماری و دریافت دارو:',
+    phrases: [
+      ['Ich brauche etwas gegen Kopfschmerzen.','من چیزی برای سردرد می‌خواهم.','درخواست دارو'],
+      ['Ich habe Bauchschmerzen und Fieber.','من دل‌درد و تب دارم.','توضیح علائم بیماری'],
+      ['Haben Sie etwas gegen Erkältung?','چیزی برای سرماخوردگی دارید؟','درخواست داروی سرماخوردگی'],
+      ['Ich habe Halsschmerzen.','من گلودرد دارم.','توضیح درد گلو'],
+      ['Wie oft muss ich das einnehmen?','این را چند بار در روز باید مصرف کنم؟','دستور مصرف دارو'],
+      ['Vor oder nach dem Essen?','قبل از غذا یا بعد از غذا؟','زمان مصرف قرص'],
+      ['Haben Sie ein Rezept?','آیا نسخه پزشک دارید؟','سؤال داروساز'],
+      ['Gibt es Nebenwirkungen?','آیا این دارو عوارض جانبی دارد؟','پرسیدن عوارض دارو'],
+      ['Ich bin allergisch gegen Penicillin.','من به پنی‌سیلین حساسیت دارم.','اعلام حساسیت دارویی'],
+      ['Gute Besserung!','آرزوی سلامتی / بهبود یابید!','تعارف داروساز']
+    ],
+    dialogue: [
+      {de: 'Apotheker: Guten Tag, wie kann ich Ihnen helfen?', fa: 'داروساز: روز بخیر، چطور می‌توانم کمکتان کنم؟'},
+      {de: 'Kunde: Guten Tag. Ich habe seit gestern starke Kopfschmerzen.', fa: 'مشتری: روز بخیر. من از دیروز سردرد شدیدی دارم.'},
+      {de: 'Apotheker: Haben Sie auch Fieber oder Halsschmerzen?', fa: 'داروساز: آیا تب یا گلودرد هم دارید؟'},
+      {de: 'Kunde: Nein, nur Kopfschmerzen.', fa: 'مشتری: نه، فقط سردرد.'},
+      {de: 'Apotheker: Hier sind Schmerztabletten. Nehmen Sie eine Tablette nach dem Essen.', fa: 'داروساز: بفرمایید این قرص مسکن است. یک قرص بعد از غذا بخورید.'},
+      {de: 'Kunde: Wie oft am Tag?', fa: 'مشتری: چند بار در روز؟'},
+      {de: 'Apotheker: Maximal dreimal am Tag. Gute Besserung!', fa: 'داروساز: حداکثر سه بار در روز. آرزوی بهبودی!'}
+    ],
+    vocab: [
+      {word: 'die Kopfschmerzen', pron: 'دی کُپف‌شمرتسن', meaning: 'سردرد'},
+      {word: 'das Fieber', pron: 'داس فیبِر', meaning: 'تب'},
+      {word: 'das Rezept', pron: 'داس رِتسپت', meaning: 'نسخه پزشک'},
+      {word: 'die Tablette', pron: 'دی تابْلِته', meaning: 'قرص دارویی'},
+      {word: 'einnehmen', pron: 'آین‌نِمِن', meaning: 'مصرف کردن (دارو)'},
+      {word: 'Gute Besserung!', pron: 'گوته بِسِرونگ', meaning: 'بهبود یابید / بلا دور باشد'}
+    ],
+    grammarTitle: '💡 بیان درد با ترکیب اسم + Schmerzen',
+    grammarText: 'در زبان آلمانی برای بیان درد اعضای بدن، اسم عضو بدن به کلمه **Schmerzen** وصل می‌شود: <br>• der Kopf (سر) ← **Kopfschmerzen** (سردرد)<br>• der Bauch (شکم) ← **Bauchschmerzen** (دل‌درد)',
+    quiz: [
+      {
+        q: 'وارد داروخانه می‌شوی و می‌خواهی بگویی سردرد داری و مسکن می‌خواهی:',
+        a: ['Ich habe Kopfschmerzen. Haben Sie Schmerztabletten?', 'Ich bin gesund.', 'Ich esse gerne Krapfen.'],
+        c: 0,
+        why: 'کلمه «Kopfschmerzen» به معنی سردرد و «Schmerztabletten» قرص مسکن است.'
+      },
+      {
+        q: 'می‌خواهی بگویی گلودرد (Halsschmerzen) و تب (Fieber) داری:',
+        a: ['Ich habe Halsschmerzen und Fieber.', 'Ich habe keine Schmerzen.', 'Mein Bein tut weh.'],
+        c: 0,
+        why: '«Halsschmerzen» یعنی گلودرد و «Fieber» یعنی تب داشتن.'
+      },
+      {
+        q: 'می‌خواهی بپرسی دارو را باید قبل از غذا مصرف کنی یا بعد از غذا؟',
+        a: ['Muss ich das vor oder nach dem Essen einnehmen?', 'Wann ist das Essen fertig?', 'Ich mag kein Essen.'],
+        c: 0,
+        why: '«vor dem Essen» یعنی قبل از غذا و «nach dem Essen» یعنی بعد از غذا.'
+      },
+      {
+        q: 'داروساز می‌پرسد: «Haben Sie ein Rezept?» منظور چیست؟',
+        a: ['آیا نسخه پزشک همراه دارید؟', 'آیا کارت بانکی دارید؟', 'آیا وقت قبلی دارید؟'],
+        c: 0,
+        why: 'کلمه «das Rezept» به معنی نسخه پزشک برای داروهاست.'
+      },
+      {
+        q: 'می‌خواهی به داروساز بگویی به یک داروی خاص حساسیت (allergisch) داری:',
+        a: ['Ich bin allergisch gegen Penicillin.', 'Ich mag Penicillin.', 'Penicillin ist gut.'],
+        c: 0,
+        why: '«allergisch sein gegen...» یعنی حساسیت داشتن به یک ماده یا دارو.'
+      },
+      {
+        q: 'می‌خواهی بپرسی آیا دارو عوارض جانبی (Nebenwirkungen) دارد یا خیر؟',
+        a: ['Gibt es Nebenwirkungen?', 'Ist das Medikament süß?', 'Wo ist der Arzt?'],
+        c: 0,
+        why: '«die Nebenwirkungen» به معنای عوارض جانبی دارو است.'
+      },
+      {
+        q: 'موقع خداحافظی، داروساز به شما می‌گوید: «Gute Besserung!» یعنی چه؟',
+        a: ['بهبود یابید / بلا دور باشد!', 'روز خوبی داشته باشید!', 'خداحافظ تا بعد!'],
+        c: 0,
+        why: 'اصطلاح «Gute Besserung!» برای آرزوی سلامتی و شفای بیمار به کار می‌رود.'
+      }
+    ]
+  },
+  housing: {
+    title: 'اجاره خانه و صاحب‌خانه (Wohnungssuche & Vermieter)',
+    intro: '۱۰ عبارت ضروری برای گفتگو با صاحب‌خانه، قرار بازدید و سوالات اجاره خانه در آلمان:',
+    phrases: [
+      ['Ich interessiere mich für die Wohnung.','من به این آپارتمان علاقه‌مندم.','تماس اولیه برای اجاره'],
+      ['Wann ist ein Besichtigungstermin möglich?','چه زمانی امکان وقت بازدید وجود دارد؟','درخواست بازدید خانه'],
+      ['Wie hoch ist die Kaltmiete?','اجاره خالص (بدون شارژ) چقدر است؟','اجاره بدون هزینه‌های جانبی'],
+      ['Wie hoch sind die Nebenkosten?','هزینه‌های جانبی (شارژ/گرمایش) چقدر است؟','هزینه‌های شارژ و نگهداری'],
+      ['Wie hoch ist die Kaution?','مبلغ ودیعه (پول پیش) چقدر است؟','ودیعه امانی خانه'],
+      ['Sind Haustiere erlaubt?','آیا داشتن حیوان خانگی مجاز است؟','پرسیدن قوانین خانه'],
+      ['Ab wann ist die Wohnung frei?','از چه زمانی آپارتمان خالی است؟','تاریخ تحویل ملک'],
+      ['Gibt es einen Balkon oder einen Keller?','آیا بالکن یا انباری وجود دارد؟','امکانات آپارتمان'],
+      ['Ich möchte den Mietvertrag unterschreiben.','می‌خواهم اجاره‌نامه را امضا کنم.','عقد قرارداد'],
+      ['Die Heizung funktioniert nicht.','سیستم گرمایشی کار نمی‌کند.','گزارش مشکل به صاحب‌خانه']
+    ],
+    dialogue: [
+      {de: 'Vermieter: Guten Tag, Herr Sina. Sind Sie an der Wohnung interessiert?', fa: 'صصاحب‌خانه: روز بخیر آقای سینا ... به آپارتمان علاقه‌مندید؟'},
+      {de: 'Mieter: Guten Tag! Ja, die Wohnung gefällt mir sehr gut. Wie hoch ist die Warmmiete?', fa: 'مستاجر: روز بخیر! بله، آپارتمان را بسیار دوست دارم. اجاره ناخالص (با شارژ) چقدر است؟'},
+      {de: 'Vermieter: Die Kaltmiete ist 600 Euro und die Nebenkosten sind 150 Euro.', fa: 'صاحب‌خانه: اجاره خالص ۶۰۰ یورو و هزینه‌های جانبی ۱۵۰ یورو است.'},
+      {de: 'Mieter: Und wie viel Kaution muss ich zahlen?', fa: 'مستاجر: و چقدر ودیعه (Kaution) باید بپردازم؟'},
+      {de: 'Vermieter: Die Kaution beträgt zwei Kaltmieten, also 1200 Euro.', fa: 'صاحب‌خانه: ودیعه معادل دو اجاره خالص، یعنی ۱۲۰۰ یورو است.'},
+      {de: 'Mieter: Wann kann ich einziehen?', fa: 'مستاجر: از چه زمانی می‌توانم اسباب‌کشی کنم و ساکن شوم؟'},
+      {de: 'Vermieter: Ab dem ersten nächsten Monat.', fa: 'صاحب‌خانه: از اول ماه آینده.'}
+    ],
+    vocab: [
+      {word: 'die Wohnung', pron: 'دی وُنونگ', meaning: 'آپارتمان / مسکن'},
+      {word: 'der Vermieter', pron: 'دِر فِرمیتِر', meaning: 'صاحب‌خانه / موجر'},
+      {word: 'die Kaltmiete', pron: 'دی کالت‌میته', meaning: 'اجاره خالص بدون شارژ'},
+      {word: 'die Warmmiete', pron: 'دی وارم‌میته', meaning: 'اجاره کل همراه شارژ'},
+      {word: 'die Kaution', pron: 'دی کائوتسیون', meaning: 'ودیعه امانی (پول پیش)'},
+      {word: 'der Mietvertrag', pron: 'دِر میت‌فِرتراگ', meaning: 'قرارداد اجاره'}
+    ],
+    grammarTitle: '💡 تفاوت Kaltmiete و Warmmiete در آلمان',
+    grammarText: 'در اجاره مسکن آلمان همیشه به دو قیمت برمی‌خورید: <br>• **Kaltmiete:** فقط اجاره خالص آپارتمان.<br>• **Warmmiete:** اجاره خالص + **Nebenkosten** (شارژ شامل آب گرم، گرمایش و زباله). برق و اینترنت معمولاً جداگانه پرداخت می‌شود.',
+    quiz: [
+      {
+        q: 'آگهی خانه‌ای را دیده‌ای و می‌خواهی بپرسی چه زمانی می‌توانی برای بازدید (Besichtigung) بروی:',
+        a: ['Wann ist ein Besichtigungstermin möglich?', 'Wo ist mein Haus?', 'Ich habe keine Wohnung.'],
+        c: 0,
+        why: '«der Besichtigungstermin» وقت بازدید از خانه است.'
+      },
+      {
+        q: 'تفاوت Kaltmiete و Warmmiete چیست و اگر بخواهی اجاره کل با شارژ را بپرسی چه می‌گویی؟',
+        a: ['Wie hoch ist die Warmmiete?', 'Wie alt ist das Haus?', 'Kaltmiete ist warm.'],
+        c: 0,
+        why: '«Warmmiete» شامل اجاره پایه به همراه هزینه‌های جانبی (آب، گرمایش و...) است.'
+      },
+      {
+        q: 'می‌خواهی بپرسی پول پیش / ودیعه امانی (Kaution) چقدر است؟',
+        a: ['Wie hoch ist die Kaution?', 'Was ist die Kaution?', 'Ich habe keine Kaution.'],
+        c: 0,
+        why: '«die Kaution» ودیعه‌ای است که نزد صاحب‌خانه امانت می‌ماند.'
+      },
+      {
+        q: 'می‌خواهی از صاحب‌خانه بپرسی آیا نگهداری سگ یا گربه (Haustiere) در آپارتمان مجاز است؟',
+        a: ['Sind Haustiere erlaubt?', 'Haben Sie ein Haustier?', 'Das Haustier ist klein.'],
+        c: 0,
+        why: '«Haustiere erlaubt» به معنای مجاز بودن حیوانات خانگی است.'
+      },
+      {
+        q: 'می‌خواهی بپرسی از چه زمانی می‌توانی اسباب‌کشی کنی و وارد خانه شوی (einziehen)؟',
+        a: ['Wann kann ich einziehen?', 'Wann kann ich aussteigen?', 'Wie groß ist die Tür?'],
+        c: 0,
+        why: 'فعل «einziehen» به معنای اسباب‌کشی کردن به خانه جدید است.'
+      },
+      {
+        q: 'در زمستان شوفاژ کار نمی‌کند. چطور به صاحب‌خانه پیام می‌دهی؟',
+        a: ['Die Heizung funktioniert nicht.', 'Die Heizung ist sehr warm.', 'Ich brauche keine Heizung.'],
+        c: 0,
+        why: '«Die Heizung funktioniert nicht» یعنی سیستم گرمایشی خراب است.'
+      },
+      {
+        q: 'قرارداد اجاره (Mietvertrag) آماده است و می‌خواهی بگویی آماده امضا هستی:',
+        a: ['Ich möchte den Mietvertrag unterschreiben.', 'Der Mietvertrag ist lang.', 'Ich habe keinen Vertrag.'],
+        c: 0,
+        why: '«der Mietvertrag» اجاره‌نامه رسمی در آلمان است.'
+      }
+    ]
+  },
+  workplace: {
+    title: 'محیط کار و همکاران (Arbeitsplatz & Kollegen)',
+    intro: '۱۰ عبارت پرکاربرد برای روزهای اول کاری، معرفی خود و تعامل با همکاران:',
+    phrases: [
+      ['Ich bin der neue Mitarbeiter.','من کارمند جدید هستم.','معرفی در روز اول'],
+      ['Ich arbeite in der Qualitätsentwicklung.','من در بخش تضمین/توسعه کیفیت کار می‌کنم.','توضیح بخش کاری'],
+      ['Freut mich, Sie kennenzulernen.','از آشنایی با شما خوشوقتم.','احوالپرسی محترمانه کاری'],
+      ['Wo ist mein Arbeitsplatz?','میز/محل کار من کجاست؟','پرسیدن استقرار'],
+      ['Wann ist die Mittagspause?','استراحت ناهار چه ساعتی است؟','پرسیدن زمان استراحت'],
+      ['Mahlzeit! / Guten Appetit!','نوش جان! (سلام وقت ناهار)','تعارف رایج کاری آلمان'],
+      ['Haben Sie kurz Zeit für eine Frage?','آیا کوتاه برای یک سوال وقت دارید؟','درخواست کمک از همکار'],
+      ['Ich schicke Ihnen eine E-Mail.','من برای شما یک ایمیل می‌فرستم.','ارتباطات کاری'],
+      ['Wann beginnt das Meeting?','جلسه چه ساعتی شروع می‌شود؟','پرسیدن زمان جلسه'],
+      ['Schönen Feierabend!','پایان کار خوبی داشته باشید!','خداحافظی در پایان روز کاری']
+    ],
+    dialogue: [
+      {de: 'Kollege: Hallo! Bist du der neue Kollege?', fa: 'همکار: سلام! آیا تو همکار جدید هستی؟'},
+      {de: 'Sina: Ja, hallo! Ich heiße Sina und arbeite ab heute hier.', fa: 'سینا: بله سلام! من سینا هستم و از امروز اینجا کار می‌کنم.'},
+      {de: 'Kollege: Herzlich willkommen im Team! Ich bin Thomas.', fa: 'همکار: خیلی به تیم ما خوش آمدی! من توماس هستم.'},
+      {de: 'Sina: Freut mich, dich kennenzulernen, Thomas.', fa: 'سینا: از آشنایی با تو خوشوقتم توماس.'},
+      {de: 'Kollege: Wenn du Fragen hast, kannst du mich immer fragen.', fa: 'همکار: اگر سوالی داشتی همیشه می‌توانی از من بپرسی.'},
+      {de: 'Sina: Vielen Dank! Wann machen wir normalerweise Mittagspause?', fa: 'سینا: خیلی ممنون! معمولاً چه ساعتی ناهار می‌خوریم؟'},
+      {de: 'Kollege: Um 12 Uhr gehen wir zusammen in die Kantine.', fa: 'همکار: ساعت ۱۲ با هم به سلف/غذاخوری شرکت می‌رویم.'}
+    ],
+    vocab: [
+      {word: 'der Mitarbeiter', pron: 'دِر میت‌آربایتر', meaning: 'همکار / کارمند'},
+      {word: 'der Arbeitsplatz', pron: 'دِر آربایتس‌پلاتس', meaning: 'محل کار / میز کار'},
+      {word: 'die Mittagspause', pron: 'دی میتاگس‌پائوزه', meaning: 'استراحت ناهار'},
+      {word: 'der Feierabend', pron: 'دِر فایرآبند', meaning: 'فراغت بعد از پایان کار'},
+      {word: 'die Kantine', pron: 'دی کانتینه', meaning: 'سلف / غذاخوری شرکت'},
+      {word: 'das Meeting', pron: 'داس میتینگ', meaning: 'جلسه کاری'}
+    ],
+    grammarTitle: '💡 اصطلاح ویژه Feierabend و Mahlzeit در فرهنگ کاری',
+    grammarText: 'در فرهنگ کاری آلمان دو کلمه بسیار مهم وجود دارد: <br>• **Mahlzeit!**: در ساعات بین ۱۱:۳۰ تا ۱۳:۳۰ به عنوان سلام ظهرگاهی و ارزو برای ناهار به کار می‌رود.<br>• **Schönen Feierabend!**: خداحافظی صمیمانه موقع تعطیل شدن از کار.',
+    quiz: [
+      {
+        q: 'روز اول کاری است و می‌خواهی خودت را به همکارت معرفی کنی و بگویی کارمند جدید هستی:',
+        a: ['Hallo, ich bin der neue Mitarbeiter.', 'Ich habe keine Arbeit.', 'Wo ist der Chef?'],
+        c: 0,
+        why: '«der neue Mitarbeiter» یعنی کارمند جدید.'
+      },
+      {
+        q: 'می‌خواهی بگویی "از آشنایی با شما خوشوقتم":',
+        a: ['Freut mich, Sie kennenzulernen.', 'Ich kenne Sie nicht.', 'Wie heißen Sie nicht?'],
+        c: 0,
+        why: '«Freut mich, Sie kennenzulernen» عبارت رسمی و محترمانه برای ابراز خرسندی از آشنایی است.'
+      },
+      {
+        q: 'در محیط‌های کاری آلمان هنگام ظهر و زمان ناهار چه اصطلاحی بین همکاران بسیار رایج است؟',
+        a: ['Mahlzeit!', 'Gute Nacht!', 'Guten Morgen!'],
+        c: 0,
+        why: 'اصطلاح «Mahlzeit!» سلام و تعارف ویژه زمان ناهار در ادارات آلمان است.'
+      },
+      {
+        q: 'ساعت ۵ عصر است و کار تعطیل شده. موقع رفتن به همکارانت چه می‌گویی؟',
+        a: ['Schönen Feierabend!', 'Guten Morgen!', 'Gute Besserung!'],
+        c: 0,
+        why: '«Feierabend» به زمان فراغت پس از پایان ساعت کاری گفته می‌شود.'
+      },
+      {
+        q: 'می‌خواهی از همکارت بپرسی آیا چند دقیقه برای راهنمایی وقت دارد یا نه؟',
+        a: ['Haben Sie kurz Zeit?', 'Wie viel Uhr ist es?', 'Ich habe keine Zeit.'],
+        c: 0,
+        why: '«Haben Sie kurz Zeit?» یعنی آیا یک لحظه وقت دارید؟'
+      },
+      {
+        q: 'می‌خواهی بپرسی جلسه کاری (Meeting) چه ساعتی شروع می‌شود؟',
+        a: ['Wann beginnt das Meeting?', 'Das Meeting ist lang.', 'Wer ist im Meeting?'],
+        c: 0,
+        why: '«Wann beginnt...» یعنی چه زمانی شروع می‌شود؟'
+      },
+      {
+        q: 'می‌خواهی بگویی اطلاعات را برای همکارت از طریق ایمیل ارسال می‌کنی:',
+        a: ['Ich schicke Ihnen eine E-Mail.', 'Ich schreibe einen Brief.', 'Ich rufe nicht an.'],
+        c: 0,
+        why: 'فعل «schicken» یعنی فرستادن و ارسال کردن.'
+      }
+    ]
+  },
+  neighbors: {
+    title: 'آشنایی با همسایه‌ها (Nachbarn & Hausgemeinschaft)',
+    intro: '۱۰ عبارت پرکاربرد برای ارتباط با همسایه‌ها، دریافت بسته پستی و رعایت قوانین آپارتمان:',
+    phrases: [
+      ['Hallo, ich bin Ihr neuer Nachbar.','سلام، من همسایه جدید شما هستم.','معرفی به همسایه‌ها'],
+      ['Ich wohne im ersten Stock.','من در طبقه اول زندگی می‌کنم.','توضیح طبقه سکونت'],
+      ['Haben Sie mein Paket angenommen?','آیا بسته پستی من را تحویل گرفته‌اید؟','پرسیدن بسته پستی'],
+      ['Vielen Dank fürs Annehmen!','خیلی ممنون بابت تحویل گرفتن بسته!','تشکر بابت بسته'],
+      ['Bitte beachten Sie die Ruhezeit.','لطفاً ساعات سکوت و آرامش را رعایت کنید.','قانون Ruhezeit'],
+      ['Am Sonntag ist Ruhezeit.','یکشنبه‌ها روز سکوت و استراحت است.','قانون یکشنبه‌ها'],
+      ['Entschuldigung für den Lärm.','ببخشید بابت سر و صدا.','عذرخواهی از همسایه'],
+      ['Ich mache am Samstag eine kleine Party.','من شنبه یک مهمانی کوچک دارم.','اطلاع‌رسانی مهمانی'],
+      ['Können Sie die Tür öffnen?','می‌توانید در ورودی را باز کنید؟','درخواست باز کردن در ساختمان'],
+      ['Brauchen Sie Hilfe mit den Mülltonnen?','آیا برای سطل‌های زباله نیاز به کمک دارید؟','کمک به همسایه']
+    ],
+    dialogue: [
+      {de: 'Sina: Guten Tag! Ich bin Sina, Ihr neuer Nachbar aus dem 2. Stock.', fa: 'سینا: روز بخیر! من سینا هستم، همسایه جدید شما از طبقه دوم.'},
+      {de: 'Nachbarin: Guten Tag! Schön, Sie kennenzulernen. Ich bin Frau Müller.', fa: 'همسایه: روز بخیر! خوشبختم از آشنایی با شما. من خانم مولر هستم.'},
+      {de: 'Sina: Entschuldigung, der Postbote hat ein Paket für mich bei Ihnen abgegeben?', fa: 'سینا: ببخشید، پستچی یک بسته برای من پیش شما تحویل داده؟'},
+      {de: 'Nachbarin: Ja, genau! Hier ist Ihr Paket.', fa: 'همسایه: بله دقیقاً! بفرمایید این بسته شماست.'},
+      {de: 'Sina: Vielen herzlichen Dank fürs Annehmen!', fa: 'سینا: یک دنیا ممنون بابت تحویل گرفتنش!'},
+      {de: 'Nachbarin: Sehr gerne. Wenn Sie Fragen haben, klopfen Sie einfach.', fa: 'همسایه: با کمال میل. اگر سوالی داشتید فقط در بزنید.'}
+    ],
+    vocab: [
+      {word: 'der Nachbar', pron: 'دِر ناخ‌بار', meaning: 'همسایه (مذکر)'},
+      {word: 'das Paket', pron: 'داس پاکِت', meaning: 'بسته پستی'},
+      {word: 'die Ruhezeit', pron: 'دی روهه‌تسایت', meaning: 'ساعات استراحت و سکوت'},
+      {word: 'der Lärm', pron: 'دِر لِرم', meaning: 'سر و صدا / نویز'},
+      {word: 'der Stock', pron: 'دِر اشتُک', meaning: 'طبقه ساختمان'},
+      {word: 'abgeben', pron: 'آپ‌گِبِن', meaning: 'تحویل دادن (بسته به همسایه)'}
+    ],
+    grammarTitle: '💡 قانون Ruhezeit در آپارتمان‌های آلمان',
+    grammarText: 'در آلمان قانون **Ruhezeit** بسیار جدی است: <br>• همه روزه از ساعت ۲۲:۰۰ تا ۰۷:۰۰ صبح.<br>• تمام طول روزهای **یکشنبه** و تعطیلات رسمی. در این ساعات نباید جاروبرقی کشید، لباسشویی روشن کرد یا موسیقی بلند پخش نمود.',
+    quiz: [
+      {
+        q: 'می‌خواهی خودت را به همسایه‌ات معرفی کنی و بگویی در طبقه اول (erster Stock) زندگی می‌کنی:',
+        a: ['Ich wohne im ersten Stock.', 'Ich habe keinen Stock.', 'Das Haus ist alt.'],
+        c: 0,
+        why: '«im ersten Stock» به معنای در طبقه اول است.'
+      },
+      {
+        q: 'پستچی نبوده و بسته پستی‌ات را به همسایه داده. چطور تحویلش می‌گیری؟',
+        a: ['Haben Sie mein Paket angenommen?', 'Wo ist der Postbote?', 'Das Paket ist schwer.'],
+        c: 0,
+        why: '«ein Paket annehmen» یعنی تحویل گرفتن بسته پستی.'
+      },
+      {
+        q: 'در آلمان قانون ساعات سکوت در شب و روزهای یکشنبه بسیار مهم است. این قانون چه نام دارد؟',
+        a: ['Die Ruhezeit', 'Die Arbeitszeit', 'Die Schulzeit'],
+        c: 0,
+        why: '«die Ruhezeit» زمان‌های مشخص شده برای حفظ سکوت در آپارتمان‌ها است.'
+      },
+      {
+        q: 'می‌خواهی روز شنبه یک مهمانی کوچک داشته باشی و از قبل به همسایه اطلاع دهی تا ناراحت نشود:',
+        a: ['Ich mache am Samstag eine kleine Feier.', 'Ich schlafe am Samstag.', 'Am Samstag bin ich nicht hier.'],
+        c: 0,
+        why: 'اطلاع دادن مهمانی به همسایه‌ها رفتار محترمانه‌ای در آلمان محسوب می‌شود.'
+      },
+      {
+        q: 'اتفاقی سر و صدای زیادی در خانه‌ات ایجاد شده و می‌خواهی از همسایه عذرخواهی کنی:',
+        a: ['Entschuldigung für den Lärm.', 'Der Lärm ist schön.', 'Ich höre nichts.'],
+        c: 0,
+        why: '«der Lärm» به معنی سر و صدا و نویز است.'
+      },
+      {
+        q: 'کلید را جا گذاشته‌ای و می‌خواهی بپرسی آیا همسایه می‌تواند در اصلی ساختمان را برایت باز کند؟',
+        a: ['Können Sie bitte die Haustür öffnen?', 'Die Tür ist grün.', 'Ich habe keinen Schlüssel.'],
+        c: 0,
+        why: '«die Haustür öffnen» یعنی باز کردن در ورودی اصلی ساختمان.'
+      },
+      {
+        q: 'همسایه بسته‌ات را به تو داده. جمله‌ای صمیمانه برای تشکر چیست؟',
+        a: ['Vielen Dank fürs Annehmen!', 'Guten Tag!', 'Das macht nichts.'],
+        c: 0,
+        why: '«Vielen Dank fürs Annehmen» تشکر اختصاصی برای دریافت بسته پستی است.'
+      }
+    ]
+  },
+  hobbies: {
+    title: 'علایق و آخر هفته (Hobbys & Freizeit)',
+    intro: '۱۰ عبارت پرکاربرد برای صحبت درباره تفریحات، سرگرمی‌ها و برنامه‌های آخر هفته:',
+    phrases: [
+      ['Was machst du gerne in deiner Freizeit?','در وقت آزاد خود دوست داری چه کار کنی؟','پرسیدن سرگرمی'],
+      ['Meine Hobbys sind Lesen und Schwimmen.','سرگرمی‌های من مطالعه و شنا است.','بیان سرگرمی‌ها'],
+      ['Ich spiele gerne Fußball.','من دوست دارم فوتبال بازی کنم.','ورزش و سرگرمی'],
+      ['Ich koche sehr gerne.','من عاشق آشپزی هستم.','علاقه‌مندی به آشپزی'],
+      ['Was machst du am Wochenende?','آخر هفته چه کار می‌کنی؟','برنامه آخر هفته'],
+      ['Hast du am Samstag Zeit?','آیا شنبه وقت داری؟','قرار گذاشتن'],
+      ['Wollen wir zusammen einen Kaffee trinken?','موافقی با هم یک قهوه بنوشیم؟','دعوت صمیمانه'],
+      ['Ich gehe am Sonntag im Park spazieren.','من یکشنبه در پارک پیاده‌روی می‌کنم.','برنامه تفریحی'],
+      ['Ich sehe gerne Filme.','من دوست دارم فیلم تماشا کنم.','تماشای فیلم'],
+      ['Das klingt super!','عالی به نظر می‌رسد!','قبول دعوت / ابراز علاقه']
+    ],
+    dialogue: [
+      {de: 'Thomas: Hallo Sina! Was machst du am Wochenende?', fa: 'توماس: سلام سینا! آخر هفته چه کار می‌کنی؟'},
+      {de: 'Sina: Hallo Thomas! Ich gehe am Samstag im Park spazieren. Und du?', fa: 'سینا: سلام توماس! من شنبه در پارک پیاده‌روی می‌کنم. تو چطور؟'},
+      {de: 'Thomas: Ich spiele Fußball. Hast du am Sonntag Zeit?', fa: 'توماس: من فوتبال بازی می‌کنم. آیا یکشنبه وقت داری؟'},
+      {de: 'Sina: Ja, am Sonntag habe ich frei. Warum?', fa: 'سینا: بله، یکشنبه وقتم آزاد است. چطور؟'},
+      {de: 'Thomas: Wollen wir zusammen einen Kaffee trinken gehen?', fa: 'توماس: موافقی با هم برویم یک قهوه بنوشیم؟'},
+      {de: 'Sina: Ja, sehr gerne! Das klingt super.', fa: 'سینا: بله، با کمال میل! عالی به نظر می‌رسد.'}
+    ],
+    vocab: [
+      {word: 'das Hobby', pron: 'داس هابی', meaning: 'سرگرمی / علاقه شخصی'},
+      {word: 'die Freizeit', pron: 'دی فرای‌تسایت', meaning: 'وقت آزاد / زمان فراغت'},
+      {word: 'das Wochenende', pron: 'داس وُخِن‌اِنده', meaning: 'آخر هفته (شنبه و یکشنبه)'},
+      {word: 'spazieren gehen', pron: 'اشپاتسیرِن گِهِن', meaning: 'پیاده‌روی کردن'},
+      {word: 'kochen', pron: 'کُخِن', meaning: 'آشپزی کردن'},
+      {word: 'frei haben', pron: 'فرای هابِن', meaning: 'وقت آزاد داشتن / تعطیل بودن'}
+    ],
+    grammarTitle: '💡 نقش قید gerne در بیان علاقه',
+    grammarText: 'در زبان آلمانی برای اینکه بگویید کاری را با علاقه انجام می‌دهید کافیست کلمه **gerne** را بلافاصله بعد از فعل بیاورید: <br>• Ich lese **gerne**. (کتاب خواندن را دوست دارم)<br>• Ich koche **gerne**. (آشپزی را دوست دارم)',
+    quiz: [
+      {
+        q: 'دوستت می‌پرسد در وقت آزاد چه کار می‌کنی. می‌خواهی بگویی دوست داری کتاب بخوانی:',
+        a: ['Ich lese gerne Bücher in meiner Freizeit.', 'Ich habe keine Freizeit.', 'Das Buch ist teuer.'],
+        c: 0,
+        why: '«Bücher lesen» به معنای کتاب خواندن است.'
+      },
+      {
+        q: 'می‌خواهی بپرسی دوستت آخر هفته (am Wochenende) چه برنامه‌ای دارد؟',
+        a: ['Was machst du am Wochenende?', 'Wann ist das Wochenende?', 'Das Wochenende ist kurz.'],
+        c: 0,
+        why: '«das Wochenende» به معنی آخر هفته (شنبه و یکشنبه در آلمان) است.'
+      },
+      {
+        q: 'کدام گزینه برای دعوت صمیمانه از یک دوست به خوردن قهوه مناسب است؟',
+        a: ['Wollen wir zusammen einen Kaffee trinken?', 'Ich trinke keinen Kaffee.', 'Wo ist der Kaffee?'],
+        c: 0,
+        why: '«Wollen wir...?» الگوی رایج برای پیشنهاد انجام یک کار مشترک است.'
+      },
+      {
+        q: 'کسی شما را به یک پیاده‌روی دعوت کرده و شما می‌خواهید بگویید "این عالی به نظر می‌رسد!":',
+        a: ['Das klingt super!', 'Das ist alt.', 'Ich habe keine Zeit.'],
+        c: 0,
+        why: '«Das klingt super!» اصطلاحی برای تایید و ابراز اشتیاق است.'
+      },
+      {
+        q: 'می‌خواهی بگویی روزهای یکشنبه وقتت آزاد است (frei haben):',
+        a: ['Am Sonntag habe ich frei.', 'Am Sonntag arbeite ich.', 'Ich kenne den Sonntag nicht.'],
+        c: 0,
+        why: '«frei haben» یعنی وقت آزاد داشتن و کار نداشتن.'
+      },
+      {
+        q: 'می‌خواهی بپرسی آیا دوستت روز شنبه وقت دارد یا نه؟',
+        a: ['Hast du am Samstag Zeit?', 'Ist heute Samstag?', 'Der Samstag ist schön.'],
+        c: 0,
+        why: '«Hast du Zeit?» پرسش استاندارد درباره داشتن وقت است.'
+      },
+      {
+        q: 'می‌خواهی بگویی یکی از سرگرمی‌هایت آشپزی کردن (kochen) است:',
+        a: ['Ich koche sehr gerne.', 'Ich esse nur.', 'Die Küche ist groß.'],
+        c: 0,
+        why: 'فعل «kochen» به معنی آشپزی کردن است.'
+      }
+    ]
+  }
+};
+
+let currentSceneKey = 'bakery';
+let currentQuizIndex = 0;
+let totalAnsweredCorrect = 0;
+let showTranslationsFlag = true;
+
+const $ = id => document.getElementById(id);
+
+function initScene(key) {
+  currentSceneKey = key;
+  currentQuizIndex = 0;
+  
+  // Highlight UI button
+  document.querySelectorAll('.situation').forEach(b => {
+    b.classList.toggle('active', b.dataset.scene === key);
+  });
+
+  const sceneData = scenes[key];
+  $('sceneTitle').textContent = sceneData.title;
+  $('sceneIntro').textContent = sceneData.intro;
+
+  // Render Phrases
+  $('phrases').innerHTML = sceneData.phrases.map(p => `
+    <div class="phrase">
+      <div class="de">${p[0]}</div>
+      <div class="fa translation">${p[1]}</div>
+      <div class="note translation">${p[2]}</div>
+    </div>
+  `).join('');
+
+  // Render Dialogue
+  $('dialogueContainer').innerHTML = sceneData.dialogue.map(d => `
+    <div class="dialogue-line">
+      <div class="de">${d.de}</div>
+      <div class="fa translation" style="font-size:12px; color:var(--muted);">${d.fa}</div>
+    </div>
+  `).join('');
+
+  // Render Extra Vocab Table
+  if (sceneData.vocab) {
+    $('vocabBody').innerHTML = sceneData.vocab.map(v => `
+      <tr>
+        <td class="vocab-de">${v.word}</td>
+        <td>${v.pron}</td>
+        <td>${v.meaning}</td>
+      </tr>
+    `).join('');
+  }
+
+  // Render Grammar Tip
+  if (sceneData.grammarTitle) {
+    $('grammarTitle').textContent = sceneData.grammarTitle;
+    $('grammarText').innerHTML = sceneData.grammarText;
+  }
+
+  updateTranslationsVisibility();
+  renderQuiz();
+}
+
+function renderQuiz() {
+  const sceneData = scenes[currentSceneKey];
+  const quizList = sceneData.quiz;
+
+  if (currentQuizIndex >= quizList.length) {
+    $('question').textContent = `🎉 آفرین! تمام ${quizList.length} سوال بخش "${sceneData.title}" را با موفقیت پاسخ دادی.`;
+    $('answers').innerHTML = '';$('feedback').textContent = 'می‌توانی موضوع دیگری را از بالای صفحه انتخاب کنی یا همین بخش را دوباره مرور کنی.';
+    $('progressBar').style.width = '100%';
+    return;
+  }
+
+  const qObj = quizList[currentQuizIndex];
+  $('question').textContent = `سؤال ${currentQuizIndex + 1} از ${quizList.length}: ${qObj.q}`;
+  $('answers').innerHTML = '';
+
+  qObj.a.forEach((optText, index) => {
+    const btn = document.createElement('button');
+    btn.className = 'answer';
+    btn.textContent = optText;
+    btn.onclick = () => handleAnswer(index);
+    $('answers').appendChild(btn);
+  });
+
+  $('feedback').textContent = 'یک گزینه را انتخاب کن تا بازخورد و علت آن را ببینی.';
+  
+  // Progress Bar calculation
+  const perc = ((currentQuizIndex) / quizList.length) * 100;
+  $('progressBar').style.width = `${perc}%`;
+}
+
+function handleAnswer(selectedIndex) {
+  const qObj = scenes[currentSceneKey].quiz[currentQuizIndex];
+  const buttons = document.querySelectorAll('.answer');
+
+  buttons.forEach((btn, idx) => {
+    btn.disabled = true;
+    if (idx === qObj.c) {
+      btn.classList.add('correct');
+    } else if (idx === selectedIndex) {
+      btn.classList.add('wrong');
+    }
+  });
+
+  if (selectedIndex === qObj.c) {
+    totalAnsweredCorrect++;
+    $('feedback').innerHTML = `<strong style="color:var(--green)">✓ کاملاً درست است!</strong><br>${qObj.why}`;
+  } else {
+    $('feedback').innerHTML = `<strong style="color:var(--red)">✗ پاسخ صحیح: ${qObj.a[qObj.c]}</strong><br>${qObj.why}`;
+  }
+
+  $('progressBar').style.width = `${((currentQuizIndex + 1) / scenes[currentSceneKey].quiz.length) * 100}%`;
+}
+
+function updateTranslationsVisibility() {
+  document.querySelectorAll('.translation').forEach(el => {
+    el.hidden = !showTranslationsFlag;
+  });
+}
+
+// Event Listeners
+document.querySelectorAll('.situation').forEach(btn => {
+  btn.addEventListener('click', () => {
+    initScene(btn.dataset.scene);
+  });
+});
+
+$('showTranslations').addEventListener('click', () => {
+  showTranslationsFlag = !showTranslationsFlag;
+  updateTranslationsVisibility();
+});
+
+$('nextQuestion').addEventListener('click', () => {
+  const sceneQuizList = scenes[currentSceneKey].quiz;
+  if (currentQuizIndex < sceneQuizList.length - 1) {
+    currentQuizIndex++;
+    renderQuiz();
+  } else {
+    // Jump to next scene if available
+    const keys = Object.keys(scenes);
+    const currentIndex = keys.indexOf(currentSceneKey);
+    const nextKey = keys[(currentIndex + 1) % keys.length];
+    initScene(nextKey);
+  }
+});
+
+$('reset').addEventListener('click', () => {
+  currentQuizIndex = 0;
+  renderQuiz();
+});
+
+// Start initially
+initScene('bakery');
+</script>
+</body>
+</html>

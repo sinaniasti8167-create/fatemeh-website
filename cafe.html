@@ -1,0 +1,804 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#38261d"><meta name="description" content="کافهٔ آلمانی؛ داستان‌های کوتاه، اصطلاحات عامیانه آلمانی، واژگان کاربردی و سخنان بزرگان.">
+<title>کافهٔ آلمانی | Deutsch mit Fatemeh</title>
+<style>
+:root{--espresso:#38251c;--coffee:#65442f;--caramel:#b9783d;--gold:#e4bd79;--cream:#fbf3e6;--paper:#fffaf1;--ink:#33271f;--muted:#76675a;--sage:#73775a;--line:#e4d3bb;--shadow:0 18px 40px #3d26151c;--green:#6b8e62;--red:#b95240}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;background:#f7efe2;color:var(--ink);font-family:Vazirmatn,"IRANSans",Tahoma,"Segoe UI",Arial,sans-serif;line-height:1.95}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1120px,calc(100% - 36px));margin:auto}
+.topbar{position:sticky;top:0;z-index:10;background:#302117f2;color:#fff7eb;border-bottom:1px solid #d7a76066;backdrop-filter:blur(12px)}.nav{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font-weight:bold;white-space:nowrap}.brand small{display:block;font-size:10px;letter-spacing:1px;color:#e4cba7;direction:ltr;text-align:right}.links{display:flex;align-items:center;gap:6px;flex-wrap:wrap}.links a{font-size:12px;padding:8px 10px;border-radius:99px;color:#f3e6d5}.links a:hover,.links a.active{background:#e4bd7925;color:#f4cf8f}
+.hero{min-height:430px;display:flex;align-items:center;position:relative;color:#fff8ee;background:linear-gradient(90deg,#21150e35 0%,#21150e4d 42%,#160d09d9 100%),url('cafe-hero-study.webp') center 55%/cover no-repeat}.hero:after{content:"";position:absolute;inset:auto 0 0;height:90px;background:linear-gradient(transparent,#38251c55);pointer-events:none}.hero-inner{position:relative;z-index:1;max-width:680px;padding:65px 0 78px}.eyebrow{color:#f0cb8a;font-size:12px;letter-spacing:2px;direction:ltr;text-align:right;margin:0 0 8px}.hero h1{font-size:clamp(34px,5vw,56px);line-height:1.4;margin:0 0 12px}.hero p{font-size:16px;color:#f6e8d4;max-width:600px;margin:0 0 22px}.hero-actions{display:flex;gap:10px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 17px;border-radius:9px;font-size:13px;font-weight:bold;border:1px solid transparent;cursor:pointer;transition:.2s}.btn:hover{transform:translateY(-2px)}.btn-gold{background:var(--gold);color:#332116}.btn-outline{border-color:#f7e6ca99;color:#fff7e9;background:#ffffff0c}
+main{padding-bottom:50px}.introline{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:26px 0 8px}.introline h2{font-size:24px;margin:0}.introline p{color:var(--muted);font-size:13px;margin:0}.section{padding:36px 0}.section-head{margin-bottom:20px}.section-head .eyebrow{color:var(--caramel);margin-bottom:2px}.section-head h2{font-size:27px;margin:0 0 4px}.section-head p{color:var(--muted);font-size:13px;margin:0}
+
+/* تب‌های اصلی */
+.main-tabs{display:flex;gap:10px;margin-bottom:24px;border-bottom:2px solid var(--line);padding-bottom:12px;flex-wrap:wrap}
+.tab-btn{padding:10px 20px;border-radius:12px;border:1px solid var(--line);background:#fffaf4;font-size:14px;font-weight:bold;cursor:pointer;color:var(--ink);transition:.2s}
+.tab-btn.active,.tab-btn:hover{background:var(--espresso);color:var(--gold);border-color:var(--espresso);box-shadow:0 6px 14px #38251c1f}
+
+/* فیلتر دسته بندی */
+.filter-bar{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:15px}
+.filter-btn{padding:6px 12px;border-radius:8px;border:1px solid var(--line);background:#fffaf4;font-size:11px;cursor:pointer;color:var(--ink);transition:.2s}
+.filter-btn.active,.filter-btn:hover{background:var(--coffee);color:#fff;border-color:var(--coffee)}
+
+.library{display:grid;grid-template-columns:260px 1fr;gap:22px;align-items:start}.people{display:grid;gap:9px;max-height:850px;overflow-y:auto;padding-left:4px}.person-btn{width:100%;text-align:right;display:flex;align-items:center;gap:12px;padding:12px 14px;border:1px solid var(--line);border-radius:13px;background:#fffaf4;color:var(--ink);cursor:pointer;transition:.2s}.person-btn:hover{border-color:#c18a53;transform:translateX(-2px)}.person-btn.active{background:var(--espresso);border-color:var(--espresso);color:#fff4e3;box-shadow:0 8px 18px #38251c22}.person-text{display:block;min-width:0}.person-icon{flex:0 0 38px;height:38px;border-radius:12px;display:grid;place-items:center;background:#f0dfc7;color:var(--coffee);font-family:Georgia,serif;font-weight:bold;font-size:18px;direction:ltr}.person-btn.active .person-icon{background:#e4bd79;color:#38251c}.person-name{font-weight:bold;font-size:14px;display:block}.person-sub{font-size:11px;opacity:.72;display:block}
+.bio-panel{background:var(--paper);border:1px solid #e5d4bb;border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}.bio-top{padding:23px 25px 18px;background:linear-gradient(120deg,#f1dfc3,#fff7e9 65%,#e8d7bd);border-bottom:1px solid var(--line);position:relative}.bio-top:after{content:"❝";position:absolute;left:20px;top:-20px;font-family:Georgia,serif;font-size:100px;color:#b9783d1f;line-height:1}.bio-kicker{font-size:11px;color:#9a6638;letter-spacing:1.5px;direction:ltr;text-align:right;margin-bottom:3px}.bio-heading{display:flex;align-items:center;gap:0;position:relative;z-index:1}.bio-heading-text{min-width:0}.bio-top h2{font-size:27px;margin:0 0 2px}.bio-top .sub{font-size:12px;color:var(--muted);margin:0}.bio-body{padding:21px 25px}.bio-intro{font-size:13px;color:var(--muted);margin:0 0 13px}.sentences{display:grid;gap:10px}.sentence{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:10px 0;border-bottom:1px dashed #e7d9c6}.sentence:last-child{border-bottom:0}.de{direction:ltr;text-align:left;font-size:14px;font-weight:bold;color:#533825;line-height:1.8}.fa{font-size:13px;color:#75675b;line-height:1.9}.de .num{display:inline-grid;place-items:center;width:23px;height:23px;border-radius:50%;background:#ead5b5;color:#6c4729;font-size:10px;margin-right:7px;vertical-align:middle}.bio-footer{padding:13px 25px;background:#f7eddd;border-top:1px solid var(--line);font-size:11px;color:#816e5b}
+
+/* کتابی */
+.book-container{background:#fffcf7;border:1px solid #e3d5c1;border-radius:14px;padding:24px;margin-bottom:18px;box-shadow:inset 0 0 15px #3a251708}
+.book-de{direction:ltr;text-align:left;font-size:16px;line-height:2.2;color:#3b271a;font-family:'Georgia',serif;font-weight:500;margin-bottom:0}
+.book-fa-box{margin-top:16px;padding:16px;background:#f5ebe0;border-radius:10px;border-right:4px solid var(--caramel);font-size:14px;line-height:2.0;color:#544336;display:none}
+
+/* گرامر */
+.grammar-box{background:#f4ebe0;border:1px solid #e2cfb8;border-radius:14px;padding:18px;margin-top:22px}
+.grammar-box h4{margin:0 0 8px 0;color:var(--espresso);font-size:15px;display:flex;align-items:center;gap:6px}
+.grammar-box p{margin:0;font-size:13px;line-height:1.8;color:#5c493c}
+
+.vocab-wrap{margin-top:23px}.vocab-title{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}.vocab-title h3{font-size:18px;margin:0}.vocab-title span{font-size:11px;color:var(--muted)}.vocab-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.word-card{border:1px solid var(--line);border-radius:13px;padding:14px;background:#fffaf2;min-width:0}.word-top{display:flex;align-items:baseline;justify-content:space-between;gap:8px}.word{direction:ltr;text-align:left;font-weight:bold;color:#583b27;font-size:18px}.word-type{font-size:10px;background:#e9dcc7;color:#70543b;padding:2px 7px;border-radius:6px;white-space:nowrap}.word-meaning{font-size:13px;font-weight:bold;margin:4px 0 2px}.word-detail{font-size:11px;color:var(--muted)}.word-example{font-size:12px;direction:ltr;text-align:left;color:#916033;border-top:1px solid #eee1cf;margin-top:9px;padding-top:8px}
+
+.quiz-section{margin-top:28px;padding-top:20px;border-top:1px solid var(--line)}
+.quiz-card{background:#fdf8f0;border:1px solid #e7d8c0;border-radius:14px;padding:18px}
+.quiz-q{font-size:14px;font-weight:bold;color:#4a3221;margin-bottom:12px}
+.quiz-opts{display:grid;gap:8px}
+.quiz-opt{background:#fff;border:1px solid #e2d2ba;border-radius:9px;padding:10px 14px;text-align:right;cursor:pointer;font-size:13px;transition:.2s;color:var(--ink)}
+.quiz-opt:hover{border-color:var(--caramel);background:#faf3e6}
+.quiz-opt.correct{background:#eaf2e8;border-color:var(--green);color:#2d5026;font-weight:bold}
+.quiz-opt.wrong{background:#fbeee8;border-color:var(--red);color:#702619}
+.quiz-feedback{margin-top:10px;font-size:12px;line-height:1.6;color:var(--muted)}
+
+/* بخش اصطلاحات عامیانه (بدون لینک کاذب) */
+.slang-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.slang-card{background:#fffcf7;border:1px solid #e3d5c1;border-radius:14px;padding:18px;position:relative;box-shadow:0 4px 12px #3a251708;cursor:default;}
+.slang-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+.slang-badge{font-size:10px;background:#e9dcc7;color:#70543b;padding:2px 8px;border-radius:6px;font-weight:bold}
+.slang-phrase{direction:ltr;text-align:left;font-size:17px;font-weight:bold;color:#583b27;font-family:'Georgia',serif;margin-bottom:6px}
+.slang-literal{font-size:12px;color:var(--muted);margin-bottom:8px;font-style:italic}
+.slang-meaning{font-size:13px;font-weight:bold;color:var(--espresso);border-top:1px dashed #e4d3bb;padding-top:8px;margin-top:6px}
+.slang-example{font-size:12px;direction:ltr;text-align:left;color:#916033;margin-top:4px}
+
+/* سخنان بزرگان */
+.quote-strip{margin-top:35px;display:grid;grid-template-columns:90px 1fr auto;align-items:center;gap:22px;padding:26px 32px;border-radius:20px;background:linear-gradient(135deg,#2c1b12 0%,#462c1e 50%,#301e13 100%);color:#fff7eb;box-shadow:0 15px 35px #26160d2b;border:1px solid #e4bd7933;position:relative;overflow:hidden}
+.quote-strip::before{content:"";position:absolute;top:-50px;left:-50px;width:120px;height:120px;background:#e4bd790d;border-radius:50%;pointer-events:none}
+.cup{font-size:46px;text-align:center;background:#3b2518;width:74px;height:74px;border-radius:16px;display:grid;place-items:center;border:1px solid #e4bd7944;box-shadow:inset 0 4px 10px #00000033;animation:floatCup 3s ease-in-out infinite}
+@keyframes floatCup{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+.quote-content{display:flex;flex-direction:column;gap:5px;animation:fadeInQuote .5s ease}
+@keyframes fadeInQuote{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.quote-strip .de{color:#fbd89b;font-size:17px;font-family:'Georgia',serif;font-weight:bold;letter-spacing:.3px}
+.quote-strip .fa{color:#e4d9c7;font-size:13px;opacity:.9}
+.quote-author{font-size:11px;color:#e4cba7;letter-spacing:1px;direction:ltr;text-align:right;font-weight:bold;margin-top:2px}
+.quote-strip button{background:linear-gradient(135deg,var(--gold),#cfa053);color:#2c1b12;border:0;border-radius:11px;padding:12px 18px;cursor:pointer;font-size:12px;font-weight:bold;white-space:nowrap;box-shadow:0 6px 15px #e4bd7933;transition:.2s}
+.quote-strip button:hover{transform:translateY(-2px);filter:brightness(1.08);box-shadow:0 8px 18px #e4bd7955}
+
+.footer{background:#302117;color:#dfcdb5;padding:24px 0;font-size:11px}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.footer-de{direction:ltr;letter-spacing:1.5px;color:#e4bd79}
+
+@media(max-width:800px){.nav{align-items:flex-start;flex-direction:column;padding:12px 0;gap:6px}.links{gap:2px}.links a{padding:6px 8px}.library{grid-template-columns:1fr}.people{grid-template-columns:repeat(2,1fr)}.person-btn{padding:10px}.bio-top,.bio-body{padding:19px}.quote-strip{grid-template-columns:1fr;text-align:center;padding:20px}.cup{margin:0 auto}.quote-strip button{justify-self:center}.slang-grid{grid-template-columns:1fr}}
+@media(max-width:520px){.wrap{width:calc(100% - 24px)}.hero{min-height:390px;background-position:56% center}.hero-inner{padding:52px 0 62px}.hero h1{font-size:34px}.hero p{font-size:14px}.introline{align-items:flex-start;flex-direction:column;gap:2px}.section{padding:26px 0}.section-head h2{font-size:23px}.people{grid-template-columns:1fr 1fr;gap:7px}.person-btn{gap:8px}.person-name{font-size:12px}.person-sub{font-size:10px}.person-icon{flex-basis:31px;height:31px}.bio-top h2{font-size:23px}.bio-heading{gap:0}.sentence{grid-template-columns:1fr;gap:2px;padding:9px 0}.de{font-size:13px}.fa{font-size:12px}.vocab-grid{grid-template-columns:1fr 1fr;gap:7px}.word-card{padding:10px}.word{font-size:16px}.word-meaning{font-size:12px}.quote-strip .de{font-size:16px}.links a{font-size:11px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style></head>
+<body>
+<header class="topbar"><div class="wrap nav"><a class="brand" href="index.html">فاطمه براتی<small>DEUTSCH MIT FATEMEH</small></a><nav class="links" aria-label="ناوبری اصلی"><a href="index.html">خانه</a><a href="index.html#courses">دوره‌ها</a><a href="index.html#about">روش تدریس</a><a href="null.html">آلمانی از صفر</a><a href="alltag.html">آلمانی در زندگی</a><a href="lernen.html">تمرین A1</a><a class="active" href="cafe.html">کافهٔ آلمانی</a><a href="index.html#contact">ارتباط</a></nav></div></header>
+<main>
+<section class="hero"><div class="wrap"><div class="hero-inner"><p class="eyebrow">DAS DEUTSCHE LERNCAFÉ</p><h1>یک فنجان قهوه،<br>یک دنیای تازه از آلمانی</h1><p>اینجا با داستان زندگی چهره‌های اثرگذار، داستان‌های کوتاه و اصطلاحات عامیانهٔ آلمانی آشنا می‌شویم.</p><div class="hero-actions"><a class="btn btn-gold" href="#portraits">شروع مطالعه ↓</a><a class="btn btn-outline" href="#today">سخنان بزرگان</a></div></div></div></section>
+<div class="wrap introline"><h2>میز مطالعهٔ کافه</h2><p>انتخاب بین زندگی‌نامه مفاخر، داستان‌های کوتاه و اصطلاحات اصیل عامیانه.</p></div>
+
+<section class="section" id="portraits"><div class="wrap">
+
+<!-- تب‌های اصلی سویچر بخش‌ها -->
+<div class="main-tabs">
+  <button class="tab-btn active" id="tabBios" onclick="switchMainTab('bios')">📖 زندگی‌نامه مفاخر و چهره‌ها (۲۰ سوژه)</button>
+  <button class="tab-btn" id="tabStories" onclick="switchMainTab('stories')">📚 داستان‌های کوتاه</button>
+  <button class="tab-btn" id="tabSlang" onclick="switchMainTab('slang')">☕ اصطلاحات عامیانه (Umgangssprache)</button>
+</div>
+
+<!-- بخش ۱: زندگی‌نامه چهره‌ها (۲۰ شخصیت کامل) -->
+<div id="sectionBios">
+  <div class="section-head"><p class="eyebrow">MENSCHEN & GESCHICHTEN</p><h2>آدم‌ها و داستان‌هایشان (۲۰ چهره برتر)</h2><p>از نویسندگان و فیلسوفان بزرگ تا دانشمندان، مخترعان، هنرمندان و سیاستمداران تاریخ</p></div>
+  <div class="library">
+    <div>
+      <div class="filter-bar" id="filterBar">
+        <button class="filter-btn active" data-cat="all">همه (۲۰)</button>
+        <button class="filter-btn" data-cat="writer">نویسندگان</button>
+        <button class="filter-btn" data-cat="science">دانشمندان</button>
+        <button class="filter-btn" data-cat="art">هنر و موسیقی</button>
+        <button class="filter-btn" data-cat="philosophy">فلاسفه</button>
+        <button class="filter-btn" data-cat="history">تاریخ و سیاست</button>
+      </div>
+      <div class="people" id="people"></div>
+    </div>
+
+    <article class="bio-panel">
+      <div class="bio-top">
+        <div class="bio-heading">
+          <div class="bio-heading-text">
+            <div class="bio-kicker" id="bioKicker">LEBEN & WERK</div>
+            <h2 id="bioName">نام شخصیت</h2>
+            <p class="sub" id="bioSub">توضیحات کوتاه</p>
+          </div>
+        </div>
+      </div>
+      <div class="bio-body">
+        <p class="bio-intro" id="bioIntro">زندگی‌نامه را جمله‌به‌جمله بخوان؛ اول آلمانی، بعد معنی فارسی.</p>
+        <div class="sentences" id="sentences"></div>
+        
+        <div class="vocab-wrap">
+          <div class="vocab-title">
+            <h3>واژه‌های کاربردی</h3>
+            <span>معنی · نقش کلمه · آرتیکل/جمع · مثال</span>
+          </div>
+          <div class="vocab-grid" id="vocab"></div>
+        </div>
+
+        <div class="quiz-section">
+          <div class="vocab-title" style="margin-bottom:8px;">
+            <h3>تست سریع سنجش یادگیری</h3>
+            <span>دانش خود را درباره این متن بسنجید</span>
+          </div>
+          <div class="quiz-card">
+            <div class="quiz-q" id="quizQ">سؤال...</div>
+            <div class="quiz-opts" id="quizOpts"></div>
+            <div class="quiz-feedback" id="quizFeedback"></div>
+          </div>
+        </div>
+
+      </div>
+      <div class="bio-footer" id="bioFooter">نکتهٔ یادگیری</div>
+    </article>
+  </div>
+</div>
+
+<!-- بخش ۲: داستان‌های کوتاه -->
+<div id="sectionStories" style="display:none;">
+  <div class="section-head"><p class="eyebrow">KURZGESCHICHTEN · A1-A2</p><h2>داستان‌های کوتاه کاربردی</h2><p>داستان‌های کوتاه پیوسته در دسته‌بندی‌های مختلف؛ ابتدا آلمانی بخوانید، سپس ترجمه، واژگان جامع و گرامر را بررسی کنید.</p></div>
+  <div class="library">
+    <div>
+      <div class="filter-bar" id="storyFilterBar">
+        <button class="filter-btn active" data-scat="all">همه داستان‌ها</button>
+        <button class="filter-btn" data-scat="daily">زندگی روزمره</button>
+        <button class="filter-btn" data-scat="travel">سفر و ماجراجویی</button>
+        <button class="filter-btn" data-scat="life">زندگی در آلمان</button>
+      </div>
+      <div class="people" id="storiesList"></div>
+    </div>
+
+    <article class="bio-panel">
+      <div class="bio-top">
+        <div class="bio-heading">
+          <div style="font-size:42px; background:#fff8eb; border-radius:12px; padding:10px 16px; border:1px solid var(--line);" id="storyEmoji">📖</div>
+          <div class="bio-heading-text">
+            <div class="bio-kicker" id="storyKicker">KURZGESCHICHTE</div>
+            <h2 id="storyTitle">عنوان داستان</h2>
+            <p class="sub" id="storySub">سطح داستان · مدت زمان مطالعه</p>
+          </div>
+        </div>
+      </div>
+      <div class="bio-body">
+        
+        <div class="book-container">
+          <p class="book-de" id="storyTextDe">متن آلمانی داستان...</p>
+          <div class="book-fa-box" id="storyTextFa">ترجمه فارسی داستان...</div>
+        </div>
+
+        <div style="display:flex; justify-content:flex-end; margin-bottom:20px;">
+          <button class="btn btn-gold" id="toggleStoryTrans" style="font-size:12px; padding:8px 15px;">نمایش ترجمه کامل داستان ↓</button>
+        </div>
+
+        <div class="grammar-box">
+          <h4 id="storyGrammarTitle">💡 نکته گرامری کلیدی این داستان</h4>
+          <p id="storyGrammarText">توضیحات گرامری...</p>
+        </div>
+        
+        <div class="vocab-wrap">
+          <div class="vocab-title">
+            <h3>واژگان و کلمات کلیدی داستان (کامل)</h3>
+            <span>معنی · آرتیکل/نقش · مثال در متن</span>
+          </div>
+          <div class="vocab-grid" id="storyVocab"></div>
+        </div>
+
+        <div class="quiz-section">
+          <div class="vocab-title" style="margin-bottom:8px;">
+            <h3>تست درک مطلب داستان</h3>
+            <span>آیا داستان را خوب متوجه شدی؟</span>
+          </div>
+          <div class="quiz-card">
+            <div class="quiz-q" id="storyQuizQ">سؤال...</div>
+            <div class="quiz-opts" id="storyQuizOpts"></div>
+            <div class="quiz-feedback" id="storyQuizFb"></div>
+          </div>
+        </div>
+
+      </div>
+      <div class="bio-footer" id="storyFooter">نکته آموزشی داستان</div>
+    </article>
+  </div>
+</div>
+
+<!-- بخش ۳: اصطلاحات عامیانه کوچه و بازار -->
+<div id="sectionSlang" style="display:none;">
+  <div class="section-head"><p class="eyebrow"> UMGANGSSPRACHE & REDEWENDUNGEN</p><h2>اصطلاحات اصیل کوچه و بازار آلمان</h2><p>جملات و تکه‌کلام‌هایی که آلمانی‌زبان‌ها در گفتگوهای واقعی روزمره استفاده می‌کنند.</p></div>
+  
+  <div class="filter-bar" id="slangFilterBar" style="margin-bottom:20px;">
+    <button class="filter-btn active" data-slang="all">همه اصطلاحات</button>
+    <button class="filter-btn" data-slang="daily">روزمره و واکنش‌ها</button>
+    <button class="filter-btn" data-slang="work">کار و تلاش</button>
+    <button class="filter-btn" data-slang="humor">طنز و کنایه</button>
+  </div>
+
+  <div class="slang-grid" id="slangGrid"></div>
+</div>
+
+</div></section>
+
+<!-- بخش سخنان بزرگان آلمان -->
+<section class="section" id="today" style="padding-top:8px">
+  <div class="wrap">
+    <div class="quote-strip">
+      <div class="cup">📜</div>
+      <div class="quote-content" id="quoteContainer">
+        <div class="de" id="quoteDe">„Auch aus Steinen, die einem in den Weg gelegt werden, kann man Schönes bauen.“</div>
+        <div class="fa" id="quoteFa">حتی از سنگ‌هایی که سر راه آدم گذاشته می‌شود هم می‌توان چیز زیبایی ساخت.</div>
+        <div class="quote-author" id="quoteAuthor">— Johann Wolfgang von Goethe</div>
+      </div>
+      <button id="nextQuote" type="button">جملهٔ بعدی ↻</button>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer"><div class="wrap footer-inner"><span>یادگیری زبان، قدم‌به‌قدم و باهم</span><span class="footer-de">LESEN · VERSTEHEN · SPRECHEN</span><span>© Deutsch mit Fatemeh</span></div></footer>
+
+<script>
+// --- بانک کامل ۲۰ مفاخر و چهره‌های برجسته تاریخ ---
+const bios=[
+{id:'goethe',cat:'writer',icon:'G',name:'یوهان ولفگانگ فون گوته',sub:'نویسنده و شاعر آلمانی · 1749–1832',kicker:'DER DICHTER',intro:'گوته از مهم‌ترین چهره‌های ادبیات آلمانی است.',sentences:[['Johann Wolfgang von Goethe wurde 1749 in Frankfurt geboren.','یوهان ولفگانگ فون گوته در سال ۱۷۴۹ در فرانکفورت به دنیا آمد.'],['Er war ein deutscher Dichter und Schriftsteller.','او شاعر و نویسنده‌ای آلمانی بود.'],['Goethe schrieb Gedichte, Theaterstücke und Geschichten.','گوته شعر، نمایشنامه و داستان می‌نوشت.'],['Sein bekanntestes Werk heißt „Faust“.','معروف‌ترین اثر او «فاوست» نام دارد.'],['Er reiste gern und interessierte sich für Kunst und Natur.','او به سفر علاقه داشت و به هنر و طبیعت توجه می‌کرد.'],['Goethe starb 1832 in Weimar.','گوته در سال ۱۸۳۲ در وایمار درگذشت.']],vocab:[['der Dichter','اسم مذکر · جمع: die Dichter','شاعر','Goethe ist ein Dichter.','گوته شاعر است.'],['das Gedicht','اسم خنثی · جمع: die Gedichte','شعر','Ich lese ein Gedicht.','من یک شعر می‌خوانم.'],['schreiben','فعل','نوشتن','Sie schreibt eine Geschichte.','او یک داستان می‌نویسد.'],['bekannt','صفت','شناخته‌شده، معروف','Das Buch ist bekannt.','این کتاب معروف است.'],['die Natur','اسم مؤنث','طبیعت','Ich mag die Natur.','من طبیعت را دوست دارم.'],['reisen','فعل','سفر کردن','Wir reisen nach Weimar.','ما به وایمار سفر می‌کنیم.']],footer:'نکته: «wurde geboren» یعنی «به دنیا آمد».',quiz:{q:'معروف‌ترین اثر گوته چه نام دارد؟',opts:['Die Verwandlung','Faust','Tintenherz','Der Prozess'],c:1,why:'در متن آمده است: Sein bekanntestes Werk heißt „Faust“.'}},
+{id:'kafka',cat:'writer',icon:'K',name:'فرانتس کافکا',sub:'نویسندهٔ آلمانی‌زبان · 1883–1924',kicker:'DER SCHRIFTSTELLER',intro:'کافکا بیشتر آثار ادبی خود را به زبان آلمانی نوشت.',sentences:[['Franz Kafka wurde 1883 in Prag geboren.','فرانتس کافکا در سال ۱۸۸۳ در پراگ به دنیا آمد.'],['Er schrieb auf Deutsch.','او به زبان آلمانی می‌نوشت.'],['Kafka arbeitete in einer Versicherung.','کافکا در یک شرکت بیمه کار می‌کرد.'],['Seine Geschichten sind oft ungewöhnlich und nachdenklich.','داستان‌های او اغلب غیرمعمول و تأمل‌برانگیز هستند.'],['Bekannte Werke sind „Die Verwandlung“ und „Der Prozess“.','از آثار شناخته‌شدهٔ او «مسخ» و «محاکمه» هستند.'],['Heute lesen Menschen seine Bücher auf der ganzen Welt.','امروزه مردم در سراسر جهان کتاب‌های او را می‌خوانند.']],vocab:[['die Geschichte','اسم مؤنث','داستان؛ تاریخ','Ich lese eine Geschichte.','من یک داستان می‌خوانم.'],['arbeiten','فعل','کار کردن','Er arbeitet im Büro.','او در دفتر کار می‌کند.'],['ungewöhnlich','صفت','غیرمعمول','Das ist ungewöhnlich.','این غیرمعمول است.'],['das Buch','اسم خنثی','کتاب','Das Buch ist interessant.','کتاب جالب است.'],['lesen','فعل بی‌قاعده','خواندن','Wir lesen auf Deutsch.','ما به آلمانی می‌خوانیم.'],['die Welt','اسم مؤنث','جهان، دنیا','Menschen auf der Welt.','مردم در جهان.']],footer:'نکته: کافکا در پراگ زندگی می‌کرد و آلمانی می‌نویسد.',quiz:{q:'کافکا در چه مکانی کار می‌کرد؟',opts:['In einer Schule','In einer Versicherung','In einem Museum','In einer Bäckerei'],c:1,why:'Kafka arbeitete in einer Versicherung.'}},
+{id:'einstein',cat:'science',icon:'E',name:'آلبرت اینشتین',sub:'فیزیک‌دان نظری · 1879–1955',kicker:'DER WISSENSCHAFTLER',intro:'اینشتین به یکی از شناخته‌شده‌ترین دانشمندان جهان تبدیل شد.',sentences:[['Albert Einstein wurde 1879 in Ulm geboren.','آلبرت اینشتین در سال ۱۸۷۹ در اولم به دنیا آمد.'],['Er war ein theoretischer Physiker.','او فیزیک‌دان نظری بود.'],['Er interessierte sich schon als Kind für Mathematik.','او از کودکی به ریاضی علاقه داشت.'],['Seine Relativitätstheorie veränderte die Physik.','نظریهٔ نسبیت او فیزیک را تغییر داد.'],['1921 bekam er den Nobelpreis für Physik.','او در سال ۱۹۲۱ جایزهٔ نوبل فیزیک را دریافت کرد.'],['Einstein setzte sich auch für Frieden ein.','اینشتین همچنین از صلح حمایت می‌کرد.']],vocab:[['der Wissenschaftler','اسم مذکر','دانشمند','Sie ist Wissenschaftlerin.','او دانشمند است.'],['die Mathematik','اسم مؤنث','ریاضی','Mathematik ist interessant.','ریاضی جالب است.'],['verändern','فعل','تغییر دادن','Das verändert die Welt.','این دنیا را تغییر می‌دهد.'],['der Frieden','اسم مذکر','صلح','Wir wünschen uns Frieden.','ما آرزوی صلح داریم.']],footer:'نکته: «sich interessieren für» با ضمیر انعکاسی می‌آید.',quiz:{q:'اینشتین در چه سالی جایزه نوبل گرفت؟',opts:['1879','1900','1921','1955'],c:2,why:'1921 bekam er den Nobelpreis für Physik.'}},
+{id:'beethoven',cat:'art',icon:'L',name:'لودویگ فان بتهوهن',sub:'آهنگساز بزرگ کلاسیک · 1770–1827',kicker:'DER KOMPONIST',intro:'بتهوهن از بزرگ‌ترین و تأثیرگذارترین آهنگسازان تاریخ موسیقی جهان است.',sentences:[['Ludwig van Beethoven wurde 1770 in Bonn geboren.','لودویگ فان بتهوهن در سال ۱۷۷۰ در بن به دنیا آمد.'],['Er war ein genialer Komponist und Pianist.','او آهنگساز و پیانیست نابغه‌ای بود.'],['Schon in jungen Jahren zeigte sich sein musikalisches Talent.','استعداد موسیقی او از سنین جوانی آشکار شد.'],['Später zog er nach Wien und komponierte wunderbare Sinfonien.','او بعداً به وین رفت و سمفونی‌های فوق‌العاده‌ای ساخت.'],['Obwohl er taub wurde, schuf er weiter großartige Musik.','با اینکه ناشنوا شد، به خلق موسیقی باشکوه ادامه داد.'],['Seine 9. Sinfonie mit der „Ode an die Freude“ ist weltweit berühmt.','سمفونی نهم او با «سرود شادی» در سراسر جهان مشهور است.']],vocab:[['der Komponist','اسم مذکر · جمع: die Komponisten','آهنگساز','Beethoven war ein Komponist.','بتهوهن یک آهنگساز بود.'],['die Musik','اسم مؤنث','موسیقی','Ich höre gern klassische Musik.','من با علاقه موسیقی کلاسیک گوش می‌دهم.'],['taub','صفت','ناشنوا','Er wurde im Alter taub.','او در سنین بالا ناشنوا شد.'],['berühmt','صفت','مشهور / نامدار','Das Musikstück ist berühmt.','این قطعه موسیقی مشهور است.']],footer:'نکته: فعل «komponieren» به معنای آهنگسازی کردن است.',quiz:{q:'بتهوهن با وجود چه مشکلی به کار خود ادامه داد؟',opts:['نابینا شد','ناشنوا شد (taub wurde)','دستش آسیب دید','مهاجرت کرد'],c:1,why:'در متن آمده است: Obwohl er taub wurde, schuf er weiter großartige Musik.'}},
+{id:'grimm',cat:'writer',icon:'B',name:'برادران گریم (یاکوب و ویلهلم)',sub:'گردآورندگان افسانه‌ها · قرن ۱۹ میلادی',kicker:'MÄRCHENERZÄHLER',intro:'برادران گریم قصه‌ها و افسانه‌های عامیانه آلمان را جاودانه کردند.',sentences:[['Die Brüder Grimm wurden in Hanau geboren.','برادران گریم در هاناو به دنیا آمدند.'],['Jakob und Wilhelm sammelten deutsche Märchen und Sagen.','یاکوب و ویلهلم افسانه‌ها و اسطوره‌های آلمانی را جمع‌آوری کردند.'],['Zu ihren berühmtesten Geschichten gehören „Hänsel und Gretel“.','از معروف‌ترین داستان‌های آن‌ها «هانسل و گرتل» است.'],['Sie arbeiteten auch als Sprachwissenschaftler und Professoren.','آن‌ها همچنین به عنوان زبان‌شناس و استاد دانشگاه کار می‌کردند.'],['Ihre Märchen wurden in hunderte Sprachen übersetzt.','داستان‌های آن‌ها به صدها زبان ترجمه شد.']],vocab:[['das Märchen','اسم خنثی · جمع: die Märchen','قصه / افسانه','Kinder lieben Märchen.','کودکان افسانه‌ها را دوست دارند.'],['sammeln','فعل باقاعده','جمع‌آوری کردن','Er sammelt alte Bücher.','او کتاب‌های قدیمی جمع می‌کند.'],['übersetzen','فعل باقاعده','ترجمه کردن','Das Buch wird übersetzt.','کتاب ترجمه می‌شود.']],footer:'نکته: جمع کلمه Bruder به Brüder تبدیل می‌شود.',quiz:{q:'برادران گریم چه چیزی را جمع‌آوری کردند؟',opts:['دست‌نویس‌های علمی','افسانه‌ها و قصه‌های عامیانه (Märchen)','سکه و تمبر','نقشه‌های قدیمی'],c:1,why:'در متن آمده است: Jakob und Wilhelm sammelten deutsche Märchen und Sagen.'}},
+{id:'merkel',cat:'history',icon:'M',name:'آنجلا مرکل',sub:'سیاستمدار و صدراعظم سابق · متولد ۱۹۵۴',kicker:'DIE BUNDESKANZLERIN',intro:'آنجلا مرکل برای سال‌ها سکان هدایت دولت آلمان را بر عهده داشت.',sentences:[['Angela Merkel wurde 1954 in Hamburg geboren.','آنجلا مرکل در سال ۱۹۵۴ در هامبورگ به دنیا آمد.'],['Sie studierte Physik und arbeitete als Wissenschaftlerin.','او فیزیک خواند و به عنوان دانشمند کار کرد.'],['2005 wurde sie zur ersten Bundeskanzlerin von Deutschland gewählt.','او در سال ۲۰۰۵ به عنوان نخستین زن به مقام صدراعظمی آلمان انتخاب شد.'],['Sie regierte das Land sechzehn Jahre lang.','او به مدت شانزده سال بر کشور حکومت کرد.'],['Merkel galt als eine der einflussreichsten Politikerinnen der Welt.','مرکل به عنوان یکی از تأثیرگذارترین سیاستمداران جهان شناخته می‌شد.']],vocab:[['die Politik','اسم مؤنث','سیاست','Sie interessiert sich für Politik.','او به سیاست علاقه دارد.'],['die Kanzlerin','اسم مؤنث · جمع: die Kanzlerinnen','صدراعظم (زن)','Angela Merkel war Kanzlerin.','آنجلا مرکل صدراعظم بود.'],['regieren','فعل','حکومت کردن / اداره کردن','Er regiert das Land.','او کشور را اداره می‌کند.']],footer:'نکته: کلمه Bundeskanzlerin یک اسم مرکب طولانی و رایج در آلمان است.',quiz:{q:'مرکل چه رشته‌ای را در دانشگاه خوانده بود؟',opts:['حقوق','فیزیک (Physik)','اقتصاد','پزشکی'],c:1,why:'در متن آمده است: Sie studierte Physik und arbeitete als Wissenschaftlerin.'}},
+{id:'gutenberg',cat:'science',icon:'G',name:'یوهانس گوتنبرگ',sub:'مخترع صنعت چاپ · 1400–1468',kicker:'DER BUCHDRUCKER',intro:'اختراع ماشین چاپ توسط گوتنبرگ، انقلاب بزرگی در نشر دانش ایجاد کرد.',sentences:[['Johannes Gutenberg wurde um 1400 in Mainz geboren.','یوهانس گوتنبرگ حدود سال ۱۴۰۰ در ماینتس به دنیا آمد.'],['Er erfand den Buchdruck با beweglichen Metalllettern.','او چاپ کتاب با حروف متحرک فلزی را اختراع کرد.'],['Dank seiner Erfindung konnten Bücher schnell kopiert werden.','به لطف اختراع او، کتاب‌ها توانستند به سرعت تکثیر شوند.'],['Sein berühmtestes Werk ist die „Gutenberg-Bibel“.','معروف‌ترین اثر او «انجیل گوتنبرگ» است.'],['Diese Erfindung veränderte die Welt der Bildung für immer.','این اختراع دنیای آموزش را برای همیشه تغییر داد.']],vocab:[['die Erfindung','اسم مؤنث · جمع: die Erfindungen','اختراع','Das ist eine tolle Erfindung.','این یک اختراع عالی است.'],['der Buchdruck','اسم مذکر','صنعت چاپ','Der Buchdruck revolutionierte die Welt.','صنعت چاپ دنیا را متحول کرد.'],['kopieren','فعل','کپی کردن / تکثیر کردن','Man kopiert das Dokument.','سند تکثیر می‌شود.']],footer:'نکته: کلمه Erfindung از فعل erfinden (اختراع کردن) مشتق شده است.',quiz:{q:'اختراع گوتنبرگ چه چیزی را آسان کرد؟',opts:['ساخت ماشین‌آلات','تکثیر و چاپ کتاب‌ها (Buchdruck)','سفر با قطار','تولید دارو'],c:1,why:'در متن آمده است: Er erfand den Buchdruck mit beweglichen Metalllettern.'}},
+{id:'benz',cat:'science',icon:'BZ',name:'کارل بنز',sub:'مخترع و پیشگام خودرو · 1844–1929',kicker:'DER PIONIER',intro:'کارل بنز موتور احتراق داخلی را روی خودرو نصب کرد.',sentences:[['Karl Benz wurde 1844 in Karlsruhe geboren.','کارل بنز در سال ۱۸۴۴ در کارلسروهه به دنیا آمد.'],['Er war ein deutscher Ingenieur und Erfinder.','او مهندس و مخترع آلمانی بود.'],['1885 baute er das erste praktische Auto der Welt.','او در سال ۱۸۸۵ نخستین خودروی کاربردی جهان را ساخت.'],['Seine Frau Bertha unterstützte ihn bei seiner Arbeit.','همسرش برتا در کارش از او حمایت کرد.'],['Heute ist Mercedes-Benz eine globale Marke.','امروزه مرسدس بنز یک برند جهانی است.']],vocab:[['der Ingenieur','اسم مذکر','مهندس','Er arbeitet als Ingenieur.','او به عنوان مهندس کار می‌کند.'],['das Auto','اسم خنثی','خودرو / ماشین','Das Auto fährt schnell.','خودرو سریع حرکت می‌کند.']],footer:'نکته: «baute» شکل گذشته ساده فعل bauen است.',quiz:{q:'کارل بنز چه وسیله‌ای را ساخت؟',opts:['قطار برقی','نخستین خودروی کاربردی','هواپیما','دوچرخه کوهستان'],c:1,why:'Er baute das erste praktische Auto.'}},
+{id:'schiller',cat:'writer',icon:'FS',name:'فریدریش شیلر',sub:'شاعر و نمایشنامه‌نویس · 1759–1805',kicker:'DER DRAMATIKER',intro:'شیلر از بزرگ‌ترین نمایشنامه‌نویسان کلاسیک آلمان است.',sentences:[['Friedrich Schiller wurde 1759 in Marbach geboren.','فریدریش شیلر در سال ۱۷۵۹ در مارباخ به دنیا آمد.'],['Er war ein enger Freund von Goethe.','او دوست صمیمی گوته بود.'],['Seine Stücke wie „Die Räuber“ sind weltberühmt.','نمایش‌نامه‌های او مانند «راهزنان» در سراسر جهان مشهور هستند.'],['Er schrieb auch das Gedicht „An die Freude“.','او همچنین شعر «سرود شادی» را سرود.'],['Schiller starb im Alter von nur 45 Jahren in Weimar.','شیلر در سن تنها ۴۵ سالگی در وایمار درگذشت.']],vocab:[['das Theaterstück','اسم خنثی','نمایش‌نامه','Das Theaterstück ist spannend.','نمایش‌نامه جذاب است.'],['der Freund','اسم مذکر','دوست','Er ist mein bester Freund.','او بهترین دوست من است.']],footer:'نکته: دوستی شیلر و گوته در تاریخ ادبیات آلمان بسیار افسانه‌ای است.',quiz:{q:'شیلر دوست صمیمی کدام نویسنده بزرگ بود؟',opts:['کافکا','گوته','اینشتین','بتهوهن'],c:1,why:'Er war ein enger Freund von Goethe.'}},
+{id:'bach',cat:'art',icon:'JB',name:'یوهان سباستین باخ',sub:'آهنگساز و نوازنده ارگ · 1685–1750',kicker:'DER BAROCKMEISTER',intro:'باخ استاد برجسته موسیقی دوران باروک بود.',sentences:[['Johann Sebastian Bach wurde 1685 in Eisenach geboren.','یوهان سباستین باخ در سال ۱۶۸۵ در آیزناخ به دنیا آمد.'],['Er stammte aus einer bekannten Musikerfamilie.','او از یک خانواده سرشناس موسیقیدان برخاسته بود.'],['Bach spielte wunderbar Orgel und Geige.','باخ به زیبایی ارگ و ویولن می‌نواخت.'],['Seine Musik wird heute noch weltweit gespielt.','موسیقی او هنوز در سراسر جهان نواخته می‌شود.']],vocab:[['die Musikfamilie','اسم مؤنث','خانواده موسیقیدان','Er kommt aus einer Musikerfamilie.','او از خانواده موسیقیدان است.'],['spielen','فعل','نواختن / بازی کردن','Er spielt Klavier.','او پیانو می‌نوازد.']],footer:'نکته: Bach آثار فوق‌العاده‌ای برای کلیسا و دربار ساخت.',quiz:{q:'باخ در چه رشته‌ای تبحر داشت؟',opts:['نقاشی','موسیقی و نوازندگی ارگ','مجسمه‌سازی','معماری'],c:1,why:'Bach spielte wunderbar Orgel und Geige.'}},
+{id:'marx',cat:'philosophy',icon:'KM',name:'کارل مارکس',sub:'فیلسوف و اقتصاددان · 1818–1883',kicker:'DER PHILOSOPH',intro:'مارکس اندیشه‌های عمیقی درباره اقتصاد و جامعه ارائه داد.',sentences:[['Karl Marx wurde 1818 in Trier geboren.','کارل مارکس در سال ۱۸۱۸ در تریر به دنیا آمد.'],['Er studierte Philosophie und Geschichte.','او فلسفه و تاریخ خواند.'],['Zusammen mit Friedrich Engels schrieb er das „Kapital“.','او به همراه فریدریش انگلس کتاب «سرمایه» را نوشت.'],['Seine Ideen prägten die politische Geschichte der Welt.','اندیشه‌های او تاریخ سیاسی جهان را تحت تأثیر قرار داد.']],vocab:[['die Philosophie','اسم مؤنث','فلسفه','Er studiert Philosophie.','او فلسفه می‌خواند.'],['die Idee','اسم مؤنث','ایده / اندیشه','Das ist eine gute Idee.','این یک ایده خوب است.']],footer:'نکته: همکاری مارکس و انگلس بسیار ماندگار شد.',quiz:{q:'مارکس چه کتاب مهمی را نوشت؟',opts:['Faust','Das Kapital','Die Verwandlung','Der Prozess'],c:1,why:'Er schrieb das Kapital.'}},
+{id:'nietzsche',cat:'philosophy',icon:'FN',name:'فریدریش نیچه',sub:'فیلسوف و شاعر · 1844–1900',kicker:'DER DENKER',intro:'نیچه با دیدگاه‌های خاص خود سنت‌های فلسفی را به چالش کشید.',sentences:[['Friedrich Nietzsche wurde 1844 in Röcken geboren.','فریدریش نیچه در سال ۱۸۴۴ در روکن به دنیا آمد.'],['Er war ein radikaler Kritiker der Kultur.','او منتقد رادیکال فرهنگ بود.'],['Sein bekanntes Werk heißt „Also sprach Zarathustra“.','اثر معروف او «چنین گفت زرتشت» نام دارد.'],['Er prägte Begriffe wie den „Übermenschen“.','او مفاهیمی مانند «ابرانسان» را مطرح کرد.']],vocab:[['der Kritiker','اسم مذکر','منتقد','Er ist ein strenger Kritiker.','او یک منتقد سخت‌گیر است.'],['die Kultur','اسم مؤنث','فرهنگ','Wir studieren die Kultur.','ما فرهنگ را مطالعه می‌کنیم.']],footer:'نکته: آثار نیچه تأثیر عمیقی بر ادبیات مدرن گذاشت.',quiz:{q:'نام کتاب مشهور نیچه چیست؟',opts:['Faust','Also sprach Zarathustra','Die Bibel','Das Kapital'],c:1,why:'Sein bekanntes Werk heißt Also sprach Zarathustra.'}},
+{id:'humboldt',cat:'science',icon:'AH',name:'الکساندر فون هومبولت',sub:'طبیعت‌شناس و کاشف · 1769–1859',kicker:'DER NATURFORSCHER',intro:'هومبولت بنیان‌گذار جغرافیای علمی مدرن بود.',sentences:[['Alexander von Humboldt wurde 1769 in Berlin geboren.','الکساندر فون هومبولت در سال ۱۷۶۹ در برلین به دنیا آمد.'],['Er unternahm große Forschungsreisen nach Amerika.','او سفرهای تحقیقاتی بزرگی به آمریکا انجام داد.'],['Er untersuchte die Natur, das Klima und die Pflanzenwelt.','او طبیعت، اقلیم و دنیای گیاهان را بررسی کرد.'],['Nach ihm sind viele Institutionen benannt.','مؤسسات زیادی به نام او نامگذاری شده‌اند.']],vocab:[['die Forschungsreise','اسم مؤنث','سفر تحقیقاتی','Er macht eine Forschungsreise.','او به سفر تحقیقاتی می‌رود.'],['das Klima','اسم خنثی','اقلیم / آب و هوا','Das Klima verändert sich.','آب و هوا در حال تغییر است.']],footer:'نکته: دانشگاه معروف برلین (Humboldt-Universität) به نام اوست.',quiz:{q:'هومبولت به چه موضوعی علاقه داشت؟',opts:['سیاست','طبیعت و جغرافیای علمی','تئاتر','موسیقی کلاسیک'],c:1,why:'Er untersuchte die Natur und das Klima.'}},
+{id:'diesel',cat:'science',icon:'RD',name:'رودولف دیزل',sub:'مخترع موتور دیزل · 1858–1913',kicker:'DER ERFINDER',intro:'دیزل مخترع موتور احتراقی با بازدهی بالا بود.',sentences:[['Rudolf Diesel wurde 1858 in Paris geboren.','رودولف دیزل در سال ۱۸۵۸ در پاریس به دنیا آمد.'],['Er war ein deutscher Ingenieur.','او یک مهندس آلمانی بود.'],['1897 erfand er den nach ihm benannten Dieselmotor.','او در سال ۱۸۹۷ موتور دیزل را که به نام خودش است اختراع کرد.'],['Diese Erfindung revolutionierte den Transport und die Industrie.','این اختراع حمل و نقل و صنعت را متحول کرد.']],vocab:[['der Motor','اسم مذکر','موتور','Der Motor ist stark.','موتور قوی است.'],['die Industrie','اسم مؤنث','صنعت','Die Industrie wächst.','صنعت در حال رشد است.']],footer:'نکته: موتورهای دیزل امروزه در وسایل نقلیه سنگین کاربرد دارند.',quiz:{q:'رودولف دیزل چه چیزی را اختراع کرد؟',opts:['موتور دیزل','لامپ برق','تلفن','رادیو'],c:0,why:'Er erfand den Dieselmotor.'}},
+{id:'brandt',cat:'history',icon:'WB',name:'ویلی برانت',sub:'سیاستمدار و صدراعظم سابق · 1913–1992',kicker:'DER STAATSMANN',intro:'ویلی برانت سیاست آشتی و تنش‌زدایی را پایه‌گذاری کرد.',sentences:[['Willy Brandt wurde 1913 in Lübeck geboren.','ویلی برانت در سال ۱۹۱۳ در لوبک به دنیا آمد.'],['Er war regierender Bürgermeister von Berlin و später Bundeskanzler.','او شهردار حاکم برلین و بعدتر صدراعظم شد.'],['Er bekam den Friedensnobelpreis für seine Ostpolitik.','او به خاطر سیاست شرقی‌اش جایزه صلح نوبل گرفت.'],['Sein Kniefall von Warschau wurde weltberหวم است.','زانوزدن او در ورشو جهانی شد.']],vocab:[['der Bürgermeister','اسم مذکر','شهردار','Er ist der Bürgermeister der Stadt.','او شهردار شهر است.'],['der Friedensnobelpreis','اسم مذکر','جایزه صلح نوبل','Er gewinnt den Friedensnobelpreis.','او جایزه صلح نوبل را می‌برد.']],footer:'نکته: سیاست Ostpolitik برانت نقش مهمی در کاهش تنش‌های جنگ سرد داشت.',quiz:{q:'ویلی برانت چه جایزه مهمی دریافت کرد؟',opts:['جایزه نوبل فیزیک','جایزه صلح نوبل','جایزه ادبیات','جایزه معماری'],c:1,why:'Er bekam den Friedensnobelpreis.'}},
+{id:'kochn',cat:'science',icon:'RK',name:'روبرت کخ',sub:'پزشک و میکروب‌شناس · 1843–1910',kicker:'DER MIKROBIOLOGE',intro:'کخ بنیان‌گذار باکتری‌شناسی مدرن و کاشف باکتری سل بود.',sentences:[['Robert Koch wurde 1843 in Clausthal geboren.','روبرت کخ در سال ۱۸۴۳ در کلاوستال به دنیا آمد.'],['Er entdeckte den Erreger der Tuberkulose.','او عامل بیماری سل را کشف کرد.'],['1905 erhielt er den Nobelpreis für Medizin.','او در سال ۱۹۰۵ جایزه نوبل پزشکی را دریافت کرد.'],['Seine Entdeckungen retteten Millionen Menschenleben.','کشفیات او جان میلیون‌ها انسان را نجات داد.']],vocab:[['die Medizin','اسم مؤنث','پزشکی / دارو','Er studiert Medizin.','او پزشکی می‌خواند.'],['die Krankheit','اسم مؤنث','بیماری','Die Krankheit ist heilbar.','بیماری قابل درمان است.']],footer:'نکته: مؤسسه معروف Robert-Koch-Institut در آلمان به نام اوست.',quiz:{q:'روبرت کخ چه جایزه‌ای گرفت؟',opts:['نوبل پزشکی','نوبل فیزیک','نوبل شیمی','نوبل صلح'],c:0,why:'Er erhielt den Nobelpreis für Medizin.'}},
+{id:'bismarck',cat:'history',icon:'OB',name:'اتو فون بیسمارک',sub:'نخستین صدر اعظم امپراتوری آلمان · 1815–1898',kicker:'DER KANZLER',intro:'بیسمارک نقش اصلی را در اتحاد آلمان در قرن نوزدهم داشت.',sentences:[['Otto von Bismarck wurde 1815 in Schönhausen geboren.','اتو فون بیسمارک در سال ۱۸۱۵ در شونهاوزن به دنیا آمد.'],['Er war als der „Eiserne Kanzler“ bekannt.','او به عنوان «صدراعظم آهنین» شناخته می‌شد.'],['1871 vereinigte er die deutschen Staaten zu einem Kaiserreich.','او در سال ۱۸۷۱ ایالات آلمان را به یک امپراتوری واحد متحد کرد.'],['Er prägte die europäische Politik seiner Zeit.','او سیاست اروپایی زمان خود را شکل داد.']],vocab:[['das Reich','اسم خنثی','امپراتوری / قلمرو','Das Reich war groß.','امپراتوری بزرگ بود.'],['die Macht','اسم مؤنث','قدرت','Die Macht des Staates.','قدرت دولت.']],footer:'نکته: لقب بیسمارک «Der Eiserne Kanzler» بود.',quiz:{q:'بیسمارک به چه عنوانی معروف بود؟',opts:['صدراعظم آهنین','پزشک بزرگ','شاعر ملی','معمار برتر'],c:0,why:'Er war als der Eiserne Kanzler bekannt.'}},
+{id:'mann',cat:'writer',icon:'TM',name:'توماس مان',sub:'نویسنده برنده نوبل ادبیات · 1875–1955',kicker:'DER ERZÄHLER',intro:'توماس مان از برجسته‌ترین نویسندگان قرن بیستم آلمان است.',sentences:[['Thomas Mann wurde 1875 in Lübeck geboren.','توماس مان در سال ۱۸۷۵ در لوبک به دنیا آمد.'],['Sein Roman „Buddenbrooks“ brachte ihm großen Erfolg.','رمان او «بودنبروک‌ها» برایش موفقیت بزرگی به ارمغان آورد.'],['1929 erhielt er den Nobelpreis für Literatur.','او در سال ۱۹۲۹ جایزه نوبل ادبیات را دریافت کرد.'],['Später emigrierte er in die USA.','او بعدها به ایالات متحده مهاجرت کرد.']],vocab:[['der Roman','اسم مذکر','رمان','Ich lese einen Roman.','من یک ررمان می‌خوانم.'],['der Erfolg','اسم مؤنث','موفقیت','Der Roman hat Erfolg.','رمان موفقیت‌آمیز است.']],footer:'نکته: برادر او هاینریش مان نیز نویسنده بزرگی بود.',quiz:{q:'توماس مان در چه سالی جایزه نوبل ادبیات گرفت؟',opts:['1900','1929','1950','1955'],c:1,why:'1929 erhielt er den Nobelpreis für Literatur.'}},
+{id:'copernicus',cat:'science',icon:'NK',name:'نیکلاس کوپرنیک',sub:'ستاره‌شناس (دارای ریشه آلمانی-لهستانی) · 1473–1543',kicker:'DER ASTRONOM',intro:'کوپرنیک مدل مرکزیت خورشید در منظومه شمسی را مطرح کرد.',sentences:[['Nikolaus Kopernikus wurde 1473 geboren.','نیکلاس کوپرنیک در سال ۱۴۷۳ به دنیا آمد.'],['Er war ein bedeutender Astronom.','او اخترشناس برجسته‌ای بود.'],['Er entdeckte, dass die Erde sich um die Sonne dreht.','او کشف کرد که زمین به دور خورشید می‌چرخد.'],['Seine Theorie veränderte unser Weltbild.','نظریه او جهان‌بینی ما را تغییر داد.']],vocab:[['die Sonne','اسم مؤنث','خورشید','Die Sonne geht auf.','خورشید طلوع می‌کند.'],['die Erde','اسم مؤنث','زمین','Die Erde kreist um die Sonne.','زمین به دور خورشید می‌چرخد.']],footer:'نکته: این نظریه نقطه عطفی در تاریخ علم بود.',quiz:{q:'کوپرنیک چه چیزی را اثبات کرد؟',opts:['زمین به دور خورشید می‌چرخد','خورشید ثابت نیست','ماه از سنگ است','ستاره‌ها ثابتند'],c:0,why:'Er entdeckte, dass die Erde sich um die Sonne dreht.'}},
+{id:'kant',cat:'philosophy',icon:'IK',name:'ایمانوئل کانت',sub:'فیلسوف بزرگ روشنگری · 1724–1804',kicker:'DER AUFKLÄRER',intro:'کانت از بزرگ‌ترین فلاسفه تاریخ در حوزه شناخت‌شناسی است.',sentences:[['Immanuel Kant wurde 1724 in Königsberg geboren.','ایمانوئل کانت در سال ۱۷۲۴ در کونیگسبرگ به دنیا آمد.'],['Er war ein zentraler Philosoph der Aufklärung.','او فیلسوف مرکزی عصر روشنگری بود.'],['Sein Hauptwerk ist die „Kritik der reinen Vernunft“.','اثر اصلی او «نقد عقل محض» است.'],['Er prägte die moderne Ethik tiefgehend.','او اخلاق مدرن را عمیقاً تحت تأثیر قرار داد.']],vocab:[['die Vernunft','اسم مؤنث','عقل / خرد','Vernunft ist wichtig.','خرد مهم است.'],['die Ethik','اسم مؤنث','اخلاق','Ethik in der Wissenschaft.','اخلاق در علم.']],footer:'نکته: زندگی کانت در کونیگسبرگ بسیار منظم و دقیق بود.',quiz:{q:'کانت از چه کسانی در فلسفه بود؟',opts:['فلاسفه عصر روشنگری','فلاسفه یونان باستان','نقاشان باروک','آهنگسازان کلاسیک'],c:0,why:'Er war ein zentraler Philosoph der Aufklärung.'}}
+];
+
+// --- داستان‌های کوتاه ---
+const stories=[
+{
+  id:'story1',
+  cat:'daily',
+  emoji:'🔑',
+  title:'Der verlorene Schlüssel',
+  sub:'زندگی روزمره · سطح A1-A2',
+  kicker:'TAGESABLAUF',
+  deText:'Es ist Freitagabend und Thomas kommt spät nach Hause. Er steht vor seiner Wohnungstür und sucht den Schlüssel. Er schaut in seine Jackentasche, aber der Schlüssel ist nicht da. Thomas bekommt ein bisschen Panik. „Wo ist mein Schlüssel?“, fragt er sich. Er erinnert sich: Am Nachmittag war er im Supermarkt und im Café. Plötzlich klingelt sein Handy. Es ist sein Nachbar Herr Müller. „Hallo Thomas, du hast deinen Schlüssel im Flur vergessen! Er steckt an der Tür.“, sagt Herr Müller. Thomas atmet tief aus und lacht. „Vielen Dank, Herr Müller! Sie haben meinen Abend gerettet.“',
+  faText:'جمعه شب است و توماس دیر به خانه می‌آید. او جلوی در آپارتمانش می‌ایستد و دنبال کلید می‌گردد. داخل جیب کاپشنش را نگاه می‌کند، اما کلید آنجا نیست. توماس کمی دستپاچه می‌شود: «کلیدم کجاست؟» او به یاد می‌آورد که بعدازظهر در سوپرمارکت و کافه بود. ناگهان تلفنش زنگ می‌خورد؛ همسایه‌اش آقای مولر است: «سلام توماس، تو کلیدت را در راهرو جا گذاشته‌ای! روی در مانده است.» توماس نفس عمیقی می‌کشد و می‌خندد: «خیلی ممنون آقای مولر! شما عصر من را نجات دادید.»',
+  grammarTitle:'📌 مفعول مستقیم (Akkusativ) با فعل Suchen',
+  grammarText:'فعل **suchen** (گشتن / دنبال چیزی گشتن) یک فعل Akkusativ‌ساز است. آرتیکل کلمه مذکر **der Schlüssel** در این حالت تبدیل به **den Schlüssel** می‌شود: <br>• Er sucht **den** Schlüssel. (او دنبال کلید می‌گردد)',
+  vocab:[
+    ['der Schlüssel','اسم مذکر · جمع: die Schlüssel','کلید','Wo ist mein Schlüssel?','کلیدم کجاست؟'],
+    ['suchen','فعل باقاعده (Akkusativ)','دنبال چیزی گشتن','Er sucht den Schlüssel.','او دنبال کلید می‌گردد.'],
+    ['die Wohnungstür','اسم مؤنث · جمع: die Wohnungstüren','در آپارتمان','Er steht vor der Wohnungstür.','او جلوی در آپارتمان ایستاده.'],
+    ['die Jackentasche','اسم مؤنث · جمع: die Jackentaschen','جیب کاپشن','Der Schlüssel ist in der Tasche.','کلید در جیب است.'],
+    ['die Panik','اسم مؤنث (بدون جمع)','ترس / دستپاچگی','Er bekommt Panik.','او دستپاچه می‌شود.'],
+    ['sich erinnern','فعل انعکاسی','به یاد آوردن','Er erinnert sich an den Tag.','او روز را به یاد می‌آورد.'],
+    ['der Nachmittag','اسم مذکر · جمع: die Nachmittage','بعدازظهر','Am Nachmittag war er im Café.','بعدازظهر او در کافه بود.'],
+    ['klingeln','فعل باقاعده','زنگ خوردن','Das Handy klingelt.','تلفن همراه زنگ می‌خورد.'],
+    ['der Nachbar','اسم مذکر · جمع: die Nachbarn','همسایه','Herr Müller ist mein Nachbar.','آقای مولر همسایه من است.'],
+    ['der Flur','اسم مذکر · جمع: die Flure','راهرو / ورودی','Er steht im Flur.','او در راهرو ایستاده است.'],
+    ['vergessen','فعل بی‌قاعده','جا گذاشتن / فراموش کردن','Ich habe den Schlüssel vergessen.','کلیدم را جا گذاشتم.'],
+    ['stecken','فعل باقاعده','گیر کردن / قرار داشتن','Der Schlüssel steckt im Schloss.','کلید در قفل مانده است.'],
+    ['ausatmen','فعل جداشدنی','نفس راحت کشیدن / بازدم','Er atmet tief aus.','او نفس عمیقی می‌کشد.'],
+    ['retten','فعل باقاعده','نجات دادن','Sie haben meinen Abend gerettet.','عصر من را نجات دادید.']
+  ],
+  footer:'نکته گرامری: برای حالت مفعولی مذکر همیشه از den استفاده کنید.',
+  quiz:{
+    q:'کلید توماس در نهایت کجا پیدا شد؟',
+    opts:['در سوپرمارکت','روی در در راهرو (im Flur)','در کافه','در جیب کاپشنش'],
+    c:1,
+    why:'آقای مولر تماس گرفت و گفت کلید روی در راهرو مانده است (Er steckt an der Tür).'
+  }
+},
+{
+  id:'story2',
+  cat:'daily',
+  emoji:'☕',
+  title:'Ein ruhiger Samstag in Berlin',
+  sub:'زندگی روزمره · سطح A1',
+  kicker:'WOCHENENDE',
+  deText:'Sina wacht um 7 Uhr morgens auf. Die Sonne scheint. Er geht in die Küche und macht einen frischen Kaffee. Heute ist Samstag und Sina hat keinen Stress. Er hat frei. Er nimmt sein deutsches Buch und liest zwei Kapitel auf dem Balkon. Um 11 Uhr trifft er seinen Freund Stefan im Park. Sie trinken Kaffee, sprechen über die Woche und lachen viel. Sina denkt: „Das Leben in Berlin ist wirklich schön.“',
+  faText:'سینا ساعت ۷ صبح از خواب بیدار می‌شود. خورشید می‌تابد. او به آشپزخانه می‌رود و یک قهوه تازه درست می‌کند. امروز شنبه است و سینا استرسی ندارد؛ او تعطیل است. کتاب آلمانی‌اش را برمی‌دارد و دو فصل را در بالکن می‌خواند. ساعت ۱۱ دوستش اشتفان را در پارک ملاقات می‌کند. آن‌ها قهوه می‌نوشند، درباره هفته صحبت می‌کنند و می‌خندند. سینا با خود فکر می‌کند: „زندگی در برلین واقعاً زیباست.“',
+  grammarTitle:'📌 افعال جداشدنی (Trennbare Verben)',
+  grammarText:'فعل **aufwachen** (از خواب بیدار شدن) یک فعل جداشدنی است. پیشوند **auf** در جملات زمان حال به انتهای جمله منتقل می‌شود: <br>• Sina wacht um 7 Uhr **auf**.',
+  vocab:[
+    ['aufwachen','فعل جداشدنی','از خواب بیدار شدن','Ich wache um 7 Uhr auf.','من ساعت ۷ بیدار می‌شوم.'],
+    ['scheinen','فعل بی‌قاعده','تابیدن (خورشید)','Die Sonne scheint heute.','امروز خورشید می‌تابد.'],
+    ['die Küche','اسم مؤنث · جمع: die Küchen','آشپزخانه','Er steht in der Küche.','او در آشپزخانه است.'],
+    ['frisch','صفت','تازه','Ein frischer Kaffee schmeckt gut.','یک قهوه تازه خوشمزه است.'],
+    ['frei haben','عبارت فعلی','تعطیل بودن / وقت آزاد داشتن','Heute habe ich frei.','امروز وقتم آزاد است.'],
+    ['das Kapitel','اسم خنثی · جمع: die Kapitel','فصل کتاب','Ich lese das erste Kapitel.','من فصل اول را می‌خوانم.'],
+    ['der Balkon','اسم مذکر · جمع: die Balkone','بالکن','Er liest auf dem Balkon.','او روی بالکن مطالعه می‌کند.'],
+    ['treffen','فعل بی‌قاعده (Akkusativ)','ملاقات کردن / دیدن','Er trifft seinen Freund.','او دوستش را ملاقات می‌کند.'],
+    ['sprechen über','فعل + حرف اضافه','صحبت کردن درباره','Sie sprechen über die Woche.','آن‌ها درباره هفته صحبت می‌کنند.'],
+    ['lachen','فعل باقاعده','خندیدن','Wir lachen viel zusammen.','ما با هم زیاد می‌خندیم.'],
+    ['denken','فعل بی‌قاعده','فکر کردن','Er denkt an seine Zukunft.','او به آینده‌اش فکر می‌کند.'],
+    ['wirklich','قید / صفت','واقعاً / به‌راستی','Das ist wirklich schön.','این واقعاً زیباست.']
+  ],
+  footer:'نکته گرامری: فعل treffen تغییر مصوت دارد: er trifft.',
+  quiz:{
+    q:'سینا روز شنبه ساعت ۱۱ چه کاری انجام می‌دهد؟',
+    opts:['به اداره می‌رود','دوستش اشتفان را در پارک ملاقات می‌کند','به سفر می‌رود','در خانه تمیزکاری می‌کند'],
+    c:1,
+    why:'در متن آمده که ساعت ۱۱ اشتفان را در پارک دید و با هم قهوه خوردند.'
+  }
+},
+{
+  id:'story3',
+  cat:'travel',
+  emoji:'🚆',
+  title:'Die Reise nach München',
+  sub:'سفر و ماجراجویی · سطح A1-A2',
+  kicker:'REISE & ZUG',
+  deText:'Amina steht am Bahnhof in Frankfurt. Sie möchte nach München fahren, um ihre Schwester zu besuchen. Der Zug fährt um 9:15 Uhr ab. Sie steigt ein und sucht ihren Sitzplatz am Fenster. Die Fahrt dauert etwa drei Stunden. Während der Reise liest Amina ein Buch und schaut aus dem Fenster. Die Landschaft ist wunderschön. Pünktlich um 12:20 Uhr kommt der Zug in München an. Ihre Schwester wartet schon am Bahnsteig mit einem Blumenstrauß.',
+  faText:'آمینا در ایستگاه قطار فرانکفورت ایستاده است. او می‌خواهد به مونیخ برود تا خواهرش را ببینید. قطار ساعت ۹:۱۵ حرکت می‌کند. او سوار می‌شود و صندلی‌اش را کنار پنجره پیدا می‌کند. سفر حدود سه ساعت طول می‌کشد. در طول مسیر، آمینا کتاب می‌خواند و به بیرون نگاه می‌کند. طبیعت بسیار زیباست. قطار راس ساعت ۱۲:۲۰ به مونیخ می‌رسد. خواهرش از قبل روی سکو با یک دسته گل منتظر اوست.',
+  grammarTitle:'📌 افعال حرکت قطار: abfahren و ankommen',
+  grammarText:'فعل **abfahren** (حرکت کردن) و **ankommen** (رسیدن) هر دو جداشدنی هستند: <br>• Der Zug fährt um 9:15 Uhr **ab**. (قطار حرکت می‌کند)<br>• Der Zug kommt um 12:20 Uhr **an**. (قطار می‌رسد)',
+  vocab:[
+    ['der Bahnhof','اسم مذکر · جمع: die Bahnhöfe','ایستگاه قطار','Er steht am Bahnhof.','او در ایستگاه قطار است.'],
+    ['besuchen','فعل (Akkusativ)','دیدار کردن / به دیدن کسی رفتن','Sie besucht ihre Schwester.','او به دیدن خواهرش می‌رود.'],
+    ['abfahren','فعل جداشدنی','حرکت کردن (وسیله نقلیه)','Der Zug fährt ab.','قطار حرکت می‌کند.'],
+    ['einsteigen','فعل جداشدنی','سوار شدن','Sie steigt in den Zug ein.','او سوار قطار می‌شود.'],
+    ['der Sitzplatz','اسم مذکر · جمع: die Sitzplätze','صندلی / محل نشستن','Ich habe einen Sitzplatz.','من یک صندلی دارم.'],
+    ['dauern','فعل باقاعده','طول کشیدن (زمان)','Die Fahrt dauert drei Stunden.','سفر سه ساعت طول می‌کشد.'],
+    ['die Landschaft','اسم مؤنث · جمع: die Landschaften','طبیعت / چشم‌انداز','Die Landschaft ist schön.','طبیعت زیباست.'],
+    ['pünktlich','صفت / قید','به‌موقع / آن‌آن','Der Zug ist pünktlich.','قطار به‌موقع است.'],
+    ['ankommen','فعل جداشدنی','رسیدن به مقصد','Wann kommt der Zug an?','قطار چه زمانی می‌رسد؟'],
+    ['der Bahnsteig','اسم مذکر · جمع: die Bahnsteige','سکوی ایستگاه قطار','Wir warten am Bahnsteig.','ما روی سکو منتظریم.'],
+    ['der Blumenstrauß','اسم مذکر · جمع: die Blumensträuße','دسته گل','Er bringt einen Blumenstrauß.','او یک دسته گل می‌آورد.']
+  ],
+  footer:'نکته گرامری: حروف اضافه مکان با ایستگاه قطار: am Bahnhof / am Bahnsteig.',
+  quiz:{
+    q:'خواهر آمینا با چه چیزی روی سکو منتظر او بود؟',
+    opts:['با یک قهوه گرم','با یک دسته گل (Blumenstrauß)','با یک بلیت جدید','با یک چمدان بزرگ'],
+    c:1,
+    why:'در متن آمده: Ihre Schwester wartet schon am Bahnsteig mit einem Blumenstrauß.'
+  }
+},
+{
+  id:'story4',
+  cat:'travel',
+  emoji:'🌧️',
+  title:'Ein unerwarteter Regentag',
+  sub:'سفر و ماجراجویی · سطح A2',
+  kicker:'AUSFLUG & WETTER',
+  deText:'Markus und Lukas machen einen Ausflug in die Berge. Sie haben Rucksäcke, Wanderschuhe und eine Landkarte dabei. Das Wetter am Morgen ist warm und sonnig. Aber am Nachmittag kommen plötzliche dunkle Wolken. Es beginnt stark zu regnen. Die zwei Freunde haben leider keinen Regenschirm vergessen, aber zum Glück finden sie eine kleine Holzhütte im Wald. Sie warten dort zwei Stunden, trinken heißen Tee aus der Thermoskanne und erzählen Witze. Als der Regen aufhört, zeigt sich ein wunderschöner Regenbogen.',
+  faText:'مارکوس و لوکاس به یک پیاده‌روی و گردش در کوهستان می‌روند. آن‌ها کوله‌پشتی، کفش کوهنوردی و نقشه همراه دارند. هوای صبح گرم و آفتابی است. اما بعدازظهر ناگهان ابرهای تیره می‌آیند. باران شدیدی شروع به باریدن می‌کند. دو دوست متأسفانه چتر همراه ندارند، اما خوشبختانه یک کلبه چوبی کوچک در جنگل پیدا می‌کنند. آن‌ها دو ساعت آنجا منتظر می‌مانند، چای گرم از فلاسک می‌نوشند و لطیفه می‌گویند. وقتی باران بند می‌آید، یک رنگین‌کمان فوق‌العاده زیبا پدیدار می‌شود.',
+  grammarTitle:'📌 حرف اضافه زنگ‌دار زمانی: Als (وقتی که)',
+  grammarText:'کلمه **als** برای بیان رویدادهای یک‌باره در گذشته به کار می‌رود و فعل را به انتهای جمله می‌فرستد: <br>• **Als** der Regen **aufhört**, zeigt sich ein Regenbogen.',
+  vocab:[
+    ['der Ausflug','اسم مذکر · جمع: die Ausflüge','گردش / گشت و گذار','Wir machen einen Ausflug.','ما به گردش می‌رویم.'],
+    ['der Rucksack','اسم مذکر · جمع: die Rucksäcke','کوله‌پشتی','Der Rucksack ist schwer.','کوله‌پشتی سنگین است.'],
+    ['die Wanderschuhe','اسم جمع','کفش کوهنوردی','Ich brauche Wanderschuhe.','من کفش کوهنوردی لازم دارم.'],
+    ['die Landkarte','اسم مؤنث · جمع: die Landkarten','نقشه جغرافیا','Wir lesen die Landkarte.','ما نقشه را می‌خوانیم.'],
+    ['plötzlich','قید / صفت','ناگهان / یک‌باره','Plötzlich regnet es.','ناگهان باران می‌بارد.'],
+    ['die Wolke','اسم مؤنث · جمع: die Wolken','ابر','Die Wolken sind dunkel.','ابرها تیره هستند.'],
+    ['der Regenschirm','اسم مذکر · جمع: die Regenschirme','چتر','Hast du einen Regenschirm?','چتر داری؟'],
+    ['zum Glück','اصطلاح قیدی','خوشبختانه','Zum Glück haben wir Zeit.','خوشبختانه وقت داریم.'],
+    ['die Holzhütte','اسم مؤنث · جمع: die Holzhütten','کلبه چوبی','Sie schlafen in der Hütte.','آن‌ها در کلبه می‌خوابند.'],
+    ['die Thermoskanne','اسم مؤنث · جمع: die Thermoskannen','فلاسک','Tee ist in der Thermoskanne.','چای در فلاسک است.'],
+    ['der Witz','اسم مذکر · جمع: die Witze','لطیفه / جوک','Er erzählt einen Witz.','او یک لطیفه تعریف می‌کند.'],
+    ['aufhören','فعل جداشدنی','بند آمدن / متوقف شدن','Der Regen hört auf.','باران بند می‌آید.'],
+    ['der Regenbogen','اسم مذکر · جمع: die Regenbögen','رنگین‌کمان','Der Regenbogen ist bunt.','رنگین‌کمان رنگارنگ است.']
+  ],
+  footer:'نکته گرامری: ترکیب zum Glück به معنی خوشبختانه بسیار کاربردی است.',
+  quiz:{
+    q:'مارکوس و لوکاس هنگام باران کجا پناه گرفتند؟',
+    opts:['در ماشین','در یک کلبه چوبی (Holzhütte) در جنگل','در یک هتل بزرگ','زیر درخت چنار'],
+    c:1,
+    why:'در متن ذکر شده: Zum Glück finden sie eine kleine Holzhütte im Wald.'
+  }
+},
+{
+  id:'story5',
+  cat:'life',
+  emoji:'🏠',
+  title:'Die neue Wohnung in Hamburg',
+  sub:'زندگی در آلمان · سطح A2',
+  kicker:'WOHNEN & UMZUG',
+  deText:'Sara hat endlich eine neue Wohnung in Hamburg gefunden. Die Wohnung hat zwei Zimmer, einen Balkon und eine moderne Küche. Heute ist der Umzugstag. Ihre Freunde Ben und Maria helfen ihr beim Tragen der schweren Kartons. Sie bringen das Sofa, den Tisch und die Schränke in den zweiten Stock. Am Abend sind alle sehr müde, aber glücklich. Sara bestellt Pizza für alle, weil sie die neue Wohnung feiern möchten.',
+  faText:'سارا بالاخره یک آپارتمان جدید در هامبورگ پیدا کرده است. این آپارتمان دو اتاق، یک بالکن و یک آشپزخانه مدرن دارد. امروز روز اسباب‌کشی است. دوستانش بن و ماریا به او در حمل جعبه‌های سنگین کمک می‌کنند. آن‌ها مبل، میز و کمدها را به طبقه دوم می‌برند. غروب همه بسیار خسته اما خوشحال هستند. سارا برای همه پیتزا سفارش می‌دهد، چون می‌خواهند خانه جدید را جشن بگیرند.',
+  grammarTitle:'📌 حروف ربط علت‌ساز: weil (چون / زیرا)',
+  grammarText:'کلمه **weil** دلیل را بیان می‌کند و باعث می‌شود فعل اصلی به **انتهای جمله** منتقل شود: <br>• ..., **weil** sie die neue Wohnung feiern **möchten**.',
+  vocab:[
+    ['endlich','قید','بالاخره / سرانجام','Endlich habe ich Zeit.','بالاخره وقت پیدا کردم.'],
+    ['die Wohnung','اسم مؤنث · جمع: die Wohnungen','آپارتمان / خانه','Die Wohnung ist schön.','آپارتمان زیباست.'],
+    ['der Umzugstag','اسم مذکر · جمع: die Umzugstage','روز اسباب‌کشی','Heute ist der Umzugstag.','امروز روز اسباب‌کشی است.'],
+    ['tragen','فعل بی‌قاعده','حمل کردن / پوشیدن','Er trägt den Karton.','او جعبه را حمل می‌کند.'],
+    ['schwer','صفت','سنگین / سخت','Der Karton ist schwer.','جعبه سنگین است.'],
+    ['der Karton','اسم مذکر · جمع: die Kartons','جعبه مقوایی','Die Kartons stehen hier.','جعبه‌ها اینجا هستند.'],
+    ['der Schrank','اسم مذکر · جمع: die Schränke','کمد','Der Schrank steht im Zimmer.','کمد در اتاق قرار دارد.'],
+    ['der Stock','اسم مذکر · جمع: die Stockwerke','طبقه ساختمان','Im zweiten Stock.','در طبقه دوم.'],
+    ['müde','صفت','خسته','Ich bin sehr müde.','من خیلی خسته‌ام.'],
+    ['glücklich','صفت','خوشحال / خوشبخت','Sie sind alle glücklich.','همه خوشحال هستند.'],
+    ['bestellen','فعل (Akkusativ)','سفارش دادن','Sie bestellt eine Pizza.','او پیتزا سفارش می‌دهد.'],
+    ['feiern','فعل باقاعده','جشن گرفتن','Wir feiern die Party.','ما مهمانی را جشن می‌گیریم.']
+  ],
+  footer:'نکته گرامری: فعل helfen با حالت Dativ می‌آید: helfen ihr.',
+  quiz:{
+    q:'سارا و دوستانش چرا پیتزا سفارش دادند؟',
+    opts:['چون آشپزخانه نداشتند','چون می‌خواستند خانه جدید را جشن بگیرند (feiern)','چون غذاهای دیگر گران بود','چون رستوران تعطیل بود'],
+    c:1,
+    why:'در متن آمده: ...weil sie die neue Wohnung feiern möchten.'
+  }
+},
+{
+  id:'story6',
+  cat:'life',
+  emoji:'💼',
+  title:'Der erste Arbeitstag',
+  sub:'زندگی در آلمان · سطح A1-A2',
+  kicker:'ARBEITSLEBEN',
+  deText:'Heute ist der erste Arbeitstag von Reza in einer deutschen Firma. Er ist pünktlich um 8:30 Uhr im Büro. Seine Chefin, Frau Weber, begrüßt ihn freundlich und zeigt ihm seinen Arbeitsplatz. Reza bekommt einen neuen Laptop und ein Notizbuch. Am Mittag geht Reza mit seinen neuen Kollegen in die Kantine. Sie essen zusammen und sprechen über Hobbys und Urlaub. Reza fühlt sich sehr wohl und freut sich auf die Arbeit.',
+  faText:'امروز اولین روز کاری رضا در یک شرکت آلمانی است. او راس ساعت ۸:۳۰ در دفتر کار حاضر است. رئیسش، خانم وبر، به گرمی به او خوش‌آمد می‌گوید و محل کارش را به او نشان می‌دهد. رضا یک لپ‌تاپ جدید و یک دفترچه یادداشت دریافت می‌کند. هنگام ظهر رضا با همکاران جدیدش به سلف شرکت می‌رود. آن‌ها با هم غذا می‌خورند و درباره سرگرمی‌ها و تعطیلات صحبت می‌کنند. رضا احساس خیلی خوبی دارد و برای کار مشتاق است.',
+  grammarTitle:'📌 افعال انعکاسی: sich wohlfühlen & sich freuen',
+  grammarText:'فعل‌های انعکاسی همراه با ضمیر انعکاسی (mich, dich, sich...) می‌آیند: <br>• Reza fühlt **sich** wohl. (رضا احساس خوبی دارد)<br>• Er freut **sich** auf die Arbeit. (او مشتاق کار است)',
+  vocab:[
+    ['die Firma','اسم مؤنث · جمع: die Firmen','شرکت / کمپانی','Er arbeitet in einer Firma.','او در یک شرکت کار می‌کند.'],
+    ['das Büro','اسم خنثی · جمع: die Büros','دفتر کار / اداره','Er ist im Büro.','او در دفتر کار است.'],
+    ['die Chefin','اسم مؤنث · جمع: die Chefinnen','رئیس (زن)','Die Chefin ist nett.','رئیس مهربان است.'],
+    ['begrüßen','فعل (Akkusativ)','خوش‌آمد گفتن / احوالپرسی','Sie begrüßt den Kollegen.','او به همکار خوش‌آمد می‌گوید.'],
+    ['zeigen','فعل باقاعده','نشان دادن','Er zeigt ihm den Weg.','او راه را به او نشان می‌دهد.'],
+    ['der Arbeitsplatz','اسم مذکر · جمع: die Arbeitsplätze','میز / محل کار','Das ist mein Arbeitsplatz.','این محل کار من است.'],
+    ['das Notizbuch','اسم خنثی · جمع: die Notizbücher','دفترچه یادداشت','Er schreibt ins Notizbuch.','او در دفترچه می‌نویسد.'],
+    ['der Kollege','اسم مذکر · جمع: die Kollegen','همکار (مرد)','Er spricht با den Kollegen.','او با همکاران صحبت می‌کند.'],
+    ['die Kantine','اسم مؤنث · جمع: die Kantinen','سلف / غذاخوری شرکت','Wir essen in der Kantine.','ما در سلف غذا می‌خوریم.'],
+    ['der Urlaub','اسم مذکر · جمع: die Urlaube','مرخصی / تعطیلات','Er macht im Sommer Urlaub.','او در تابستان به مرخصی می‌رود.'],
+    ['sich wohlfühlen','فعل انعکاسی جداشدنی','احساس راحتی و خوبی داشتن','Ich fühle mich wohl.','من احساس خوبی دارم.'],
+    ['sich freuen auf','فعل انعکاسی + حرف اضافه','مشتاق رویدادی در آینده بودن','Er freut sich auf die Arbeit.','او مشتاق شروع کار است.']
+  ],
+  footer:'نکته گرامری: sich freuen auf برای اشتیاق داشتن به رویدادی در آینده به کار می‌رود.',
+  quiz:{
+    q:'رضا هنگام ظهر با همکارانش کجا رفت؟',
+    opts:['به رستوران بیرون','به سلف شرکت (die Kantine)','به خانه','به پارک نزدیک شرکت'],
+    c:1,
+    why:'در متن ذکر شده: Am Mittag geht Reza با seinen neuen Kollegen in die Kantine.'
+  }
+}
+];
+
+// --- بانک اصطلاحات عامیانه کوچه و بازار (۳۲ اصطلاح کامل) ---
+const slangList = [
+  { cat: 'daily', phrase: 'Na, alles klar?', literal: 'خب، همه چیز روشن است؟', meaning: 'چطوری ؟/ اوضاع چطوره؟ (سلام بسیار رایج بین دوستان)', example: '— Na, alles klar? — Ja, alles super!' },
+  { cat: 'daily', phrase: 'Ich habe die Schnauze voll!', literal: 'پوزه/دهانم پر شده است!', meaning: 'کاسه صبرم لبریز شده / خسته شدم از این وضعیت!', example: 'Ich habe die Schnauze voll von diesem Regen.' },
+  { cat: 'work', phrase: 'Da steppt der Bär!', literal: 'آنجا خرس می‌رقصد!', meaning: 'آنجا خیلی شلوغ و پر از شور و هیجان است / غلغله است!', example: 'Am Wochenende im Club steppt der Bär.' },
+  { cat: 'humor', phrase: 'Ich verstehe nur Bahnhof!', literal: 'من فقط ایستگاه قطار می‌فهمم!', meaning: 'هیچ‌چیزی متوجه نمی‌شوم / سر در نمی‌آورم!', example: 'Er erklärt Physik, aber ich verstehe nur Bahnhof.' },
+  { cat: 'work', phrase: 'jemandem die Daumen drücken', literal: 'فشار دادن شصت برای کسی', meaning: 'برای کسی آرزوی موفقیت کردن', example: 'Morgen hast du Prüfung? Ich drücke dir die Daumen!' },
+  { cat: 'daily', phrase: 'Null Bock haben', literal: 'نداشتنِ صفرِ حوصله', meaning: 'اصلاً حوصله کاری را نداشتن / حالش را نداشتن', example: 'Heute habe ich null Bock zum Arbeiten.' },
+  { cat: 'humor', phrase: 'Tomaten auf den Augen haben', literal: 'گوجه‌فرنگی روی چشم داشتن', meaning: 'کور بودن و ندیدن چیزهای کاملاً واضح جلوی چشم', example: 'Siehst du das Schild nicht? Hast du Tomaten auf den Augen?' },
+  { cat: 'work', phrase: 'einen Kater haben', literal: 'گربه داشتن', meaning: 'سردرد و حال بد بعد از مصرف الکل / خماری', example: 'Ich habe heute einen Kater vom Fest gestern.' },
+  { cat: 'daily', phrase: 'Passt schon!', literal: 'کافی است / جور می‌شود', meaning: 'عیبی نداره، مشکلی نیست / اوکیه، سخت نگیر', example: '— Tut mir leid! — Ach, passt schon!' },
+  { cat: 'humor', phrase: 'Jemandem auf den Keks gehen', literal: 'روی بیسکویت کسی راه رفتن', meaning: 'روی اعصاب کسی راه رفتن / کلافه کردن کسی', example: 'Hör auf zu singen, du gehst mir auf den Keks!' },
+  { cat: 'daily', phrase: 'Einen Vogel haben', literal: 'یک پرنده داشتن', meaning: 'دیوانه بودن / تخته رو کم داشتن', example: 'Du willst im Winter baden? Du hast doch einen Vogel!' },
+  { cat: 'work', phrase: 'Schwein haben', literal: 'خوک داشتن', meaning: 'شانس آوردن / خیلی خوش‌شانس بودن', example: 'Er hat den Unfall überlebt, da hat er echt Schwein gehabt.' },
+  { cat: 'humor', phrase: 'Das Brett vor dem Kopf haben', literal: 'تخته‌ای جلوی سر داشتن', meaning: 'نفهمیدن  یا متوجه نشدن یک موضوع ساده', example: 'Warum verstehe ich das nicht? Ich habe wohl ein Brett vor dem Kopf.' },
+  { cat: 'daily', phrase: 'Hals- und Beinbruch!', literal: 'شکستگی گردن و پا!', meaning: 'بهترین آرزوی موفقیت و شانس', example: 'Viel Glück bei der Fahrprüfung! Hals- und Beinbruch!' },
+  { cat: 'work', phrase: 'Arschkarte haben', literal: 'کارت گندیده داشتن', meaning: 'بدشانس بودن یا در مخمصه افتادن', example: 'Wer den Dienst am Sonntag hat, hat die Arschkarte.' },
+  { cat: 'humor', phrase: 'Ich glaub, ich spinne!', literal: 'فکر کنم دارم تار می‌تنم (دیوانه می‌شوم)', meaning: 'باورم نمی‌شه! داری منو دیوانه می‌کنی!', example: '10 Euro für einen Kaffee? Ich glaub, ich spinne!' },
+  { cat: 'daily', phrase: 'Halt die Ohren steif!', literal: 'گوش‌ها را سیخ نگه دار!', meaning: 'محکم باش، خودت را نباز، قوی بمان!', example: 'Die Prüfung wird schwer, aber halt die Ohren steif!' },
+  { cat: 'work', phrase: 'Den Nagel auf den Kopf treffen', literal: 'میخ را دقیقا روی سرش زدن', meaning: 'زدن به هدف / حرف حساب زدن', example: 'Mit deiner Analyse hast du den Nagel auf den Kopf getroffen.' },
+  { cat: 'humor', phrase: 'Nicht alle Tassen im Schrank haben', literal: 'همه فنجان‌ها را در کمد نداشتن', meaning: 'عقلت را از دست داده‌ای / یک تخته‌ات کم است', example: 'Du willst dein Auto verschenken? Hast du nicht alle Tassen im Schrank?' },
+  { cat: 'daily', phrase: 'Voll ins Schwarze treffen', literal: 'کاملاً زدن به بخش سیاه (هدف)', meaning: 'کاملاً درست حدس زدن / تیر به هدف زدن', example: 'Mit diesem Geschenk hast du voll ins Schwarze getroffen.' },
+  { cat: 'work', phrase: 'Feierabend machen', literal: 'ساختنِ زمان جشن پایان کار', meaning: 'تمام کردن کار روزانه و تعطیل کردن کار', example: 'Es ist 18 Uhr, lass uns Feierabend machen.' },
+  { cat: 'humor', phrase: 'Aus einer Mücke einen Elefanten machen', literal: 'از یک موش کور، فیل ساختن', meaning: 'کاه را کوه کردن / بزرگ کردن مسئله کوچک', example: 'Reg dich nicht so auf, mach aus einer Mücke keinen Elefanten.' },
+  { cat: 'daily', phrase: 'Ich bin fix und fertig', literal: 'من ثابت و تمام‌شده‌ام', meaning: 'پودر شدم / کاملاً خسته و کوفته‌ام', example: 'Nach dem Umzug bin ich fix und fertig.' },
+  { cat: 'work', phrase: 'Die Daumen drücken', literal: 'نگه داشتن شصت‌ها برای کسی', meaning: 'آرزوی موفقیت برای دیگری', example: 'Ich drücke dir für das Vorstellungsgespräch die Daumen.' },
+  { cat: 'humor', phrase: 'Seinen Senf dazu geben', literal: 'خردل خود را به آن اضافه کردن', meaning: 'نخود هر آش شدن / اظهار نظر بی‌مورد کردن', example: 'Niemand hat nach deiner Meinung gefragt, gib nicht immer deinen Senf dazu.' },
+  { cat: 'daily', phrase: 'Butter bei die Fische!', literal: 'کره را روی ماهی‌ها بگذار!', meaning: 'بریم سر اصل مطلب! تعارف رو بگذار کنار', example: 'Genug geredet, jetzt Butter bei die Fische: Was kostet das?' },
+  { cat: 'work', phrase: 'Auf dem Schlauch stehen', literal: 'روی شلنگ آب ایستادن', meaning: 'گیج زدن و متوجه نشدن منظور طرف مقابل', example: 'Hilf mir mal, ich stehe gerade völlig auf dem Schlauch.' },
+  { cat: 'humor', phrase: 'Lügen haben kurze Beine', literal: 'دروغ‌ها پاهای کوتاه دارند', meaning: 'دروغگو کم‌عمر است / دست دروغگو رو می‌شود', example: 'Sag die Wahrheit, Lügen haben kurze Beine.' },
+  { cat: 'daily', phrase: 'Abwarten und Tee trinken', literal: 'صبر کردن و چای نوشیدن', meaning: 'خونسرد بودن و دیدن عاقبت کار', example: 'Wir wissen noch nichts Genaues. Erstmal abwarten und Tee trinken.' },
+  { cat: 'work', phrase: 'Unter die Arme greifen', literal: 'زیر بازوهای کسی را گرفتن', meaning: 'به کسی کمک کردن / دست کسی را گرفتن', example: 'Er hatte finanzielle Probleme, da musste ich ihm unter die Arme greifen.' },
+  { cat: 'humor', phrase: 'Einen Korb bekommen', literal: 'یک سبد دریافت کردن', meaning: 'جواب رد شنیدن (درخواست رابطه یا ازدواج)', example: 'Er hat sie gefragt, aber er hat einen Korb bekommen.' },
+  { cat: 'daily', phrase: 'Da beißt die Maus keinen Faden ab', literal: 'موش هیچ نخی را گاز نمی‌زند', meaning: 'این یک حقیقت غیرقابل انکار است!', example: 'Die Prüfung ist Pflicht, da beißt die Maus keinen Faden ab.' }
+];
+
+
+
+const peopleEl=document.getElementById('people');
+let activeId='goethe';
+let activeStoryId='story1';
+let currentFilter='all';
+let currentStoryFilter='all';
+let currentSlangFilter='all';
+let showStoryTransFlag=false;
+
+function switchMainTab(tab){
+  document.getElementById('tabBios').classList.toggle('active', tab==='bios');
+  document.getElementById('tabStories').classList.toggle('active', tab==='stories');
+  document.getElementById('tabSlang').classList.toggle('active', tab==='slang');
+  
+  document.getElementById('sectionBios').style.display = tab==='bios' ? 'block' : 'none';
+  document.getElementById('sectionStories').style.display = tab==='stories' ? 'block' : 'none';
+  document.getElementById('sectionSlang').style.display = tab==='slang' ? 'block' : 'none';
+  
+  if(tab==='slang') renderSlangGrid();
+}
+
+function renderPeople(){
+  peopleEl.innerHTML='';
+  const filtered = bios.filter(b=> currentFilter==='all' || b.cat===currentFilter);
+  
+  filtered.forEach(b=>{
+    const btn=document.createElement('button');
+    btn.type='button';
+    btn.className='person-btn'+(b.id===activeId?' active':'');
+    btn.innerHTML=`<span class="person-text"><span class="person-name">${b.name}</span><span class="person-sub">${b.sub}</span></span>`;
+    btn.addEventListener('click',()=>{
+      activeId=b.id;
+      renderPeople();
+      renderBio(b);
+    });
+    peopleEl.appendChild(btn);
+  });
+}
+
+function renderBio(b){
+  document.getElementById('bioKicker').textContent=b.kicker;
+  document.getElementById('bioName').textContent=b.name;
+  document.getElementById('bioSub').textContent=b.sub;
+  document.getElementById('bioIntro').textContent=b.intro;
+  
+  document.getElementById('sentences').innerHTML='';
+  b.sentences.forEach((s,i)=>{
+    const row=document.createElement('div');
+    row.className='sentence';
+    const de=document.createElement('div');
+    de.className='de';
+    de.innerHTML=`<span class="num">${i+1}</span>`;
+    de.append(document.createTextNode(s[0]));
+    const fa=document.createElement('div');
+    fa.className='fa';
+    fa.textContent=s[1];
+    row.append(de,fa);
+    document.getElementById('sentences').appendChild(row);
+  });
+
+  document.getElementById('vocab').innerHTML='';
+  b.vocab.forEach(v=>{
+    const card=document.createElement('div');
+    card.className='word-card';
+    card.innerHTML=`<div class="word-top"><span class="word"></span><span class="word-type"></span></div><div class="word-meaning"></div><div class="word-detail"></div><div class="word-example"></div><div class="word-detail"></div>`;
+    card.querySelector('.word').textContent=v[0];
+    card.querySelector('.word-type').textContent=v[1].startsWith('فعل')?'فعل':v[1].startsWith('صفت')?'صفت':'اسم';
+    card.querySelector('.word-meaning').textContent=v[2];
+    card.querySelectorAll('.word-detail')[0].textContent=v[1];
+    card.querySelector('.word-example').textContent=v[3];
+    card.querySelectorAll('.word-detail')[1].textContent=v[4];
+    document.getElementById('vocab').appendChild(card);
+  });
+
+  renderQuiz(b.quiz, 'quizQ', 'quizOpts', 'quizFeedback');
+  document.getElementById('bioFooter').textContent=b.footer;
+}
+
+// --- رندر داستان‌ها ---
+function renderStoriesList(){
+  const container = document.getElementById('storiesList');
+  container.innerHTML='';
+  const filtered = stories.filter(s=> currentStoryFilter==='all' || s.cat===currentStoryFilter);
+
+  filtered.forEach(s=>{
+    const btn=document.createElement('button');
+    btn.type='button';
+    btn.className='person-btn'+(s.id===activeStoryId?' active':'');
+    btn.innerHTML=`<span class="person-icon">${s.emoji}</span><span><span class="person-name">${s.title}</span><span class="person-sub">${s.sub}</span></span>`;
+    btn.addEventListener('click',()=>{
+      activeStoryId=s.id;
+      renderStoriesList();
+      renderStoryDetail(s);
+    });
+    container.appendChild(btn);
+  });
+}
+
+function renderStoryDetail(s){
+  document.getElementById('storyEmoji').textContent=s.emoji;
+  document.getElementById('storyKicker').textContent=s.kicker;
+  document.getElementById('storyTitle').textContent=s.title;
+  document.getElementById('storySub').textContent=s.sub;
+
+  document.getElementById('storyTextDe').textContent = s.deText;
+  document.getElementById('storyTextFa').textContent = s.faText;
+
+  document.getElementById('storyGrammarTitle').innerHTML = s.grammarTitle;
+  document.getElementById('storyGrammarText').innerHTML = s.grammarText;
+  
+  showStoryTransFlag = false;
+  document.getElementById('storyTextFa').style.display = 'none';
+  document.getElementById('toggleStoryTrans').textContent = 'نمایش ترجمه کامل داستان ↓';
+
+  document.getElementById('storyVocab').innerHTML='';
+  s.vocab.forEach(v=>{
+    const card=document.createElement('div');
+    card.className='word-card';
+    card.innerHTML=`<div class="word-top"><span class="word"></span><span class="word-type"></span></div><div class="word-meaning"></div><div class="word-detail"></div><div class="word-example"></div><div class="word-detail"></div>`;
+    card.querySelector('.word').textContent=v[0];
+    card.querySelector('.word-type').textContent='واژه';
+    card.querySelector('.word-meaning').textContent=v[2];
+    card.querySelectorAll('.word-detail')[0].textContent=v[1];
+    card.querySelector('.word-example').textContent=v[3];
+    card.querySelectorAll('.word-detail')[1].textContent=v[4];
+    document.getElementById('storyVocab').appendChild(card);
+  });
+
+  renderQuiz(s.quiz, 'storyQuizQ', 'storyQuizOpts', 'storyQuizFb');
+  document.getElementById('storyFooter').textContent=s.footer;
+}
+
+// --- رندر اصطلاحات عامیانه ---
+function renderSlangGrid(){
+  const grid = document.getElementById('slangGrid');
+  grid.innerHTML='';
+  const filtered = slangList.filter(sl => currentSlangFilter==='all' || sl.cat===currentSlangFilter);
+
+  filtered.forEach(sl => {
+    const card = document.createElement('div');
+    card.className = 'slang-card';
+    card.innerHTML = `
+      <div class="slang-header">
+        <span class="slang-badge">${sl.cat === 'daily' ? 'روزمره و واکنش‌ها' : sl.cat === 'work' ? 'کار و تلاش' : 'طنز و کنایه'}</span>
+        <span style="font-size:11px; color:var(--muted)">اصطلاح اصیل آلمانی</span>
+      </div>
+      <div class="slang-phrase">${sl.phrase}</div>
+      ${sl.literal ? `<div class="slang-literal">معنی تحت‌اللفظی: ${sl.literal}</div>` : ''}
+      <div class="slang-meaning">🎯 ${sl.meaning}</div>
+      <div class="slang-example">💬 ${sl.example}</div>
+    `;
+    grid.appendChild(card);
+  });
+}
+
+function renderQuiz(qData, qId, optsId, fbId){
+  const qEl = document.getElementById(qId);
+  const optsEl = document.getElementById(optsId);
+  const fbEl = document.getElementById(fbId);
+
+  fbEl.textContent = '';
+  qEl.textContent = 'سوال: ' + qData.q;
+  optsEl.innerHTML = '';
+
+  qData.opts.forEach((optText, idx)=>{
+    const btn = document.createElement('button');
+    btn.className = 'quiz-opt';
+    btn.textContent = optText;
+    btn.onclick = ()=>{
+      const allBtns = optsEl.querySelectorAll('.quiz-opt');
+      allBtns.forEach((b, i)=>{
+        b.disabled = true;
+        if(i === qData.c) b.classList.add('correct');
+        else if(i === idx) b.classList.add('wrong');
+      });
+      if(idx === qData.c){
+        fbEl.innerHTML = '<strong style="color:var(--green)">✓ کاملاً درست است!</strong><br>' + qData.why;
+      } else {
+        fbEl.innerHTML = '<strong style="color:var(--red)">✗ پاسخ صحیح نیست.</strong><br>' + qData.why;
+      }
+    };
+    optsEl.appendChild(btn);
+  });
+}
+
+document.getElementById('toggleStoryTrans').addEventListener('click', ()=>{
+  showStoryTransFlag = !showStoryTransFlag;
+  document.getElementById('storyTextFa').style.display = showStoryTransFlag ? 'block' : 'none';
+  document.getElementById('toggleStoryTrans').textContent = showStoryTransFlag ? 'پنهان کردن ترجمه داستان ↑' : 'نمایش ترجمه کامل داستان ↓';
+});
+
+// Event listeners
+document.querySelectorAll('#filterBar .filter-btn').forEach(btn=>{
+  btn.addEventListener('click', (e)=>{
+    document.querySelectorAll('#filterBar .filter-btn').forEach(b=>b.classList.remove('active'));
+    e.target.classList.add('active');
+    currentFilter = e.target.dataset.cat;
+    renderPeople();
+  });
+});
+
+document.querySelectorAll('#storyFilterBar .filter-btn').forEach(btn=>{
+  btn.addEventListener('click', (e)=>{
+    document.querySelectorAll('#storyFilterBar .filter-btn').forEach(b=>b.classList.remove('active'));
+    e.target.classList.add('active');
+    currentStoryFilter = e.target.dataset.scat;
+    renderStoriesList();
+    const visible = stories.filter(s=> currentStoryFilter==='all' || s.cat===currentStoryFilter);
+    if(visible.length > 0){
+      activeStoryId = visible[0].id;
+      renderStoryDetail(visible[0]);
+      renderStoriesList();
+    }
+  });
+});
+
+document.querySelectorAll('#slangFilterBar .filter-btn').forEach(btn=>{
+  btn.addEventListener('click', (e)=>{
+    document.querySelectorAll('#slangFilterBar .filter-btn').forEach(b=>b.classList.remove('active'));
+    e.target.classList.add('active');
+    currentSlangFilter = e.target.dataset.slang;
+    renderSlangGrid();
+  });
+});
+
+// --- گنجینه سخنان بزرگان (۳۳ جمله غنی) ---
+const quotes = [
+  ["„Auch aus Steinen, die einem in den Weg gelegt werden, kann man Schönes bauen.“", "حتی از سنگ‌هایی که سر راه آدم گذاشته می‌شود هم می‌توان چیز زیبایی ساخت.", "Johann Wolfgang von Goethe"],
+  ["„Phantasie ist wichtiger als Wissen, denn Wissen ist begrenzt.“", "تخیل مهم‌تر از دانش است، زیرا دانش محدود است.", "Albert Einstein"],
+  ["„Wer ein Warum zu leben hat, erträgt fast jedes Wie.“", "کسی که دلیلی برای زندگی کردن داشته باشد، تقریباً هر چگونه‌ای را تحمل می‌کند.", "Friedrich Nietzsche"],
+  ["„Man sieht nur mit dem Herzen gut. Das Wesentliche ist für die Augen unsichtbar.“", "انسان فقط با قلبش به خوبی می‌بیند. اصل کار برای چشم پنهان است.", "Antoine de Saint-Exupéry"],
+  ["„Die Logik bringt dich von A nach B. Phantasie bringt dich überall hin.“", "منطق شما را از نقطه الف به ب می‌برد. تخیل شما را به هر جایی می‌برد.", "Albert Einstein"],
+  ["„Es ist nicht genug zu wissen, man muss auch anwenden; es ist nicht genug zu wollen, man muss auch tun.“", "دانستن کافی نیست، باید به کار بست؛ خواستن کافی نیست، باید عمل کرد.", "Johann Wolfgang von Goethe"],
+  ["„Der Mensch ist das, what er gelernt hat.“", "انسان همان چیزی است که آموخته است.", "Karl Marx"],
+  ["„Nichts auf der Welt ist so mächtig wie eine Idee, deren Zeit gekommen ist.“", "هیچ‌چیز در جهان به اندازه ایده‌ای که زمانش فرا رسیده باشد، قدرتمند نیست.", "Victor Hugo"],
+  ["„Glück ist das einzige, what sich verdoppelt, wenn man es teilt.“", "خوشبختی تنها چیزی است که وقتی آن را تقسیم می‌کنی، دو برابر می‌شود.", "Albert Schweitzer"],
+  ["„Wege entstehen dadurch, dass man sie geht.“", "راه‌ها با راه رفتن روی آن‌ها پدیدار می‌شوند.", "Franz Kafka"],
+  ["„Wer den Hafen nicht kennt, in den er steuern will, für den ist kein Wind günstig.“", "برای کسی که نمی‌داند مقصدش کجاست، هیچ بادی موافق نیست.", "Seneca"],
+  ["„Die reinste Form des Wahnsinns ist es, alles beim Alten zu belassen und gleichzeitig zu hoffen, dass sich etwas ändert.“", "خالص‌ترین شکل جنون این است که همه چیز را به همان روال قبل نگه داری و در عین حال امیدوار باشی چیزی تغییر کند.", "Albert Einstein"],
+  ["„Man muss das Unmögliche versuchen, um das Möglich zu erreichen.“", "برای رسیدن به ممکن، باید ناممکن را تلاش کرد.", "Hermann Hesse"],
+  ["„Leben ist das, what passiert, während du dabei bist, andere Pläne zu machen.“", "زندگی همان چیزی است که اتفاق می‌افتد، در حالی که مشغول برنامه‌ریزی‌های دیگر هستید.", "John Lennon"],
+  ["„Ein Buch ist wie ein Garten, den man in der Tasche trägt.“", "کتاب مثل باغی است که آدم در جیب خود حمل می‌کند.", "ضرب‌المثل آلمانی"],
+  ["„Alle großen Leute waren einmal Kinder, aber nur wenige erinnern sich daran.“", "همه آدم‌های بزرگ روزی کودک بوده‌اند، اما تعداد کمی از آن‌ها این را به یاد می‌آورند.", "Antoine de Saint-Exupéry"],
+  ["„Der Weg ist das Ziel.“", "مسیر خودش مقصد است.", "Confucius"],
+  ["„Wer kämpft, kann verlieren. Wer nicht kämpft, hat schon verloren.“", "کسی که مبارزه می‌کند ممکن است ببازد. کسی که مبارزه نمی‌کند از قبل باخته است.", "Bertolt Brecht"],
+  ["„Man reist ja nicht, um anzukommen, sondern um zu reisen.“", "آدم سفر نمی‌کند که به مقصد برسد، بلکه سفر می‌کند تا در سفر باشد.", "Johann Wolfgang von Goethe"],
+  ["„Die Kunst ist lang, das Leben kurz.“", "هنر طولانی است و زندگی کوتاه.", "Johann Wolfgang von Goethe"],
+  ["„Hoffnung ist der Regenbogen über dem herabstürzenden Bach des Lebens.“", "امید، رنگین‌کمانی است بر فراز نهر خروشان زندگی.", "Friedrich Nietzsche"],
+  ["„Es gibt kein Ozean, wenn nicht jeder Tropfen zählt.“", "اقیانوسی وجود نخواهد داشت اگر هر قطره‌ای به حساب نیاید.", "Theodor Storm"],
+  ["„Mut steht am Anfang des Handelns, Glück am Ende.“", "شجاعت در آغاز کار قرار دارد و خوشبختی در پایان آن.", "Demokrit"],
+  ["„Wer sich selbst kennt, wird von anderen nicht leicht getäuscht.“", "کسی که خودش را بشناسد، به راحتی توسط دیگران فریب نمی‌خورد.", "Arthur Schopenhauer"],
+  ["„Die Bildung ist die mächtigste Waffe, die man verwenden kann, um die Welt zu verändern.“", "آموزش قدرتمندترین سلاحی است که می‌توانید برای تغییر جهان از آن استفاده کنید.", "Nelson Mandela"],
+  ["„Wer den Tag mit einem Lächeln beginnt, hat ihn bereits halb gewonnen.“", "کسی که روز را با لبخند آغاز کند، نیمی از آن را از قبل برنده شده است.", "Novalis"],
+  ["„In der Mitte von Schwierigkeiten liegt die Möglichkeit.“", "در دل سختی‌هاست که فرصت‌ها و امکانات نهفته است.", "Albert Einstein"],
+  ["„Ein Freund ist jemand, der die Liedtexte deines Herzens kennt und sie dir singt, wenn du sie vergessen hast.“", "دوست کسی است که شعر دلت را می‌داند و وقتی آن را فراموش کردی، برایت می‌خواند.", "Wilhelm Busch"],
+  ["„Die Zeit heilt nicht alle Wunden, aber sie lehrt uns mit dem Unvermeidlichen zu leben.“", "زمان همه زخم‌ها را درمان نمی‌کند، اما به ما می‌آموزد که با ناگزیرها زندگی کنیم.", "Erich Kästner"],
+  ["„Man muss das Leben lieben, um es zu ertragen, und man muss den Tod lieben, um es zu genießen.“", "باید زندگی را دوست داشت تا آن را تحمل کرد، و باید مرگ را دوست داشت تا از آن لذت برد.", "Friedrich Nietzsche"],
+  ["„Wer nicht neugierig ist, erfährt nichts.“", "کسی که کنجکاو نباشد، چیزی یاد نمی‌گیرد.", "Johann Wolfgang von Goethe"],
+  ["„Geduld ist die Kunst, zu warten, während man aktiv bleibt.“", "صبر هنر انتظار کشیدن است، در حالی که آدم همچنان فعال می‌ماند.", "Wilhelm Raabe"],
+  ["„Es ist nicht wichtig, wie langsam du gehst, solange du nicht stehen bleibst.“", "مهم نیست چقدر آهسته حرکت می‌کنی، به شرطی که متوقف نشوی.", "Confucius"]
+];
+
+let qi = Math.floor(Math.random() * quotes.length);
+function showQuote(index) {
+  const container = document.getElementById('quoteContainer');
+  container.style.animation = 'none';
+  container.offsetHeight;
+  container.style.animation = 'fadeInQuote 0.5s ease';
+  
+  document.getElementById('quoteDe').textContent = quotes[index][0];
+  document.getElementById('quoteFa').textContent = quotes[index][1];
+  document.getElementById('quoteAuthor').textContent = '— ' + quotes[index][2];
+}
+
+showQuote(qi);
+
+document.getElementById('nextQuote').addEventListener('click', () => {
+  qi = (qi + 1) % quotes.length;
+  showQuote(qi);
+});
+
+// اجرای اولیه
+renderPeople();
+renderBio(bios[0]);
+renderStoriesList();
+renderStoryDetail(stories[0]);
+</script>
+</body>
+</html>
